@@ -2,13 +2,13 @@
   "name": "postcss-sass",
   "version": "1.0.0",
   "description": "SASS parser for PostCSS.",
-  "main": "script.js",
+  "main": "index.js",
   "dependencies": {
     "dart-sass": "^1.0.0-alpha.6"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "index.js"
   },
   "author": {
     "name": "Oleh Aloshkin",
