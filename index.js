@@ -1,4 +1,4 @@
-let sass = require('dart-sass');
+var sass = require('dart-sass');
 
 scss_filename = "basic.sass";
 
