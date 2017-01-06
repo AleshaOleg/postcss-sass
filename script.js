@@ -2,7 +2,7 @@ var sass = require('dart-sass');
 
 scss_filename = "basic.sass"
 
-sass.render({file: scss_filename}, function(err, result) {
+sass.render({data: 'body{background:blue; a{color:black;}}', function(err, result) {
   console.log(result);
   console.log(err);
 });

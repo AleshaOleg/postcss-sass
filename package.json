@@ -1,7 +1,7 @@
 {
   "name": "postcss-sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "SASS parser for PostCSS.",
   "main": "script.js",
   "dependencies": {
     "dart-sass": "^1.0.0-alpha.6"
@@ -10,6 +10,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+    "name": "Oleh Aloshkin",
+    "email": "olegaleshkin@gmail.com",
+    "url": "http://aleshaoleg.me"
+  },
   "license": "ISC"
 }
