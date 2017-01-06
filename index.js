@@ -1,5 +1,5 @@
-var sass = require('dart-sass');
+let sass = require('dart-sass');
 
 scss_filename = "basic.sass";
 
-console.log(sass);
+module.exports = sass;

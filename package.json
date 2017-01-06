@@ -6,14 +6,16 @@
   "dependencies": {
     "dart-sass": "^1.0.0-alpha.6"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "index.js"
+  "devDependencies": {
+    "jest": "^18.1.0"
   },
   "author": {
     "name": "Oleh Aloshkin",
     "email": "olegaleshkin@gmail.com",
     "url": "http://aleshaoleg.me"
+  },
+  "scripts": {
+    "test": "jest"
   },
   "license": "ISC"
 }
