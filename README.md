@@ -2,15 +2,19 @@
 
 [PostCSS](https://github.com/postcss/postcss) plugin to parse PostCSS AST from SASS, using [dart-sass](https://github.com/sass/dart-sass).
 
-## Usage
+## Istall
 This plugin contains two versions. There're implemented using JS and Dart languages.
 
 ### JavaScript
-Install dependencies: `npm i`
-
-Run: `node index.js`
+`npm i`
 
 ### Dart
-Install dependencies: `pub get`
+`pub get`
 
-Run: `dart index.dart`
+##Usage
+
+### JavaScript
+`node index.js`
+
+### Dart
+`dart index.dart` 
