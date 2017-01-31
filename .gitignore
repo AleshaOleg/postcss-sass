@@ -1,1 +1,4 @@
 /node_modules
+/.pub
+.packages
+pubspec.lock

@@ -3,19 +3,27 @@
   "version": "1.0.0",
   "description": "SASS parser for PostCSS.",
   "main": "index.js",
-  "dependencies": {
-    "dart-sass": "^1.0.0-alpha.6"
-  },
   "devDependencies": {
     "jest": "^18.1.0"
+  },
+  "dependencies": {
+    "dart-sass": "^1.0.0-alpha.8"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleshaOleg/postcss-sass.git"
   },
   "author": {
     "name": "Oleh Aloshkin",
     "email": "olegaleshkin@gmail.com",
     "url": "http://aleshaoleg.me"
   },
-  "scripts": {
-    "test": "jest"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleshaOleg/postcss-sass/issues"
   },
-  "license": "ISC"
+  "homepage": "https://github.com/AleshaOleg/postcss-sass#readme",
 }

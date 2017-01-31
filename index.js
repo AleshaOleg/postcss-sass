@@ -1,12 +1,10 @@
-var sass = require('dart-sass');
+const sass = require('dart-sass');
+const util = require('util');
 
-scss_filename = "basic.sass";
+scss_filename = "./basic.sass";
 
 // Example of using dart-sass
-// 
-// sass.render({file: scss_filename}, function(err, result) {
-//   console.log(result);
-//   console.log(err);
-// }); 
+const result = sass.renderSync({file: scss_filename});
+console.log((result.buffer).toString());
 
 module.exports = sass;
