@@ -1,10 +1,15 @@
-const sass = require('dart-sass');
-const util = require('util');
+let gonzales = require('gonzales-pe');
+const fs = require('fs');
 
-scss_filename = "./basic.sass";
-
-// Example of using dart-sass
-const result = sass.renderSync({file: scss_filename});
-console.log((result.buffer).toString());
-
-module.exports = sass;
+process.argv.forEach(function (val, index, array) {
+  if (index > 1) {
+    fs.readFile('./' + val, 'utf8', function (err, data) {
+      if (err) {
+        return console.log(err);
+      }
+      // Parse Sass file, and get Sass AST
+      const sassAST = (gonzales.parse(data, {syntax: 'sass'}));
+      console.log(sassAST);
+    });
+  }
+});

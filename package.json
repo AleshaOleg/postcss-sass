@@ -7,7 +7,7 @@
     "jest": "^18.1.0"
   },
   "dependencies": {
-    "dart-sass": "^1.0.0-alpha.8"
+    "gonzales-pe": "^4.0.3"
   },
   "scripts": {
     "test": "jest"
