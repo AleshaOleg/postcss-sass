@@ -1,4 +1,4 @@
-test('require dart-sass', () => {
-  var sass = require('../index');
-  expect(typeof sass).toBe('object');
+test('require gonzales-pe', () => {
+  var gonzales = require('../index');
+  expect(typeof gonzales).toBe('object');
 });
