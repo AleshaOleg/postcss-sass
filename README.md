@@ -6,4 +6,10 @@
 `npm i`
 
 ##Usage
-`node index.js`
+`node index.js [files]`
+
+###Parameters
+
+####files
+
+    @param {...String} files Files to parse
