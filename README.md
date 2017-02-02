@@ -6,7 +6,7 @@
 `npm i`
 
 ##Usage
-`node index.js [files]`
+`node index.js <String>`
 
 ###Parameters
 
