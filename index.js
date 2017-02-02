@@ -1,5 +1,5 @@
-let gonzales = require('gonzales-pe');
-const fs = require('fs');
+var gonzales = require('gonzales-pe');
+var fs = require('fs');
 
 process.argv.forEach(function (val, index, array) {
   if (index > 1) {
@@ -8,7 +8,7 @@ process.argv.forEach(function (val, index, array) {
         return console.log(err);
       }
       // Parse Sass file, and get Sass AST
-      const sassAST = (gonzales.parse(data, {syntax: 'sass'}));
+      var sassAST = (gonzales.parse(data, {syntax: 'sass'}));
       console.log(sassAST);
     });
   }
