@@ -1,3 +1,0 @@
-name: postcss_sass
-dependencies:
-  sass: ^1.0.0-alpha
