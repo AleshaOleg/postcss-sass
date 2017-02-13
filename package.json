@@ -4,7 +4,8 @@
   "description": "SASS parser for PostCSS.",
   "main": "index.js",
   "devDependencies": {
-    "jest": "^18.1.0"
+    "jest": "^18.1.0",
+    "postcss": "^5.2.12"
   },
   "dependencies": {
     "gonzales-pe": "^4.0.3"
