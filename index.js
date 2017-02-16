@@ -2,7 +2,7 @@ var gonzales = require('gonzales-pe');
 var postcss = require('postcss');
 var fs = require('fs');
 
-let nodes = [];
+var nodes = [];
 
 function getNodes(node) {
   if (node.hasOwnProperty('content') && typeof node.content === 'object') {
