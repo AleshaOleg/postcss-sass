@@ -108,4 +108,5 @@ var selector = '';
 
 var postCssAST = process(sassTree, null, selector);
 console.log(postCssAST);
+console.log('-----');
 console.log(postCssTree);

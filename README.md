@@ -1,27 +1,9 @@
-# PostCSS Sass [![Build Status][ci-img]][ci]
+# postcss-sass [![Build Status](https://travis-ci.org/AleshaOleg/postcss-sass.svg?branch=master)](https://travis-ci.org/AleshaOleg/postcss-sass)
 
-[PostCSS] plugin to parse PostCSS AST from SASS, using gonzales-pe..
+[PostCSS](https://github.com/postcss/postcss) plugin to parse PostCSS AST from SASS, using [gonzales-pe](https://github.com/tonyganch/gonzales-pe).
 
-[PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/AleshaOleg/postcss-sass.svg
-[ci]:      https://travis-ci.org/AleshaOleg/postcss-sass
+## Istall
+`npm i`
 
-```css
-.foo {
-    /* Input example */
-}
-```
-
-```css
-.foo {
-  /* Output example */
-}
-```
-
-## Usage
-
-```js
-postcss([ require('postcss-sass') ])
-```
-
-See [PostCSS] docs for examples for your environment.
+##Usage
+`node index.js`
