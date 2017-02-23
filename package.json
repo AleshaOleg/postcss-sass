@@ -1,7 +1,7 @@
 {
   "name": "postcss-sass",
   "version": "0.0.0",
-  "description": "PostCSS plugin to parse PostCSS AST from SASS, using gonzales-pe.",
+  "description": "PostCSS parcer to convert SASS to PostCSS AST, using gonzales-pe.",
   "keywords": [
     "postcss",
     "css",
