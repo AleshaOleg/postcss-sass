@@ -2,7 +2,7 @@
 
 [PostCSS](https://github.com/postcss/postcss) plugin to parse PostCSS AST from SASS, using [gonzales-pe](https://github.com/tonyganch/gonzales-pe).
 
-## Istall
+## Install
 `npm i`
 
 ##Usage
