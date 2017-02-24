@@ -96,9 +96,9 @@ function process(node, parent, selector) {
             }
         }
     } else if (node.type === 'declaration') {
-            // Create Declaration node
+        // Create Declaration node
         var decl = postcss.decl();
-            // Looking for property and value node in declaration node
+        // Looking for property and value node in declaration node
         for (var dContent = 0; dContent < node.content.length; dContent++) {
             if (node.content[dContent].type === 'property') {
                 process(node.content[dContent], decl);
@@ -107,7 +107,7 @@ function process(node, parent, selector) {
                 process(node.content[dContent], decl);
             }
         }
-            // Set parameters for Declaration node
+        // Set parameters for Declaration node
         decl.source = {
             start: node.start,
             end: node.end
