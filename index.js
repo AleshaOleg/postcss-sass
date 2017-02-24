@@ -116,10 +116,10 @@ function process(node, parent, selector) {
         decl.raws = DEFAULT_RAWS_DECL;
         parent.nodes.push(decl);
     } else if (node.type === 'property') {
-            // Set property for Declaration node
+        // Set property for Declaration node
         parent.prop = node.content[0].content;
     } else if (node.type === 'value') {
-            // Set value for Declaration node
+        // Set value for Declaration node
         parent.value = node.content[0].content;
     }
     return null;
