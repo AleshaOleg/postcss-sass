@@ -24,7 +24,8 @@
     "eslint": "^3.12.2",
     "eslint-config-postcss": "^2.0.2",
     "jest": "^18.0.0",
-    "lint-staged": "^3.3.1"
+    "lint-staged": "^3.3.1",
+    "pre-commit": "^1.2.2"
   },
   "scripts": {
     "test": "jest && eslint *.js",
@@ -39,5 +40,8 @@
       "jest": true
     }
   },
-  "pre-commit": ["test", "lint-staged"]
+  "pre-commit": [
+    "test",
+    "lint-staged"
+  ]
 }
