@@ -1,8 +1,9 @@
 var postcss = require('postcss');
 var gonzales = require('gonzales-pe');
+var Input = require('postcss/lib/input');
 
-var sass = 'div\n  a\n    span\n      color: red\n  li\n    color: green';
-var sassTree = gonzales.parse(sass, { syntax: 'sass' });
+var sassSource = 'div\n  a\n    span\n      color: red\n  li\n    color: green';
+var sassTree = gonzales.parse(sassSource, { syntax: 'sass' });
 var postCssTree = postcss
     .parse('div a span { color: red; } div li { color: green; }');
 
@@ -15,7 +16,7 @@ var DEFAULT_RAWS_RULE = {
     before: '',
     between: ' ',
     semicolon: true,
-    after: ''
+    after: ' '
 };
 
 var DEFAULT_RAWS_DECL = {
@@ -24,15 +25,17 @@ var DEFAULT_RAWS_DECL = {
 };
 
 /* eslint-disable complexity */
-function process(node, parent, selector) {
+function process(node, parent, source, selector) {
     if (node.type === 'stylesheet') {
         // Create and set parameters for Root node
         var root = postcss.root();
         root.source = {
-            start: node.start
+            start: node.start,
+            end: node.end,
+            source: new Input(source)
         };
         root.raws = DEFAULT_RAWS_ROOT;
-        process(node.content[0], root, selector);
+        process(node.content[0], root, source, selector);
         // Return PostCSS AST
         return root;
     } else if (node.type === 'ruleset') {
@@ -46,11 +49,11 @@ function process(node, parent, selector) {
                     bNextContent++
                 ) {
                     if (node.content[rContent]
-                        .content[bNextContent].type === 'ruleset') {
+                            .content[bNextContent].type === 'ruleset') {
                         last = true;
                         // Add to selector value of current node
                         process(node.content[rContent]
-                            .content[bNextContent], parent, selector);
+                            .content[bNextContent], parent, source, selector);
                     }
                 }
             }
@@ -74,7 +77,7 @@ function process(node, parent, selector) {
                 rCurrentContent++
             ) {
                 if (node.content[rCurrentContent].type === 'block') {
-                    process(node.content[rCurrentContent], rule);
+                    process(node.content[rCurrentContent], rule, source);
                 }
             }
             // Write selector to Rule, and remove last whitespace
@@ -83,7 +86,8 @@ function process(node, parent, selector) {
             rule.parent = parent;
             rule.source = {
                 start: node.start,
-                end: node.end
+                end: node.end,
+                source: new Input(source)
             };
             rule.raws = DEFAULT_RAWS_RULE;
             parent.nodes.push(rule);
@@ -92,7 +96,7 @@ function process(node, parent, selector) {
         // Looking for declaration node in block node
         for (var bContent = 0; bContent < node.content.length; bContent++) {
             if (node.content[bContent].type === 'declaration') {
-                process(node.content[bContent], parent);
+                process(node.content[bContent], parent, source);
             }
         }
     } else if (node.type === 'declaration') {
@@ -110,7 +114,8 @@ function process(node, parent, selector) {
         // Set parameters for Declaration node
         decl.source = {
             start: node.start,
-            end: node.end
+            end: node.end,
+            source: new Input(source)
         };
         decl.parent = parent;
         decl.raws = DEFAULT_RAWS_DECL;
@@ -129,7 +134,7 @@ function process(node, parent, selector) {
 // Selector for current node
 var selector = '';
 
-var postCssAST = process(sassTree, null, selector);
-console.log(postCssAST);
+var postCssAST = process(sassTree, null, sassSource, selector);
+console.log(postCssAST.nodes[0]);
 console.log('-----');
-console.log(postCssTree);
+console.log(postCssTree.nodes[0]);
