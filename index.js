@@ -5,7 +5,7 @@ var Input = require('postcss/lib/input');
 var sassSource = 'div\n  a\n    span\n      color: red\n  li\n    color: green';
 var sassTree = gonzales.parse(sassSource, { syntax: 'sass' });
 var postCssTree = postcss
-    .parse('div a span { color: red; } div li { color: green; }');
+    .parse('div a span { color : red; } div li { color : green; }');
 
 var DEFAULT_RAWS_ROOT = {
     semicolon: false,
@@ -15,8 +15,8 @@ var DEFAULT_RAWS_ROOT = {
 var DEFAULT_RAWS_RULE = {
     before: '',
     between: ' ',
-    semicolon: true,
-    after: ' '
+    semicolon: false,
+    after: ''
 };
 
 var DEFAULT_RAWS_DECL = {
@@ -69,6 +69,8 @@ function process(node, parent, source, selector) {
         if (!last) {
             // Create Rule node
             var rule = postcss.rule();
+            // Object to store raws for Rule
+            var rRaws = {};
 
             // Looking for all block nodes in current ruleset node
             for (
@@ -78,6 +80,12 @@ function process(node, parent, source, selector) {
             ) {
                 if (node.content[rCurrentContent].type === 'block') {
                     process(node.content[rCurrentContent], rule, source);
+                } else if (node.content[rCurrentContent].type === 'space') {
+                    if (!rRaws.between) {
+                        rRaws.between = node.content[rCurrentContent].content;
+                    } else {
+                        rRaws.between += node.content[rCurrentContent].content;
+                    }
                 }
             }
             // Write selector to Rule, and remove last whitespace
@@ -89,7 +97,11 @@ function process(node, parent, source, selector) {
                 end: node.end,
                 source: new Input(source)
             };
-            rule.raws = DEFAULT_RAWS_RULE;
+            if (Object.keys(rRaws).length > 0) {
+                rule.raws = rRaws;
+            } else {
+                rule.raws = DEFAULT_RAWS_RULE;
+            }
             parent.nodes.push(rule);
         }
     } else if (node.type === 'block') {
@@ -102,12 +114,25 @@ function process(node, parent, source, selector) {
     } else if (node.type === 'declaration') {
         // Create Declaration node
         var decl = postcss.decl();
+        // Object to store raws for Declaration
+        var dRaws = {};
         // Looking for property and value node in declaration node
         for (var dContent = 0; dContent < node.content.length; dContent++) {
             if (node.content[dContent].type === 'property') {
                 process(node.content[dContent], decl);
-            }
-            if (node.content[dContent].type === 'value') {
+            } else if (node.content[dContent].type === 'propertyDelimiter') {
+                if (!dRaws.between) {
+                    dRaws.between = node.content[dContent].content;
+                } else {
+                    dRaws.between += node.content[dContent].content;
+                }
+            } else if (node.content[dContent].type === 'space') {
+                if (!dRaws.between) {
+                    dRaws.between = node.content[dContent].content;
+                } else {
+                    dRaws.between += node.content[dContent].content;
+                }
+            } if (node.content[dContent].type === 'value') {
                 process(node.content[dContent], decl);
             }
         }
@@ -118,7 +143,12 @@ function process(node, parent, source, selector) {
             source: new Input(source)
         };
         decl.parent = parent;
-        decl.raws = DEFAULT_RAWS_DECL;
+        if (Object.keys(dRaws) > 0) {
+            dRaws.before = '';
+            decl.raws = dRaws;
+        } else {
+            decl.raws = DEFAULT_RAWS_DECL;
+        }
         parent.nodes.push(decl);
     } else if (node.type === 'property') {
         // Set property for Declaration node
@@ -135,6 +165,6 @@ function process(node, parent, source, selector) {
 var selector = '';
 
 var postCssAST = process(sassTree, null, sassSource, selector);
-console.log(postCssAST.nodes[0]);
-console.log('-----');
-console.log(postCssTree.nodes[0]);
+console.log(postCssAST);
+// console.log('-----');
+console.log(postCssTree);
