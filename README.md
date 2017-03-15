@@ -5,5 +5,5 @@
 ## Install
 `npm i`
 
-##Usage
+## Usage
 `node index.js`
