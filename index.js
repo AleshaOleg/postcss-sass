@@ -84,7 +84,6 @@ function sassToPostCss(node, parent, source, selector) {
                     } else {
                         rule.raws = DEFAULT_RAWS_RULE;
                     }
-                    console.log(rule);
                     parent.nodes.push(rule);
                 }
 
@@ -173,7 +172,18 @@ function sassToPostCss(node, parent, source, selector) {
         parent.prop = node.content[0].content;
     } else if (node.type === 'value') {
         // Set value for Declaration node
-        parent.value = node.content[0].content;
+        if (node.content[0].content.constructor === Array) {
+            parent.value = '';
+            for (
+                var vContent = 0;
+                vContent < node.content[0].content.length;
+                vContent++
+            ) {
+                parent.value += node.content[0].content[vContent].content;
+            }
+        } else {
+            parent.value = node.content[0].content;
+        }
     }
     return null;
 }
