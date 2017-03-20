@@ -27,7 +27,7 @@ var DEFAULT_RAWS_DECL = {
 };
 
 /* eslint-disable complexity */
-function sassToPostCss(node, parent, source, selector, input) {
+function sassToPostCss(node, parent, source, input, selector) {
     if (node.type === 'stylesheet') {
         // Create and set parameters for Root node
         var root = postcss.root();
@@ -99,8 +99,8 @@ function sassToPostCss(node, parent, source, selector, input) {
                             node.content[rContent].content[bNextContent],
                             parent,
                             source,
-                            selector,
-                            input
+                            input,
+                            selector
                         );
                     }
                 }
@@ -130,7 +130,12 @@ function sassToPostCss(node, parent, source, selector, input) {
         // Looking for declaration node in block node
         for (var bContent = 0; bContent < node.content.length; bContent++) {
             if (node.content[bContent].type === 'declaration') {
-                sassToPostCss(node.content[bContent], parent, source, input);
+                sassToPostCss(
+                    node.content[bContent],
+                    parent,
+                    source,
+                    input
+                );
             }
         }
     } else if (node.type === 'declaration') {
@@ -141,7 +146,10 @@ function sassToPostCss(node, parent, source, selector, input) {
         // Looking for property and value node in declaration node
         for (var dContent = 0; dContent < node.content.length; dContent++) {
             if (node.content[dContent].type === 'property') {
-                sassToPostCss(node.content[dContent], decl);
+                sassToPostCss(
+                    node.content[dContent],
+                    decl
+                );
             } else if (node.content[dContent].type === 'propertyDelimiter') {
                 if (!dRaws.between) {
                     dRaws.between = node.content[dContent].content;
@@ -155,7 +163,10 @@ function sassToPostCss(node, parent, source, selector, input) {
                     dRaws.between += node.content[dContent].content;
                 }
             } if (node.content[dContent].type === 'value') {
-                sassToPostCss(node.content[dContent], decl);
+                sassToPostCss(
+                    node.content[dContent],
+                    decl
+                );
             }
         }
         // Set parameters for Declaration node
@@ -198,8 +209,8 @@ var postCssASTFromSass = sassToPostCss(
     sassTree,
     null,
     sassSource,
-    '',
-    new Input(sassSource)
+    new Input(sassSource),
+    ''
 );
 console.dir(postCssASTFromCss);
 console.log('-----');
