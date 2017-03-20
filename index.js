@@ -45,6 +45,49 @@ function sassToPostCss(node, parent, source, selector) {
         // Loop to find the deepest ruleset node
         for (var rContent = 0; rContent < node.content.length; rContent++ ) {
             if (node.content[rContent].type === 'block') {
+                // Create Rule node
+                var rule = postcss.rule();
+                // Object to store raws for Rule
+                var rRaws = {};
+
+                // Looking for all block nodes in current ruleset node
+                for (
+                    var rCurrentContent = 0;
+                    rCurrentContent < node.content.length;
+                    rCurrentContent++
+                ) {
+                    if (node.content[rCurrentContent].type === 'block') {
+                        sassToPostCss(node
+                            .content[rCurrentContent], rule, source);
+                    } else if (node.content[rCurrentContent].type === 'space') {
+                        if (!rRaws.between) {
+                            rRaws.between = node
+                                .content[rCurrentContent].content;
+                        } else {
+                            rRaws.between += node
+                                .content[rCurrentContent].content;
+                        }
+                    }
+                }
+                if (rule.nodes.length !== 0) {
+                    // Write selector to Rule, and remove last whitespace
+                    rule.selector = selector.slice(0, -1);
+                    // Set parameters for Rule node
+                    rule.parent = parent;
+                    rule.source = {
+                        start: node.start,
+                        end: node.end,
+                        source: new Input(source)
+                    };
+                    if (Object.keys(rRaws).length > 0) {
+                        rule.raws = rRaws;
+                    } else {
+                        rule.raws = DEFAULT_RAWS_RULE;
+                    }
+                    console.log(rule);
+                    parent.nodes.push(rule);
+                }
+
                 for (
                     var bNextContent = 0;
                     bNextContent < node.content[rContent].length;
@@ -57,8 +100,7 @@ function sassToPostCss(node, parent, source, selector) {
                             .content[bNextContent], parent, source, selector);
                     }
                 }
-            }
-            if (node.content[rContent].type === 'selector') {
+            } else if (node.content[rContent].type === 'selector') {
                 /* Get current selector name
                 It's always have same path,
                 so it's easier to get it without recursion */
@@ -79,45 +121,6 @@ function sassToPostCss(node, parent, source, selector) {
                 }
                 selector += ' ';
             }
-        }
-
-        // Create Rule node
-        var rule = postcss.rule();
-        // Object to store raws for Rule
-        var rRaws = {};
-
-        // Looking for all block nodes in current ruleset node
-        for (
-            var rCurrentContent = 0;
-            rCurrentContent < node.content.length;
-            rCurrentContent++
-        ) {
-            if (node.content[rCurrentContent].type === 'block') {
-                sassToPostCss(node.content[rCurrentContent], rule, source);
-            } else if (node.content[rCurrentContent].type === 'space') {
-                if (!rRaws.between) {
-                    rRaws.between = node.content[rCurrentContent].content;
-                } else {
-                    rRaws.between += node.content[rCurrentContent].content;
-                }
-            }
-        }
-        if (rule.nodes.length !== 0) {
-            // Write selector to Rule, and remove last whitespace
-            rule.selector = selector.slice(0, -1);
-            // Set parameters for Rule node
-            rule.parent = parent;
-            rule.source = {
-                start: node.start,
-                end: node.end,
-                source: new Input(source)
-            };
-            if (Object.keys(rRaws).length > 0) {
-                rule.raws = rRaws;
-            } else {
-                rule.raws = DEFAULT_RAWS_RULE;
-            }
-            parent.nodes.push(rule);
         }
     } else if (node.type === 'block') {
         // Looking for declaration node in block node
