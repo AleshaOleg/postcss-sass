@@ -27,18 +27,18 @@ var DEFAULT_RAWS_DECL = {
 };
 
 /* eslint-disable complexity */
-function sassToPostCss(node, parent, source, selector) {
+function sassToPostCss(node, parent, source, selector, input) {
     if (node.type === 'stylesheet') {
         // Create and set parameters for Root node
         var root = postcss.root();
         root.source = {
             start: node.start,
             end: node.end,
-            source: new Input(source)
+            source: input
         };
         root.raws = DEFAULT_RAWS_ROOT;
         for (var i = 0; i < node.content.length; i++) {
-            sassToPostCss(node.content[i], root, source, selector);
+            sassToPostCss(node.content[i], root, source, input, selector);
         }
         return root;
     } else if (node.type === 'ruleset') {
@@ -58,7 +58,7 @@ function sassToPostCss(node, parent, source, selector) {
                 ) {
                     if (node.content[rCurrentContent].type === 'block') {
                         sassToPostCss(node
-                            .content[rCurrentContent], rule, source);
+                            .content[rCurrentContent], rule, source, input);
                     } else if (node.content[rCurrentContent].type === 'space') {
                         if (!rRaws.between) {
                             rRaws.between = node
@@ -77,7 +77,7 @@ function sassToPostCss(node, parent, source, selector) {
                     rule.source = {
                         start: node.start,
                         end: node.end,
-                        source: new Input(source)
+                        source: input
                     };
                     if (Object.keys(rRaws).length > 0) {
                         rule.raws = rRaws;
@@ -95,8 +95,13 @@ function sassToPostCss(node, parent, source, selector) {
                     if (node.content[rContent]
                             .content[bNextContent].type === 'ruleset') {
                         // Add to selector value of current node
-                        sassToPostCss(node.content[rContent]
-                            .content[bNextContent], parent, source, selector);
+                        sassToPostCss(
+                            node.content[rContent].content[bNextContent],
+                            parent,
+                            source,
+                            selector,
+                            input
+                        );
                     }
                 }
             } else if (node.content[rContent].type === 'selector') {
@@ -125,7 +130,7 @@ function sassToPostCss(node, parent, source, selector) {
         // Looking for declaration node in block node
         for (var bContent = 0; bContent < node.content.length; bContent++) {
             if (node.content[bContent].type === 'declaration') {
-                sassToPostCss(node.content[bContent], parent, source);
+                sassToPostCss(node.content[bContent], parent, source, input);
             }
         }
     } else if (node.type === 'declaration') {
@@ -157,7 +162,7 @@ function sassToPostCss(node, parent, source, selector) {
         decl.source = {
             start: node.start,
             end: node.end,
-            source: new Input(source)
+            source: input
         };
         decl.parent = parent;
         if (Object.keys(dRaws) > 0) {
@@ -189,10 +194,13 @@ function sassToPostCss(node, parent, source, selector) {
 }
 /* eslint-enable complexity */
 
-// Selector for current node
-var selector = '';
-
-var postCssASTFromSass = sassToPostCss(sassTree, null, sassSource, selector);
+var postCssASTFromSass = sassToPostCss(
+    sassTree,
+    null,
+    sassSource,
+    '',
+    new Input(sassSource)
+);
 console.dir(postCssASTFromCss);
 console.log('-----');
 console.dir(postCssASTFromSass);

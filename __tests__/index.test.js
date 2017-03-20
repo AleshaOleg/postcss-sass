@@ -3,7 +3,7 @@ var fs = require('fs');
 var postcss = require('postcss');
 var gonzales = require('gonzales-pe');
 
-var sassToPostCss = require('../index');
+var sassToPostCss = require('../');
 
 function getPostCssTree(fileName) {
     var source = fs.readFileSync(
@@ -11,8 +11,7 @@ function getPostCssTree(fileName) {
         'utf-8'
     );
     var tree = gonzales.parse(source, { syntax: 'sass' });
-    var selector = '';
-    return sassToPostCss(tree, null, source, selector);
+    return sassToPostCss(tree, null, source, '');
 }
 
 it('PostCSS dependency', function () {

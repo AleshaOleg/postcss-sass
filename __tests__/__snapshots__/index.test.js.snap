@@ -14,33 +14,7 @@ Object {
               "column": 13,
               "line": 4,
             },
-            "source": Input {
-              "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-              "id": "<input css 21>",
-            },
+            "source": undefined,
             "start": Object {
               "column": 3,
               "line": 4,
@@ -60,33 +34,7 @@ body
               "column": 18,
               "line": 5,
             },
-            "source": Input {
-              "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-              "id": "<input css 22>",
-            },
+            "source": undefined,
             "start": Object {
               "column": 3,
               "line": 5,
@@ -100,39 +48,13 @@ body
         "between": "
 ",
       },
-      "selector": "body",
+      "selector": "undefinedbody",
       "source": Object {
         "end": Object {
           "column": 19,
           "line": 5,
         },
-        "source": Input {
-          "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-          "id": "<input css 23>",
-        },
+        "source": "",
         "start": Object {
           "column": 1,
           "line": 3,
@@ -153,33 +75,7 @@ body
               "column": 14,
               "line": 8,
             },
-            "source": Input {
-              "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-              "id": "<input css 24>",
-            },
+            "source": undefined,
             "start": Object {
               "column": 3,
               "line": 8,
@@ -199,33 +95,7 @@ body
               "column": 13,
               "line": 9,
             },
-            "source": Input {
-              "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-              "id": "<input css 25>",
-            },
+            "source": undefined,
             "start": Object {
               "column": 3,
               "line": 9,
@@ -239,39 +109,13 @@ body
         "between": "
 ",
       },
-      "selector": "#page",
+      "selector": "undefined#page",
       "source": Object {
         "end": Object {
           "column": 1,
           "line": 15,
         },
-        "source": Input {
-          "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-          "id": "<input css 26>",
-        },
+        "source": "",
         "start": Object {
           "column": 1,
           "line": 7,
@@ -292,33 +136,7 @@ body
               "column": 17,
               "line": 11,
             },
-            "source": Input {
-              "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-              "id": "<input css 27>",
-            },
+            "source": undefined,
             "start": Object {
               "column": 5,
               "line": 11,
@@ -332,39 +150,13 @@ body
         "between": "
 ",
       },
-      "selector": "#page #header",
+      "selector": "undefined#page #header",
       "source": Object {
         "end": Object {
           "column": 1,
           "line": 15,
         },
-        "source": Input {
-          "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-          "id": "<input css 28>",
-        },
+        "source": "",
         "start": Object {
           "column": 3,
           "line": 10,
@@ -385,33 +177,7 @@ body
               "column": 21,
               "line": 13,
             },
-            "source": Input {
-              "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-              "id": "<input css 29>",
-            },
+            "source": undefined,
             "start": Object {
               "column": 7,
               "line": 13,
@@ -431,33 +197,7 @@ body
               "column": 21,
               "line": 14,
             },
-            "source": Input {
-              "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-              "id": "<input css 30>",
-            },
+            "source": undefined,
             "start": Object {
               "column": 7,
               "line": 14,
@@ -471,39 +211,13 @@ body
         "between": "
 ",
       },
-      "selector": "#page #header h1",
+      "selector": "undefined#page #header h1",
       "source": Object {
         "end": Object {
           "column": 22,
           "line": 14,
         },
-        "source": Input {
-          "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-          "id": "<input css 31>",
-        },
+        "source": "",
         "start": Object {
           "column": 5,
           "line": 12,
@@ -524,33 +238,7 @@ body
               "column": 18,
               "line": 19,
             },
-            "source": Input {
-              "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-              "id": "<input css 32>",
-            },
+            "source": undefined,
             "start": Object {
               "column": 7,
               "line": 19,
@@ -564,39 +252,13 @@ body
         "between": "
 ",
       },
-      "selector": "#content.user.show #container.top #column.left",
+      "selector": "undefined#content.user.show #container.top #column.left",
       "source": Object {
         "end": Object {
           "column": 19,
           "line": 19,
         },
-        "source": Input {
-          "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-          "id": "<input css 33>",
-        },
+        "source": "",
         "start": Object {
           "column": 5,
           "line": 18,
@@ -617,33 +279,7 @@ body
               "column": 18,
               "line": 21,
             },
-            "source": Input {
-              "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-              "id": "<input css 34>",
-            },
+            "source": undefined,
             "start": Object {
               "column": 7,
               "line": 21,
@@ -657,39 +293,13 @@ body
         "between": "
 ",
       },
-      "selector": "#content.user.show #container.top #column.right",
+      "selector": "undefined#content.user.show #container.top #column.right",
       "source": Object {
         "end": Object {
           "column": 19,
           "line": 21,
         },
-        "source": Input {
-          "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-          "id": "<input css 35>",
-        },
+        "source": "",
         "start": Object {
           "column": 5,
           "line": 20,
@@ -710,33 +320,7 @@ body
               "column": 21,
               "line": 23,
             },
-            "source": Input {
-              "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-              "id": "<input css 36>",
-            },
+            "source": undefined,
             "start": Object {
               "column": 5,
               "line": 23,
@@ -750,39 +334,13 @@ body
         "between": "
 ",
       },
-      "selector": "#content.user.show #container.bottom",
+      "selector": "undefined#content.user.show #container.bottom",
       "source": Object {
         "end": Object {
           "column": 22,
           "line": 23,
         },
-        "source": Input {
-          "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-          "id": "<input css 37>",
-        },
+        "source": "",
         "start": Object {
           "column": 3,
           "line": 22,
@@ -800,33 +358,7 @@ body
       "column": 22,
       "line": 23,
     },
-    "source": Input {
-      "css": "
-
-body
-  :font Arial
-  :background blue
-
-#page
-  :width 700px
-  :height 100
-  #header
-    :height 300px
-    h1
-      :font-size 50px
-      :color     blue
-
-#content.user.show
-  #container.top
-    #column.left
-      :width 100px
-    #column.right
-      :width 600px
-  #container.bottom
-    :background brown
-",
-      "id": "<input css 20>",
-    },
+    "source": undefined,
     "start": Object {
       "column": 1,
       "line": 1,
