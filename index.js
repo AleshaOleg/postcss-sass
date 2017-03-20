@@ -69,17 +69,13 @@ function sassToPostCss(node, parent, source, selector) {
                 ) {
                     if (node.content[rContent]
                             .content[sCurrentContent].type === 'id') {
-                        selector += '#' + node.content[rContent]
-                                .content[sCurrentContent].content;
+                        selector += '#';
                     } else if (node.content[rContent]
                             .content[sCurrentContent].type === 'class') {
-                        selector += '.' + node.content[rContent]
-                                .content[sCurrentContent].content;
-                    } else if (node.content[rContent]
-                            .content[sCurrentContent].type === 'typeSelector') {
-                        selector += node.content[rContent]
-                            .content[sCurrentContent].content;
+                        selector += '.';
                     }
+                    selector += node.content[rContent]
+                        .content[sCurrentContent].content;
                 }
                 selector += ' ';
             }
