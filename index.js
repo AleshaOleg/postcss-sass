@@ -1,13 +1,6 @@
-var fs = require('fs');
-
 var postcss = require('postcss');
 var gonzales = require('gonzales-pe');
 var Input = require('postcss/lib/input');
-
-var sassSource = fs.readFileSync('./__tests__/sass/basic.sass', 'utf-8');
-var sassTree = gonzales.parse(sassSource, { syntax: 'sass' });
-var cssSource = fs.readFileSync('./__tests__/css/basic.css', 'utf-8');
-var postCssASTFromCss = postcss.parse(cssSource);
 
 var DEFAULT_RAWS_ROOT = {
     semicolon: false,
@@ -27,7 +20,19 @@ var DEFAULT_RAWS_DECL = {
 };
 
 /* eslint-disable complexity */
-function sassToPostCss(node, parent, source, input, selector) {
+function sassToPostCss(source, node, parent, input, selector) {
+    if (!node) {
+        node = gonzales.parse(source, { syntax: 'sass' });
+    }
+    if (!parent) {
+        parent = null;
+    }
+    if (!input) {
+        input = new Input(source);
+    }
+    if (!selector) {
+        selector = '';
+    }
     if (node.type === 'stylesheet') {
         // Create and set parameters for Root node
         var root = postcss.root();
@@ -38,7 +43,7 @@ function sassToPostCss(node, parent, source, input, selector) {
         };
         root.raws = DEFAULT_RAWS_ROOT;
         for (var i = 0; i < node.content.length; i++) {
-            sassToPostCss(node.content[i], root, source, input, selector);
+            sassToPostCss(source, node.content[i], root, input, selector);
         }
         return root;
     } else if (node.type === 'ruleset') {
@@ -57,8 +62,12 @@ function sassToPostCss(node, parent, source, input, selector) {
                     rCurrentContent++
                 ) {
                     if (node.content[rCurrentContent].type === 'block') {
-                        sassToPostCss(node
-                            .content[rCurrentContent], rule, source, input);
+                        sassToPostCss(
+                            source,
+                            node.content[rCurrentContent],
+                            rule,
+                            input
+                        );
                     } else if (node.content[rCurrentContent].type === 'space') {
                         if (!rRaws.between) {
                             rRaws.between = node
@@ -96,9 +105,9 @@ function sassToPostCss(node, parent, source, input, selector) {
                             .content[bNextContent].type === 'ruleset') {
                         // Add to selector value of current node
                         sassToPostCss(
+                            source,
                             node.content[rContent].content[bNextContent],
                             parent,
-                            source,
                             input,
                             selector
                         );
@@ -131,9 +140,9 @@ function sassToPostCss(node, parent, source, input, selector) {
         for (var bContent = 0; bContent < node.content.length; bContent++) {
             if (node.content[bContent].type === 'declaration') {
                 sassToPostCss(
+                    source,
                     node.content[bContent],
                     parent,
-                    source,
                     input
                 );
             }
@@ -204,16 +213,5 @@ function sassToPostCss(node, parent, source, input, selector) {
     return null;
 }
 /* eslint-enable complexity */
-
-var postCssASTFromSass = sassToPostCss(
-    sassTree,
-    null,
-    sassSource,
-    new Input(sassSource),
-    ''
-);
-console.dir(postCssASTFromCss);
-console.log('-----');
-console.dir(postCssASTFromSass);
 
 module.exports = sassToPostCss;
