@@ -1,0 +1,593 @@
+exports[`test alt.sass 1`] = `
+Object {
+  "nodes": Array [
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "float",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 2,
+            },
+            "source": Input {
+              "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 3,
+              "line": 2,
+            },
+          },
+          "type": "decl",
+          "value": "left",
+        },
+        Object {
+          "prop": "width",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 15,
+              "line": 3,
+            },
+            "source": Input {
+              "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 3,
+              "line": 3,
+            },
+          },
+          "type": "decl",
+          "value": "274px",
+        },
+        Object {
+          "prop": "height",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 4,
+            },
+            "source": Input {
+              "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 3,
+              "line": 4,
+            },
+          },
+          "type": "decl",
+          "value": "75px",
+        },
+        Object {
+          "prop": "margin",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 11,
+              "line": 5,
+            },
+            "source": Input {
+              "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 3,
+              "line": 5,
+            },
+          },
+          "type": "decl",
+          "value": "0",
+        },
+        Object {
+          "prop": "background",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 16,
+              "line": 8,
+            },
+            "source": Input {
+              "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 3,
+              "line": 6,
+            },
+          },
+          "type": "decl",
+          "value": "    repeat,:, ,no-repeat
+    :,image, ,none
+",
+        },
+      ],
+      "raws": Object {
+        "between": "
+",
+      },
+      "selector": "h1",
+      "source": Object {
+        "end": Object {
+          "column": 15,
+          "line": 16,
+        },
+        "source": Input {
+          "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 16,
+              "line": 10,
+            },
+            "source": Input {
+              "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 10,
+            },
+          },
+          "type": "decl",
+          "value": "green",
+        },
+      ],
+      "raws": Object {
+        "between": " 
+",
+      },
+      "selector": "h1 a:hover, a:visited",
+      "source": Object {
+        "end": Object {
+          "column": 17,
+          "line": 10,
+        },
+        "source": Input {
+          "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 3,
+          "line": 9,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 12,
+            },
+            "source": Input {
+              "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 12,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+        Object {
+          "prop": "background-color",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 27,
+              "line": 13,
+            },
+            "source": Input {
+              "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 13,
+            },
+          },
+          "type": "decl",
+          "value": "green",
+        },
+      ],
+      "raws": Object {
+        "between": "
+",
+      },
+      "selector": "h1 b:hover",
+      "source": Object {
+        "end": Object {
+          "column": 28,
+          "line": 13,
+        },
+        "source": Input {
+          "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 3,
+          "line": 11,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "nosp",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 15,
+              "line": 15,
+            },
+            "source": Input {
+              "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 15,
+            },
+          },
+          "type": "decl",
+          "value": "1",
+        },
+        Object {
+          "prop": "sp",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 16,
+            },
+            "source": Input {
+              "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 16,
+            },
+          },
+          "type": "decl",
+          "value": "1",
+        },
+      ],
+      "raws": Object {
+        "between": "
+",
+      },
+      "selector": "h1 const",
+      "source": Object {
+        "end": Object {
+          "column": 15,
+          "line": 16,
+        },
+        "source": Input {
+          "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 3,
+          "line": 14,
+        },
+      },
+      "type": "rule",
+    },
+  ],
+  "raws": Object {
+    "after": "",
+    "semicolon": false,
+  },
+  "source": Object {
+    "end": Object {
+      "column": 15,
+      "line": 16,
+    },
+    "source": Input {
+      "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+      "id": "<input css 1>",
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "root",
+}
+`;

@@ -4,6 +4,7 @@ Object {
     Object {
       "nodes": Array [
         Object {
+          "prop": "font",
           "raws": Object {
             "before": "",
             "between": ": ",
@@ -36,8 +37,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
               "id": "<input css 1>",
             },
             "start": Object {
@@ -46,8 +46,10 @@ body
             },
           },
           "type": "decl",
+          "value": "Arial",
         },
         Object {
+          "prop": "background",
           "raws": Object {
             "before": "",
             "between": ": ",
@@ -80,8 +82,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
               "id": "<input css 1>",
             },
             "start": Object {
@@ -90,6 +91,7 @@ body
             },
           },
           "type": "decl",
+          "value": "blue",
         },
       ],
       "raws": Object {
@@ -125,8 +127,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
           "id": "<input css 1>",
         },
         "start": Object {
@@ -139,6 +140,7 @@ body
     Object {
       "nodes": Array [
         Object {
+          "prop": "width",
           "raws": Object {
             "before": "",
             "between": ": ",
@@ -171,8 +173,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
               "id": "<input css 1>",
             },
             "start": Object {
@@ -181,8 +182,10 @@ body
             },
           },
           "type": "decl",
+          "value": "700px",
         },
         Object {
+          "prop": "height",
           "raws": Object {
             "before": "",
             "between": ": ",
@@ -215,8 +218,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
               "id": "<input css 1>",
             },
             "start": Object {
@@ -225,13 +227,14 @@ body
             },
           },
           "type": "decl",
+          "value": "100",
         },
       ],
       "raws": Object {
         "between": "
 ",
       },
-      "selector": "#page",
+      "selector": " page",
       "source": Object {
         "end": Object {
           "column": 1,
@@ -260,8 +263,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
           "id": "<input css 1>",
         },
         "start": Object {
@@ -274,6 +276,7 @@ body
     Object {
       "nodes": Array [
         Object {
+          "prop": "height",
           "raws": Object {
             "before": "",
             "between": ": ",
@@ -306,8 +309,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
               "id": "<input css 1>",
             },
             "start": Object {
@@ -316,13 +318,14 @@ body
             },
           },
           "type": "decl",
+          "value": "300px",
         },
       ],
       "raws": Object {
         "between": "
 ",
       },
-      "selector": "#page #header",
+      "selector": " page# header",
       "source": Object {
         "end": Object {
           "column": 1,
@@ -351,8 +354,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
           "id": "<input css 1>",
         },
         "start": Object {
@@ -365,6 +367,7 @@ body
     Object {
       "nodes": Array [
         Object {
+          "prop": "font-size",
           "raws": Object {
             "before": "",
             "between": ": ",
@@ -397,8 +400,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
               "id": "<input css 1>",
             },
             "start": Object {
@@ -407,8 +409,10 @@ body
             },
           },
           "type": "decl",
+          "value": "50px",
         },
         Object {
+          "prop": "color",
           "raws": Object {
             "before": "",
             "between": ": ",
@@ -441,8 +445,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
               "id": "<input css 1>",
             },
             "start": Object {
@@ -451,13 +454,14 @@ body
             },
           },
           "type": "decl",
+          "value": "blue",
         },
       ],
       "raws": Object {
         "between": "
 ",
       },
-      "selector": "#page #header h1",
+      "selector": " page# header h1",
       "source": Object {
         "end": Object {
           "column": 22,
@@ -486,8 +490,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
           "id": "<input css 1>",
         },
         "start": Object {
@@ -500,6 +503,7 @@ body
     Object {
       "nodes": Array [
         Object {
+          "prop": "width",
           "raws": Object {
             "before": "",
             "between": ": ",
@@ -532,8 +536,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
               "id": "<input css 1>",
             },
             "start": Object {
@@ -542,13 +545,14 @@ body
             },
           },
           "type": "decl",
+          "value": "100px",
         },
       ],
       "raws": Object {
         "between": "
 ",
       },
-      "selector": "#content.user.show #container.top #column.left",
+      "selector": " content. user. show# container. top# column. left",
       "source": Object {
         "end": Object {
           "column": 19,
@@ -577,8 +581,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
           "id": "<input css 1>",
         },
         "start": Object {
@@ -591,6 +594,7 @@ body
     Object {
       "nodes": Array [
         Object {
+          "prop": "width",
           "raws": Object {
             "before": "",
             "between": ": ",
@@ -623,8 +627,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
               "id": "<input css 1>",
             },
             "start": Object {
@@ -633,13 +636,14 @@ body
             },
           },
           "type": "decl",
+          "value": "600px",
         },
       ],
       "raws": Object {
         "between": "
 ",
       },
-      "selector": "#content.user.show #container.top #column.right",
+      "selector": " content. user. show# container. top# column. right",
       "source": Object {
         "end": Object {
           "column": 19,
@@ -668,8 +672,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
           "id": "<input css 1>",
         },
         "start": Object {
@@ -682,6 +685,7 @@ body
     Object {
       "nodes": Array [
         Object {
+          "prop": "background",
           "raws": Object {
             "before": "",
             "between": ": ",
@@ -714,8 +718,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
               "id": "<input css 1>",
             },
             "start": Object {
@@ -724,16 +727,17 @@ body
             },
           },
           "type": "decl",
+          "value": "brown",
         },
       ],
       "raws": Object {
         "between": "
 ",
       },
-      "selector": "#content.user.show #container.bottom",
+      "selector": " content. user. show# container. bottom",
       "source": Object {
         "end": Object {
-          "column": 22,
+          "column": 21,
           "line": 23,
         },
         "source": Input {
@@ -759,8 +763,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
           "id": "<input css 1>",
         },
         "start": Object {
@@ -777,7 +780,7 @@ body
   },
   "source": Object {
     "end": Object {
-      "column": 22,
+      "column": 21,
       "line": 23,
     },
     "source": Input {
@@ -803,8 +806,7 @@ body
     #column.right
       :width 600px
   #container.bottom
-    :background brown
-",
+    :background brown",
       "id": "<input css 1>",
     },
     "start": Object {

@@ -25,6 +25,7 @@
     "eslint-config-postcss": "^2.0.2",
     "jest": "^18.0.0",
     "lint-staged": "^3.3.1",
+    "postcss-parser-tests": "^5.0.11",
     "pre-commit": "^1.2.2"
   },
   "scripts": {

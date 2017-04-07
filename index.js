@@ -20,20 +20,20 @@ var DEFAULT_RAWS_DECL = {
 };
 
 /* eslint-disable complexity */
-function sassToPostCss(source, node, parent, input, selector) {
+module.exports = function sassToPostCssTree(
+    source,
+    node,
+    parent,
+    input,
+    selector
+) {
     if (!node) {
         node = gonzales.parse(source, { syntax: 'sass' });
     }
-    if (!parent) {
-        parent = null;
-    }
-    if (!input) {
-        input = new Input(source);
-    }
-    if (!selector) {
-        selector = '';
-    }
     if (node.type === 'stylesheet') {
+        input = new Input(source);
+        parent = null;
+        selector = '';
         // Create and set parameters for Root node
         var root = postcss.root();
         root.source = {
@@ -43,11 +43,12 @@ function sassToPostCss(source, node, parent, input, selector) {
         };
         root.raws = DEFAULT_RAWS_ROOT;
         for (var i = 0; i < node.content.length; i++) {
-            sassToPostCss(source, node.content[i], root, input, selector);
+            sassToPostCssTree(source, node.content[i], root, input, selector);
         }
         return root;
     } else if (node.type === 'ruleset') {
         // Loop to find the deepest ruleset node
+        var pseudoClassFirst = false;
         for (var rContent = 0; rContent < node.content.length; rContent++ ) {
             if (node.content[rContent].type === 'block') {
                 // Create Rule node
@@ -62,7 +63,7 @@ function sassToPostCss(source, node, parent, input, selector) {
                     rCurrentContent++
                 ) {
                     if (node.content[rCurrentContent].type === 'block') {
-                        sassToPostCss(
+                        sassToPostCssTree(
                             source,
                             node.content[rCurrentContent],
                             rule,
@@ -78,9 +79,15 @@ function sassToPostCss(source, node, parent, input, selector) {
                         }
                     }
                 }
+
                 if (rule.nodes.length !== 0) {
                     // Write selector to Rule, and remove last whitespace
-                    rule.selector = selector.slice(0, -1);
+                    if (selector.slice(-1) === ',') {
+                        rule.selector = selector.slice(0, -1);
+                    } else {
+                        rule.selector = selector;
+                    }
+                    rule.selector = selector.substring(1);
                     // Set parameters for Rule node
                     rule.parent = parent;
                     rule.source = {
@@ -104,7 +111,7 @@ function sassToPostCss(source, node, parent, input, selector) {
                     if (node.content[rContent]
                             .content[bNextContent].type === 'ruleset') {
                         // Add to selector value of current node
-                        sassToPostCss(
+                        sassToPostCssTree(
                             source,
                             node.content[rContent].content[bNextContent],
                             parent,
@@ -124,22 +131,37 @@ function sassToPostCss(source, node, parent, input, selector) {
                 ) {
                     if (node.content[rContent]
                             .content[sCurrentContent].type === 'id') {
-                        selector += '#';
+                        selector += '# ';
                     } else if (node.content[rContent]
                             .content[sCurrentContent].type === 'class') {
-                        selector += '.';
+                        selector += '. ';
+                    } else if (node.content[rContent]
+                            .content[sCurrentContent].type === 'typeSelector') {
+                        if (node.content[rContent]
+                                .content[sCurrentContent + 1] &&
+                            node.content[rContent]
+                                .content[sCurrentContent + 1]
+                                .type === 'pseudoClass' &&
+                            pseudoClassFirst) {
+                            selector += ', ';
+                        } else {
+                            selector += ' ';
+                            pseudoClassFirst = true;
+                        }
+                    } else if (node.content[rContent]
+                            .content[sCurrentContent].type === 'pseudoClass') {
+                        selector += ':';
                     }
                     selector += node.content[rContent]
                         .content[sCurrentContent].content;
                 }
-                selector += ' ';
             }
         }
     } else if (node.type === 'block') {
         // Looking for declaration node in block node
         for (var bContent = 0; bContent < node.content.length; bContent++) {
             if (node.content[bContent].type === 'declaration') {
-                sassToPostCss(
+                sassToPostCssTree(
                     source,
                     node.content[bContent],
                     parent,
@@ -155,7 +177,8 @@ function sassToPostCss(source, node, parent, input, selector) {
         // Looking for property and value node in declaration node
         for (var dContent = 0; dContent < node.content.length; dContent++) {
             if (node.content[dContent].type === 'property') {
-                sassToPostCss(
+                sassToPostCssTree(
+                    source,
                     node.content[dContent],
                     decl
                 );
@@ -172,7 +195,8 @@ function sassToPostCss(source, node, parent, input, selector) {
                     dRaws.between += node.content[dContent].content;
                 }
             } if (node.content[dContent].type === 'value') {
-                sassToPostCss(
+                sassToPostCssTree(
+                    source,
                     node.content[dContent],
                     decl
                 );
@@ -197,6 +221,7 @@ function sassToPostCss(source, node, parent, input, selector) {
         parent.prop = node.content[0].content;
     } else if (node.type === 'value') {
         // Set value for Declaration node
+        console.log(node.content);
         if (node.content[0].content.constructor === Array) {
             parent.value = '';
             for (
@@ -211,7 +236,5 @@ function sassToPostCss(source, node, parent, input, selector) {
         }
     }
     return null;
-}
+};
 /* eslint-enable complexity */
-
-module.exports = sassToPostCss;
