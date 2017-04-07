@@ -221,7 +221,6 @@ module.exports = function sassToPostCssTree(
         parent.prop = node.content[0].content;
     } else if (node.type === 'value') {
         // Set value for Declaration node
-        console.log(node.content);
         if (node.content[0].content.constructor === Array) {
             parent.value = '';
             for (
