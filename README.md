@@ -7,7 +7,7 @@
 
 ## Usage
 ```
-var postcssSass = require("postcss-sass")
+var postcssSass = require("postcss-sass");
 // Sass source as argument
-postcssSass('div\n  a\n    color: red\n  li\n    color: green')
+postcssSass('div\n  a\n    color: red\n  li\n    color: green');
 ```
