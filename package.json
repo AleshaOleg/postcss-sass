@@ -40,6 +40,9 @@
     "extends": "eslint-config-postcss/es5",
     "env": {
       "jest": true
+    },
+    "rules": {
+      "complexity": "off"
     }
   },
   "pre-commit": [

@@ -21,7 +21,6 @@ var DEFAULT_RAWS_DECL = {
     semicolon: false
 };
 
-/* eslint-disable complexity */
 module.exports = function sassToPostCssTree(
     source,
     node,
@@ -297,4 +296,3 @@ module.exports = function sassToPostCssTree(
     }
     return null;
 };
-/* eslint-enable complexity */
