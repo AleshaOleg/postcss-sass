@@ -1,13 +1,17 @@
 # postcss-sass [![Build Status](https://travis-ci.org/AleshaOleg/postcss-sass.svg?branch=master)](https://travis-ci.org/AleshaOleg/postcss-sass)
 
-[PostCSS](https://github.com/postcss/postcss) parser to convert SASS to PostCSS AST, using [gonzales-pe](https://github.com/tonyganch/gonzales-pe).
+A [Sass](http://sass-lang.com/) parser for [PostCSS](https://github.com/postcss/postcss), using [gonzales-pe](https://github.com/tonyganch/gonzales-pe).
+
+**This module does not compile Sass.** It simply parses mixins as custom at-rules & variables as properties, so that PostCSS plugins can then transform Sass source code alongside CSS.
 
 ## Install
 `npm i postcss-sass --save`
 
 ## Usage
-```
+```js
 var postcssSass = require("postcss-sass");
-// Sass source as argument
-postcssSass('div\n  a\n    color: red\n  li\n    color: green');
+
+postcss(plugins).process(sass, { syntax: postcssSass }).then(function (result) {
+    result.content // Sass with transformations
+});
 ```

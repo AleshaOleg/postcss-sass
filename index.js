@@ -230,8 +230,6 @@ module.exports = function sassToPostCssTree(
                                 .content.length;
                             dCurrentContent++
                         ) {
-                            console.log(node.content[dContent]
-                                .content[dCurrentContent]);
                             decl.value += node.content[dContent]
                                 .content[dCurrentContent];
                         }
