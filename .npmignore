@@ -1,8 +1,9 @@
 .gitignore
+.npmignore
 .editorconfig
 
 node_modules/
 npm-debug.log
 
-*.test.js
+__tests__/
 .travis.yml
