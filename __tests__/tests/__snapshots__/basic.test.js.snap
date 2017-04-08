@@ -8,6 +8,7 @@ Object {
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -53,6 +54,7 @@ body
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -144,6 +146,7 @@ body
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -189,6 +192,7 @@ body
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -234,7 +238,7 @@ body
         "between": "
 ",
       },
-      "selector": " page",
+      "selector": "#page",
       "source": Object {
         "end": Object {
           "column": 1,
@@ -280,6 +284,7 @@ body
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -325,7 +330,7 @@ body
         "between": "
 ",
       },
-      "selector": " page# header",
+      "selector": "#page #header",
       "source": Object {
         "end": Object {
           "column": 1,
@@ -371,6 +376,7 @@ body
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -416,6 +422,7 @@ body
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -461,7 +468,7 @@ body
         "between": "
 ",
       },
-      "selector": " page# header h1",
+      "selector": "#page #header h1",
       "source": Object {
         "end": Object {
           "column": 22,
@@ -507,6 +514,7 @@ body
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -552,7 +560,7 @@ body
         "between": "
 ",
       },
-      "selector": " content. user. show# container. top# column. left",
+      "selector": "#content.user.show #container.top #column.left",
       "source": Object {
         "end": Object {
           "column": 19,
@@ -598,6 +606,7 @@ body
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -643,7 +652,7 @@ body
         "between": "
 ",
       },
-      "selector": " content. user. show# container. top# column. right",
+      "selector": "#content.user.show #container.top #column.right",
       "source": Object {
         "end": Object {
           "column": 19,
@@ -689,6 +698,7 @@ body
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -734,7 +744,7 @@ body
         "between": "
 ",
       },
-      "selector": " content. user. show# container. bottom",
+      "selector": "#content.user.show #container.bottom",
       "source": Object {
         "end": Object {
           "column": 21,

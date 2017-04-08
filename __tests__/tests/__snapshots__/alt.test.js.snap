@@ -8,6 +8,7 @@ Object {
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -47,6 +48,7 @@ Object {
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -86,6 +88,7 @@ Object {
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -125,6 +128,7 @@ Object {
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -160,14 +164,55 @@ Object {
           "value": "0",
         },
         Object {
-          "prop": "background",
+          "prop": "background-repeat",
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
-              "column": 16,
+              "column": 21,
+              "line": 7,
+            },
+            "source": Input {
+              "css": "h1
+  :float  left
+  :width  274px
+  height: 75px
+  margin: 0
+  background:
+    repeat: no-repeat
+    :image none
+  a:hover, a:visited
+    color: green
+  b:hover
+    color: red
+    :background-color green
+  const
+    nosp: 1 + 2
+    sp : 1 + 2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 7,
+            },
+          },
+          "type": "decl",
+          "value": "no-repeat",
+        },
+        Object {
+          "prop": "background-image",
+          "raws": Object {
+            "before": "",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 15,
               "line": 8,
             },
             "source": Input {
@@ -191,14 +236,12 @@ Object {
               "id": "<input css 1>",
             },
             "start": Object {
-              "column": 3,
-              "line": 6,
+              "column": 5,
+              "line": 8,
             },
           },
           "type": "decl",
-          "value": "    repeat,:, ,no-repeat
-    :,image, ,none
-",
+          "value": "none",
         },
       ],
       "raws": Object {
@@ -245,6 +288,7 @@ Object {
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -324,6 +368,7 @@ Object {
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -363,6 +408,7 @@ Object {
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -442,6 +488,7 @@ Object {
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -474,13 +521,14 @@ Object {
             },
           },
           "type": "decl",
-          "value": "1",
+          "value": "3",
         },
         Object {
           "prop": "sp",
           "raws": Object {
             "before": "",
             "between": ": ",
+            "semicolon": false,
           },
           "source": Object {
             "end": Object {
@@ -513,7 +561,7 @@ Object {
             },
           },
           "type": "decl",
-          "value": "1",
+          "value": "3",
         },
       ],
       "raws": Object {
