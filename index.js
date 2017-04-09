@@ -21,20 +21,27 @@ var DEFAULT_RAWS_DECL = {
     semicolon: false
 };
 
-module.exports = function sassToPostCssTree(
+function parse(source) {
+    var node = gonzales.parse(source, { syntax: 'sass' });
+    var input = new Input(source);
+    var parent = null;
+    var selector = '';
+    return {
+        node: node,
+        input: input,
+        parent: parent,
+        selector: selector
+    };
+}
+
+function process(
     source,
     node,
     parent,
     input,
     selector
 ) {
-    if (!node) {
-        node = gonzales.parse(source, { syntax: 'sass' });
-    }
     if (node.type === 'stylesheet') {
-        input = new Input(source);
-        parent = null;
-        selector = '';
         // Create and set parameters for Root node
         var root = postcss.root();
         root.source = {
@@ -44,7 +51,7 @@ module.exports = function sassToPostCssTree(
         };
         root.raws = DEFAULT_RAWS_ROOT;
         for (var i = 0; i < node.content.length; i++) {
-            sassToPostCssTree(source, node.content[i], root, input, selector);
+            process(source, node.content[i], root, input, selector);
         }
         return root;
     } else if (node.type === 'ruleset') {
@@ -64,7 +71,7 @@ module.exports = function sassToPostCssTree(
                     rCurrentContent++
                 ) {
                     if (node.content[rCurrentContent].type === 'block') {
-                        sassToPostCssTree(
+                        process(
                             source,
                             node.content[rCurrentContent],
                             rule,
@@ -115,7 +122,7 @@ module.exports = function sassToPostCssTree(
                     if (node.content[rContent]
                             .content[bNextContent].type === 'ruleset') {
                         // Add to selector value of current node
-                        sassToPostCssTree(
+                        process(
                             source,
                             node.content[rContent].content[bNextContent],
                             parent,
@@ -126,8 +133,8 @@ module.exports = function sassToPostCssTree(
                 }
             } else if (node.content[rContent].type === 'selector') {
                 /* Get current selector name
-                It's always have same path,
-                so it's easier to get it without recursion */
+                 It's always have same path,
+                 so it's easier to get it without recursion */
                 selector += ' ';
                 for (
                     var sCurrentContent = 0;
@@ -166,7 +173,7 @@ module.exports = function sassToPostCssTree(
         // Looking for declaration node in block node
         for (var bContent = 0; bContent < node.content.length; bContent++) {
             if (node.content[bContent].type === 'declaration') {
-                sassToPostCssTree(
+                process(
                     source,
                     node.content[bContent],
                     parent,
@@ -185,7 +192,7 @@ module.exports = function sassToPostCssTree(
         for (var dContent = 0; dContent < node.content.length; dContent++) {
             if (node.content[dContent].type === 'property') {
                 decl.prop = '';
-                sassToPostCssTree(
+                process(
                     source,
                     node.content[dContent],
                     decl,
@@ -207,7 +214,7 @@ module.exports = function sassToPostCssTree(
                 if (node.content[dContent].content[0].type === 'block') {
                     isBlockInside = true;
                     global.blockValue = node.content[0].content[0].content;
-                    sassToPostCssTree(
+                    process(
                         source,
                         node.content[dContent].content[0],
                         parent,
@@ -215,7 +222,7 @@ module.exports = function sassToPostCssTree(
                     );
                 } else if (node.content[dContent].content[0].type === 'color') {
                     decl.value = '#';
-                    sassToPostCssTree(
+                    process(
                         source,
                         node.content[dContent],
                         decl
@@ -235,14 +242,14 @@ module.exports = function sassToPostCssTree(
                         }
                         decl.value = math.eval(decl.value).toString();
                     } else {
-                        sassToPostCssTree(
+                        process(
                             source,
                             node.content[dContent],
                             decl
                         );
                     }
                 } else {
-                    sassToPostCssTree(
+                    process(
                         source,
                         node.content[dContent],
                         decl
@@ -293,4 +300,16 @@ module.exports = function sassToPostCssTree(
         }
     }
     return null;
+}
+
+module.exports = function sassToPostCssTree(
+    source
+) {
+    var data = parse(source);
+    return process(
+        source,
+        data.node,
+        data.parent,
+        data.input,
+        data.selector);
 };
