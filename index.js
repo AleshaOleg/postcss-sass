@@ -21,19 +21,6 @@ var DEFAULT_RAWS_DECL = {
     semicolon: false
 };
 
-function parse(source) {
-    var node = gonzales.parse(source, { syntax: 'sass' });
-    var input = new Input(source);
-    var parent = null;
-    var selector = '';
-    return {
-        node: node,
-        input: input,
-        parent: parent,
-        selector: selector
-    };
-}
-
 function process(
     source,
     node,
@@ -47,7 +34,7 @@ function process(
         root.source = {
             start: node.start,
             end: node.end,
-            source: input
+            input: input
         };
         root.raws = DEFAULT_RAWS_ROOT;
         for (var i = 0; i < node.content.length; i++) {
@@ -104,7 +91,7 @@ function process(
                     rule.source = {
                         start: node.start,
                         end: node.end,
-                        source: input
+                        input: input
                     };
                     if (Object.keys(rRaws).length > 0) {
                         rule.raws = rRaws;
@@ -263,7 +250,7 @@ function process(
             decl.source = {
                 start: node.start,
                 end: node.end,
-                source: input
+                input: input
             };
             decl.parent = parent;
             if (Object.keys(dRaws) > 0) {
@@ -303,9 +290,15 @@ function process(
 }
 
 module.exports = function sassToPostCssTree(
-    source
+    source,
+    opts
 ) {
-    var data = parse(source);
+    var data = {
+        node: gonzales.parse(source, { syntax: 'sass' }),
+        input: new Input(source, opts),
+        parent: null,
+        selector: ''
+    };
     return process(
         source,
         data.node,

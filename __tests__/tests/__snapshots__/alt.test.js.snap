@@ -15,7 +15,7 @@ Object {
               "column": 14,
               "line": 2,
             },
-            "source": Input {
+            "input": Input {
               "css": "h1
   :float  left
   :width  274px
@@ -55,7 +55,7 @@ Object {
               "column": 15,
               "line": 3,
             },
-            "source": Input {
+            "input": Input {
               "css": "h1
   :float  left
   :width  274px
@@ -95,7 +95,7 @@ Object {
               "column": 14,
               "line": 4,
             },
-            "source": Input {
+            "input": Input {
               "css": "h1
   :float  left
   :width  274px
@@ -135,7 +135,7 @@ Object {
               "column": 11,
               "line": 5,
             },
-            "source": Input {
+            "input": Input {
               "css": "h1
   :float  left
   :width  274px
@@ -175,7 +175,7 @@ Object {
               "column": 21,
               "line": 7,
             },
-            "source": Input {
+            "input": Input {
               "css": "h1
   :float  left
   :width  274px
@@ -215,7 +215,7 @@ Object {
               "column": 15,
               "line": 8,
             },
-            "source": Input {
+            "input": Input {
               "css": "h1
   :float  left
   :width  274px
@@ -254,7 +254,7 @@ Object {
           "column": 15,
           "line": 16,
         },
-        "source": Input {
+        "input": Input {
           "css": "h1
   :float  left
   :width  274px
@@ -295,7 +295,7 @@ Object {
               "column": 16,
               "line": 10,
             },
-            "source": Input {
+            "input": Input {
               "css": "h1
   :float  left
   :width  274px
@@ -334,7 +334,7 @@ Object {
           "column": 17,
           "line": 10,
         },
-        "source": Input {
+        "input": Input {
           "css": "h1
   :float  left
   :width  274px
@@ -375,7 +375,7 @@ Object {
               "column": 14,
               "line": 12,
             },
-            "source": Input {
+            "input": Input {
               "css": "h1
   :float  left
   :width  274px
@@ -415,7 +415,7 @@ Object {
               "column": 27,
               "line": 13,
             },
-            "source": Input {
+            "input": Input {
               "css": "h1
   :float  left
   :width  274px
@@ -454,7 +454,7 @@ Object {
           "column": 28,
           "line": 13,
         },
-        "source": Input {
+        "input": Input {
           "css": "h1
   :float  left
   :width  274px
@@ -495,7 +495,7 @@ Object {
               "column": 15,
               "line": 15,
             },
-            "source": Input {
+            "input": Input {
               "css": "h1
   :float  left
   :width  274px
@@ -535,7 +535,7 @@ Object {
               "column": 14,
               "line": 16,
             },
-            "source": Input {
+            "input": Input {
               "css": "h1
   :float  left
   :width  274px
@@ -574,7 +574,7 @@ Object {
           "column": 15,
           "line": 16,
         },
-        "source": Input {
+        "input": Input {
           "css": "h1
   :float  left
   :width  274px
@@ -611,7 +611,7 @@ Object {
       "column": 15,
       "line": 16,
     },
-    "source": Input {
+    "input": Input {
       "css": "h1
   :float  left
   :width  274px

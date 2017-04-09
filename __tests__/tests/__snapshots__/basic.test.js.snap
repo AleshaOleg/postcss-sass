@@ -15,7 +15,7 @@ Object {
               "column": 13,
               "line": 4,
             },
-            "source": Input {
+            "input": Input {
               "css": "
 
 body
@@ -61,7 +61,7 @@ body
               "column": 18,
               "line": 5,
             },
-            "source": Input {
+            "input": Input {
               "css": "
 
 body
@@ -106,7 +106,7 @@ body
           "column": 19,
           "line": 5,
         },
-        "source": Input {
+        "input": Input {
           "css": "
 
 body
@@ -153,7 +153,7 @@ body
               "column": 14,
               "line": 8,
             },
-            "source": Input {
+            "input": Input {
               "css": "
 
 body
@@ -199,7 +199,7 @@ body
               "column": 13,
               "line": 9,
             },
-            "source": Input {
+            "input": Input {
               "css": "
 
 body
@@ -244,7 +244,7 @@ body
           "column": 1,
           "line": 15,
         },
-        "source": Input {
+        "input": Input {
           "css": "
 
 body
@@ -291,7 +291,7 @@ body
               "column": 17,
               "line": 11,
             },
-            "source": Input {
+            "input": Input {
               "css": "
 
 body
@@ -336,7 +336,7 @@ body
           "column": 1,
           "line": 15,
         },
-        "source": Input {
+        "input": Input {
           "css": "
 
 body
@@ -383,7 +383,7 @@ body
               "column": 21,
               "line": 13,
             },
-            "source": Input {
+            "input": Input {
               "css": "
 
 body
@@ -429,7 +429,7 @@ body
               "column": 21,
               "line": 14,
             },
-            "source": Input {
+            "input": Input {
               "css": "
 
 body
@@ -474,7 +474,7 @@ body
           "column": 22,
           "line": 14,
         },
-        "source": Input {
+        "input": Input {
           "css": "
 
 body
@@ -521,7 +521,7 @@ body
               "column": 18,
               "line": 19,
             },
-            "source": Input {
+            "input": Input {
               "css": "
 
 body
@@ -566,7 +566,7 @@ body
           "column": 19,
           "line": 19,
         },
-        "source": Input {
+        "input": Input {
           "css": "
 
 body
@@ -613,7 +613,7 @@ body
               "column": 18,
               "line": 21,
             },
-            "source": Input {
+            "input": Input {
               "css": "
 
 body
@@ -658,7 +658,7 @@ body
           "column": 19,
           "line": 21,
         },
-        "source": Input {
+        "input": Input {
           "css": "
 
 body
@@ -705,7 +705,7 @@ body
               "column": 21,
               "line": 23,
             },
-            "source": Input {
+            "input": Input {
               "css": "
 
 body
@@ -750,7 +750,7 @@ body
           "column": 21,
           "line": 23,
         },
-        "source": Input {
+        "input": Input {
           "css": "
 
 body
@@ -793,7 +793,7 @@ body
       "column": 21,
       "line": 23,
     },
-    "source": Input {
+    "input": Input {
       "css": "
 
 body
