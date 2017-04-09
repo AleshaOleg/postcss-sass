@@ -1,6 +1,6 @@
 {
   "name": "postcss-sass",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A Sass parser for PostCSS, using gonzales-pe.",
   "keywords": [
     "postcss",
