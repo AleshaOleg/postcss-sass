@@ -18,3 +18,4 @@ it('parse Sass as postcss syntax', function () {
         ).root)
         .toBe('object');
 });
+

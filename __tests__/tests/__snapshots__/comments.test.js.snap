@@ -1,0 +1,141 @@
+exports[`test comments.sass 1`] = `
+Object {
+  "nodes": Array [
+    Object {
+      "nodes": Array [
+        Object {
+          "raws": Object {
+            "before": "
+    ",
+            "commentType": "single",
+            "left": " ",
+            "right": "",
+          },
+          "text": "Comment1",
+          "type": "comment",
+        },
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 3,
+            },
+            "input": Input {
+              "css": ".comments
+    // Comment1
+    color: red
+    /* Comment2 */
+    background-color: blue
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 3,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+        Object {
+          "raws": Object {
+            "before": "
+    ",
+            "commentType": "multi",
+            "left": " ",
+            "right": " ",
+          },
+          "text": "Comment2",
+          "type": "comment",
+        },
+        Object {
+          "prop": "background-color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 26,
+              "line": 5,
+            },
+            "input": Input {
+              "css": ".comments
+    // Comment1
+    color: red
+    /* Comment2 */
+    background-color: blue
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 5,
+            },
+          },
+          "type": "decl",
+          "value": "blue",
+        },
+      ],
+      "raws": Object {
+        "before": "",
+        "between": "",
+      },
+      "selector": ".comments",
+      "source": Object {
+        "end": Object {
+          "column": 27,
+          "line": 5,
+        },
+        "input": Input {
+          "css": ".comments
+    // Comment1
+    color: red
+    /* Comment2 */
+    background-color: blue
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "type": "rule",
+    },
+  ],
+  "raws": Object {
+    "before": "",
+    "semicolon": undefined,
+  },
+  "source": Object {
+    "end": Object {
+      "column": 27,
+      "line": 5,
+    },
+    "input": Input {
+      "css": ".comments
+    // Comment1
+    color: red
+    /* Comment2 */
+    background-color: blue
+",
+      "id": "<input css 1>",
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "root",
+}
+`;

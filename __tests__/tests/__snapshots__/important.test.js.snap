@@ -1,0 +1,181 @@
+exports[`test important.sass 1`] = `
+Object {
+  "nodes": Array [
+    Object {
+      "nodes": Array [
+        Object {
+          "important": true,
+          "prop": "color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 25,
+              "line": 2,
+            },
+            "input": Input {
+              "css": ".important
+    color: red !important
+    background:
+        image: none !important
+        color: red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 2,
+            },
+          },
+          "type": "decl",
+          "value": "red ",
+        },
+        Object {
+          "nodes": Array [
+            Object {
+              "important": true,
+              "prop": "image",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 30,
+                  "line": 4,
+                },
+                "input": Input {
+                  "css": ".important
+    color: red !important
+    background:
+        image: none !important
+        color: red
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 4,
+                },
+              },
+              "type": "decl",
+              "value": "none ",
+            },
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 18,
+                  "line": 5,
+                },
+                "input": Input {
+                  "css": ".important
+    color: red !important
+    background:
+        image: none !important
+        color: red
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 5,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+          ],
+          "raws": Object {
+            "before": "
+    ",
+            "between": "",
+          },
+          "selector": "background",
+          "source": Object {
+            "end": Object {
+              "column": 19,
+              "line": 5,
+            },
+            "input": Input {
+              "css": ".important
+    color: red !important
+    background:
+        image: none !important
+        color: red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 1,
+              "line": 3,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "before": "",
+        "between": "",
+      },
+      "selector": ".important",
+      "source": Object {
+        "end": Object {
+          "column": 19,
+          "line": 5,
+        },
+        "input": Input {
+          "css": ".important
+    color: red !important
+    background:
+        image: none !important
+        color: red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "type": "rule",
+    },
+  ],
+  "raws": Object {
+    "before": "",
+    "semicolon": undefined,
+  },
+  "source": Object {
+    "end": Object {
+      "column": 19,
+      "line": 5,
+    },
+    "input": Input {
+      "css": ".important
+    color: red !important
+    background:
+        image: none !important
+        color: red
+",
+      "id": "<input css 1>",
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "root",
+}
+`;

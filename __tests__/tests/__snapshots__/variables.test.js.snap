@@ -1,0 +1,116 @@
+exports[`test variables.sass 1`] = `
+Object {
+  "nodes": Array [
+    Object {
+      "prop": "$red",
+      "raws": Object {
+        "before": "",
+        "between": ": ",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": Object {
+          "column": 9,
+          "line": 1,
+        },
+        "input": Input {
+          "css": "$red: red
+
+a
+    color: $red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "type": "decl",
+      "value": "red",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 15,
+              "line": 4,
+            },
+            "input": Input {
+              "css": "$red: red
+
+a
+    color: $red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 4,
+            },
+          },
+          "type": "decl",
+          "value": "$red",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": "a",
+      "source": Object {
+        "end": Object {
+          "column": 16,
+          "line": 4,
+        },
+        "input": Input {
+          "css": "$red: red
+
+a
+    color: $red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 3,
+        },
+      },
+      "type": "rule",
+    },
+  ],
+  "raws": Object {
+    "before": "",
+    "semicolon": undefined,
+  },
+  "source": Object {
+    "end": Object {
+      "column": 16,
+      "line": 4,
+    },
+    "input": Input {
+      "css": "$red: red
+
+a
+    color: $red
+",
+      "id": "<input css 1>",
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "root",
+}
+`;

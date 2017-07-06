@@ -13,7 +13,7 @@ A [Sass](http://sass-lang.com/) parser for [PostCSS](https://github.com/postcss/
 ```js
 var postcssSass = require("postcss-sass");
 
-postcss(plugins).process(sass, { syntax: postcssSass }).then(function (result) {
+postcss(plugins).process(sass, { parser: postcssSass }).then(function (result) {
     result.content // Sass with transformations
 });
 ```
