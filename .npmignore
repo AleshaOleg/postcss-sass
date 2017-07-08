@@ -8,3 +8,6 @@ npm-debug.log
 __tests__/
 helpers/
 .travis.yml
+
+.idea/
+

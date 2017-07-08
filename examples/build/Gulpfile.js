@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 
 gulp.task('default', function () {
-    return gulp.src('../sass/basic.sass')
+    return gulp.src('../../__tests__/sass/basic.sass')
         .pipe(postcss([], {
             parser: require('../../.'),
             stringifier: require('../../stringify')

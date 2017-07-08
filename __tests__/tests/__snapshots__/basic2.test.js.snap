@@ -1,0 +1,328 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic2.sass 1`] = `
+Object {
+  "nodes": Array [
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "background",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 20,
+              "line": 2,
+            },
+            "input": Input {
+              "css": "body
+    background: #000
+
+.one
+    background: #000
+
+    .two
+        background: #f00
+
+    .three
+        background: #f00
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 2,
+            },
+          },
+          "type": "decl",
+          "value": "#000",
+        },
+      ],
+      "raws": Object {
+        "before": "",
+        "between": "",
+      },
+      "selector": "body",
+      "source": Object {
+        "end": Object {
+          "column": 21,
+          "line": 2,
+        },
+        "input": Input {
+          "css": "body
+    background: #000
+
+.one
+    background: #000
+
+    .two
+        background: #f00
+
+    .three
+        background: #f00
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "background",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 20,
+              "line": 5,
+            },
+            "input": Input {
+              "css": "body
+    background: #000
+
+.one
+    background: #000
+
+    .two
+        background: #f00
+
+    .three
+        background: #f00
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 5,
+            },
+          },
+          "type": "decl",
+          "value": "#000",
+        },
+        Object {
+          "nodes": Array [
+            Object {
+              "prop": "background",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 24,
+                  "line": 8,
+                },
+                "input": Input {
+                  "css": "body
+    background: #000
+
+.one
+    background: #000
+
+    .two
+        background: #f00
+
+    .three
+        background: #f00
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 8,
+                },
+              },
+              "type": "decl",
+              "value": "#f00",
+            },
+          ],
+          "raws": Object {
+            "before": "
+
+    ",
+            "between": "",
+          },
+          "selector": ".two",
+          "source": Object {
+            "end": Object {
+              "column": 25,
+              "line": 8,
+            },
+            "input": Input {
+              "css": "body
+    background: #000
+
+.one
+    background: #000
+
+    .two
+        background: #f00
+
+    .three
+        background: #f00
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 7,
+            },
+          },
+          "type": "rule",
+        },
+        Object {
+          "nodes": Array [
+            Object {
+              "prop": "background",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 24,
+                  "line": 11,
+                },
+                "input": Input {
+                  "css": "body
+    background: #000
+
+.one
+    background: #000
+
+    .two
+        background: #f00
+
+    .three
+        background: #f00
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 11,
+                },
+              },
+              "type": "decl",
+              "value": "#f00",
+            },
+          ],
+          "raws": Object {
+            "before": "
+
+    ",
+            "between": "",
+          },
+          "selector": ".three",
+          "source": Object {
+            "end": Object {
+              "column": 25,
+              "line": 11,
+            },
+            "input": Input {
+              "css": "body
+    background: #000
+
+.one
+    background: #000
+
+    .two
+        background: #f00
+
+    .three
+        background: #f00
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 10,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": ".one",
+      "source": Object {
+        "end": Object {
+          "column": 25,
+          "line": 11,
+        },
+        "input": Input {
+          "css": "body
+    background: #000
+
+.one
+    background: #000
+
+    .two
+        background: #f00
+
+    .three
+        background: #f00
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 4,
+        },
+      },
+      "type": "rule",
+    },
+  ],
+  "raws": Object {
+    "before": "",
+    "semicolon": undefined,
+  },
+  "source": Object {
+    "end": Object {
+      "column": 25,
+      "line": 11,
+    },
+    "input": Input {
+      "css": "body
+    background: #000
+
+.one
+    background: #000
+
+    .two
+        background: #f00
+
+    .three
+        background: #f00
+",
+      "id": "<input css 1>",
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "root",
+}
+`;

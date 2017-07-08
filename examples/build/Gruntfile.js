@@ -9,7 +9,7 @@ module.exports = function (grunt) {
                 stringifier: require('../../stringify')
             },
             dist: {
-                src: '../sass/basic.sass',
+                src: '../../__tests__/sass/basic.sass',
                 dest: './result/basic-grunt.sass'
             }
         }

@@ -1,4 +1,6 @@
-exports[`test variables.sass 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`variables.sass 1`] = `
 Object {
   "nodes": Array [
     Object {

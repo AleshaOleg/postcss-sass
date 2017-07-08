@@ -1,4 +1,5 @@
-var getPostCssTreeFromSass = require('../../helpers/getPostCssTreeFromSassTree');
+var getPostCssTreeFromSass =
+    require('../../helpers/getPostCssTreeFromSassTree');
 
 it('little.sass', function () {
     expect(getPostCssTreeFromSass('little')).toMatchSnapshot();

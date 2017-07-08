@@ -7,5 +7,5 @@ module.exports = function (fileName) {
         'utf-8'
     );
 
-    return gonzales.parse(source, {syntax: 'sass', rule: 'declaration'});
+    return gonzales.parse(source, { syntax: 'sass', rule: 'declaration' });
 };

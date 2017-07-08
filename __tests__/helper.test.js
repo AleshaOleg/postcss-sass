@@ -1,6 +1,7 @@
 var getCss = require('../helpers/getCss');
 var getTreeFromSass = require('../helpers/getTreeFromSass');
-var getPostCssTreeFromSassTree = require('../helpers/getPostCssTreeFromSassTree');
+var getPostCssTreeFromSassTree =
+    require('../helpers/getPostCssTreeFromSassTree');
 var getSassFromPostCssTree = require('../helpers/getSassFromPostCssTree');
 
 it('getCss', function () {

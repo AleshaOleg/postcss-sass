@@ -111,15 +111,15 @@ function process(
                     sCurrentContent++
                 ) {
                     if (node.content[rContent]
-                            .content[sCurrentContent].type === 'id') {
+                        .content[sCurrentContent].type === 'id') {
                         selector += '#';
                     } else if (node.content[rContent]
-                            .content[sCurrentContent].type === 'class') {
+                        .content[sCurrentContent].type === 'class') {
                         selector += '.';
                     } else if (node.content[rContent]
-                            .content[sCurrentContent].type === 'typeSelector') {
+                        .content[sCurrentContent].type === 'typeSelector') {
                         if (node.content[rContent]
-                                .content[sCurrentContent + 1] &&
+                            .content[sCurrentContent + 1] &&
                             node.content[rContent]
                                 .content[sCurrentContent + 1]
                                 .type === 'pseudoClass' &&
@@ -129,7 +129,7 @@ function process(
                             pseudoClassFirst = true;
                         }
                     } else if (node.content[rContent]
-                            .content[sCurrentContent].type === 'pseudoClass') {
+                        .content[sCurrentContent].type === 'pseudoClass') {
                         selector += ':';
                     }
                     selector += node.content[rContent]
@@ -206,11 +206,15 @@ function process(
                     /* If property is already defined and
                      there's no ':' before it */
                     dRaws.between += node.content[dContent].content;
+                    global.postcssSass.multiRuleProp += node.content[dContent]
+                        .content;
                 } else {
                     /* If ':' goes before property declaration, like
                     * :width 100px */
                     global.postcssSass.betweenBefore = true;
                     dRaws.before += node.content[dContent].content;
+                    global.postcssSass.multiRuleProp += node.content[dContent]
+                        .content;
                 }
             } else if (node.content[dContent].type === 'space') {
                 dRaws.between += node.content[dContent].content;
@@ -220,7 +224,7 @@ function process(
                     isBlockInside = true;
                     // If nested rules exist
                     if (typeof node.content[dContent]
-                            .content[0].content === 'object') {
+                        .content[0].content === 'object') {
                         global.postcssSass.multiRule = true;
                     }
                     process(
@@ -230,7 +234,7 @@ function process(
                         input
                     );
                 } else if (node.content[dContent]
-                        .content[0].type === 'variable') {
+                    .content[0].type === 'variable') {
                     decl.value = '$';
                     process(
                         source,
@@ -247,7 +251,7 @@ function process(
                         input
                     );
                 } else if (node.content[dContent]
-                        .content[0].type === 'number') {
+                    .content[0].type === 'number') {
                     if (node.content[dContent].content.length > 1) {
                         decl.value = '';
                         for (
@@ -310,6 +314,17 @@ function process(
             ) {
                 if (node.content[vContent].type === 'important') {
                     parent.important = true;
+                } else if (node.content[vContent]
+                    .content.constructor === Array ) {
+                    for (
+                        var vContentParts = 0;
+                        vContentParts < node.content[vContent]
+                            .content.length;
+                        vContentParts++
+                    ) {
+                        parent.value += node.content[vContent]
+                            .content[vContentParts];
+                    }
                 } else {
                     parent.value += node.content[vContent].content;
                 }

@@ -18,13 +18,13 @@
   "homepage": "https://github.com/AleshaOleg/postcss-sass",
   "dependencies": {
     "gonzales-pe": "^4.0.3",
-    "postcss": "^5.2.6"
+    "postcss": "^6.0.6"
   },
   "devDependencies": {
-    "eslint": "^3.12.2",
+    "eslint": "^4.1.1",
     "eslint-config-postcss": "^2.0.2",
-    "jest": "^18.0.0",
-    "lint-staged": "^3.3.1",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.1",
     "pre-commit": "^1.2.2"
   },
   "scripts": {

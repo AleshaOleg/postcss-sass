@@ -1,4 +1,6 @@
-exports[`test important.sass 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`important.sass 1`] = `
 Object {
   "nodes": Array [
     Object {
@@ -103,7 +105,7 @@ Object {
     ",
             "between": "",
           },
-          "selector": "background",
+          "selector": "background:",
           "source": Object {
             "end": Object {
               "column": 19,

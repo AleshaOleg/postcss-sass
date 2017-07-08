@@ -1,4 +1,5 @@
-var getPostCssTreeFromSass = require('../../helpers/getPostCssTreeFromSassTree');
+var getPostCssTreeFromSass =
+    require('../../helpers/getPostCssTreeFromSassTree');
 
 it('alt.sass', function () {
     expect(getPostCssTreeFromSass('alt')).toMatchSnapshot();

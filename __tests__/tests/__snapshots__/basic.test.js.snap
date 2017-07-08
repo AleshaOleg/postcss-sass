@@ -1,4 +1,6 @@
-exports[`test basic.sass 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic.sass 1`] = `
 Object {
   "nodes": Array [
     Object {
@@ -198,7 +200,7 @@ body
             },
           },
           "type": "decl",
-          "value": "700,px",
+          "value": "700px",
         },
         Object {
           "prop": "height",
@@ -298,7 +300,7 @@ body
                 },
               },
               "type": "decl",
-              "value": "300,px",
+              "value": "300px",
             },
             Object {
               "nodes": Array [
@@ -349,7 +351,7 @@ body
                     },
                   },
                   "type": "decl",
-                  "value": "50,px",
+                  "value": "50px",
                 },
                 Object {
                   "prop": "color",
@@ -596,7 +598,7 @@ body
                     },
                   },
                   "type": "decl",
-                  "value": "100,px",
+                  "value": "100px",
                 },
               ],
               "raws": Object {
@@ -694,7 +696,7 @@ body
                     },
                   },
                   "type": "decl",
-                  "value": "600,px",
+                  "value": "600px",
                 },
               ],
               "raws": Object {

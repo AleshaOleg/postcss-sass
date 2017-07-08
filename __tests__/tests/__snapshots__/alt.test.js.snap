@@ -1,4 +1,6 @@
-exports[`test alt.sass 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`alt.sass 1`] = `
 Object {
   "nodes": Array [
     Object {
@@ -83,7 +85,7 @@ Object {
             },
           },
           "type": "decl",
-          "value": "274,px",
+          "value": "274px",
         },
         Object {
           "prop": "height",
@@ -124,7 +126,7 @@ Object {
             },
           },
           "type": "decl",
-          "value": "75,px",
+          "value": "75px",
         },
         Object {
           "prop": "margin",
@@ -257,7 +259,7 @@ Object {
   ",
             "between": "",
           },
-          "selector": "background",
+          "selector": "background:",
           "source": Object {
             "end": Object {
               "column": 16,
