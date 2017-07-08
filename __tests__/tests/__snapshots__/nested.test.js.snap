@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`nested.sass 1`] = `
+Object {
+  "nodes": Array [
+    Object {
+      "nodes": Array [
+        Object {
+          "nodes": Array [
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 18,
+                  "line": 3,
+                },
+                "input": Input {
+                  "css": ".nested
+    background:
+        color: red
+        repeat: no-repeat
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 3,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+            Object {
+              "prop": "repeat",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 25,
+                  "line": 4,
+                },
+                "input": Input {
+                  "css": ".nested
+    background:
+        color: red
+        repeat: no-repeat
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 4,
+                },
+              },
+              "type": "decl",
+              "value": "no-repeat",
+            },
+          ],
+          "raws": Object {
+            "before": "
+    ",
+            "between": "",
+          },
+          "selector": "background:",
+          "source": Object {
+            "end": Object {
+              "column": 26,
+              "line": 4,
+            },
+            "input": Input {
+              "css": ".nested
+    background:
+        color: red
+        repeat: no-repeat
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 1,
+              "line": 2,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "before": "",
+        "between": "",
+      },
+      "selector": ".nested",
+      "source": Object {
+        "end": Object {
+          "column": 26,
+          "line": 4,
+        },
+        "input": Input {
+          "css": ".nested
+    background:
+        color: red
+        repeat: no-repeat
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "type": "rule",
+    },
+  ],
+  "raws": Object {
+    "before": "",
+    "semicolon": undefined,
+  },
+  "source": Object {
+    "end": Object {
+      "column": 26,
+      "line": 4,
+    },
+    "input": Input {
+      "css": ".nested
+    background:
+        color: red
+        repeat: no-repeat
+",
+      "id": "<input css 1>",
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "root",
+}
+`;

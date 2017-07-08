@@ -1,0 +1,13 @@
+body {
+    background: #000;
+}
+
+.one {
+    background: #000;
+}
+.one .two {
+    background: #f00;
+}
+.one .three {
+    background: #f00;
+}

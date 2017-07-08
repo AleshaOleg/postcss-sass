@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`little.sass 1`] = `
+Object {
+  "nodes": Array [
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 2,
+            },
+            "input": Input {
+              "css": ".little
+    color: red
+    background-color: green
+    .class
+        :font Arial
+        :background blue
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 2,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+        Object {
+          "prop": "background-color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 27,
+              "line": 3,
+            },
+            "input": Input {
+              "css": ".little
+    color: red
+    background-color: green
+    .class
+        :font Arial
+        :background blue
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 3,
+            },
+          },
+          "type": "decl",
+          "value": "green",
+        },
+        Object {
+          "nodes": Array [
+            Object {
+              "prop": "font",
+              "raws": Object {
+                "before": "
+        :",
+                "between": " ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 19,
+                  "line": 5,
+                },
+                "input": Input {
+                  "css": ".little
+    color: red
+    background-color: green
+    .class
+        :font Arial
+        :background blue
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 5,
+                },
+              },
+              "type": "decl",
+              "value": "Arial",
+            },
+            Object {
+              "prop": "background",
+              "raws": Object {
+                "before": "
+        :",
+                "between": " ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 24,
+                  "line": 6,
+                },
+                "input": Input {
+                  "css": ".little
+    color: red
+    background-color: green
+    .class
+        :font Arial
+        :background blue
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 6,
+                },
+              },
+              "type": "decl",
+              "value": "blue",
+            },
+          ],
+          "raws": Object {
+            "before": "
+    ",
+            "between": "",
+          },
+          "selector": ".class",
+          "source": Object {
+            "end": Object {
+              "column": 25,
+              "line": 6,
+            },
+            "input": Input {
+              "css": ".little
+    color: red
+    background-color: green
+    .class
+        :font Arial
+        :background blue
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 4,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "before": "",
+        "between": "",
+      },
+      "selector": ".little",
+      "source": Object {
+        "end": Object {
+          "column": 25,
+          "line": 6,
+        },
+        "input": Input {
+          "css": ".little
+    color: red
+    background-color: green
+    .class
+        :font Arial
+        :background blue
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "type": "rule",
+    },
+  ],
+  "raws": Object {
+    "before": "",
+    "semicolon": undefined,
+  },
+  "source": Object {
+    "end": Object {
+      "column": 25,
+      "line": 6,
+    },
+    "input": Input {
+      "css": ".little
+    color: red
+    background-color: green
+    .class
+        :font Arial
+        :background blue
+",
+      "id": "<input css 1>",
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "root",
+}
+`;
