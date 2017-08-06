@@ -23,6 +23,6 @@ it('getSassFromPostCssTree', function () {
 // console.log(getCss('basic'));
 // console.log(getTreeFromSass('basic'));
 // console.log(getPostCssTreeFromSassTree('basic'));
-// getSassFromPostCssTree('basic').then(function(res) {
+// getSassFromPostCssTree('basic').then(function (res) {
 //     console.log(res);
 // });

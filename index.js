@@ -271,6 +271,15 @@ function process(
                             input
                         );
                     }
+                } else if (node.content[dContent]
+                    .content[0].type === 'parentheses') {
+                    decl.value = '(';
+                    process(
+                        source,
+                        node.content[dContent],
+                        decl,
+                        input
+                    );
                 } else {
                     process(
                         source,
@@ -314,6 +323,17 @@ function process(
             ) {
                 if (node.content[vContent].type === 'important') {
                     parent.important = true;
+                } else if (node.content[vContent].type === 'parentheses') {
+                    for (
+                        var vContentParentheses = 0;
+                        vContentParentheses < node.content[vContent]
+                            .content.length;
+                        vContentParentheses++
+                    ) {
+                        parent.value += node.content[vContent]
+                            .content[vContentParentheses];
+                    }
+                    parent.value += ')';
                 } else if (node.content[vContent]
                     .content.constructor === Array ) {
                     for (

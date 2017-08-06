@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`map1.sass 1`] = `
+Object {
+  "nodes": Array [
+    Object {
+      "prop": "$array",
+      "raws": Object {
+        "before": "",
+        "between": ": ",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": Object {
+          "column": 32,
+          "line": 1,
+        },
+        "input": Input {
+          "css": "$array: (1: '1', 2: '2', 3: '3')
+$second_array: (4: '4', 5: '5')
+$merged: map-merge($array, $second_array)
+
+@each $num, $str in $merged
+    .link-#{$str}
+        z-index: $num
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "type": "decl",
+      "value": "(1: '1', 2: '2', 3: '3')",
+    },
+    Object {
+      "prop": "$second_array",
+      "raws": Object {
+        "before": "
+",
+        "between": ": ",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": Object {
+          "column": 31,
+          "line": 2,
+        },
+        "input": Input {
+          "css": "$array: (1: '1', 2: '2', 3: '3')
+$second_array: (4: '4', 5: '5')
+$merged: map-merge($array, $second_array)
+
+@each $num, $str in $merged
+    .link-#{$str}
+        z-index: $num
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 2,
+        },
+      },
+      "type": "decl",
+      "value": "(4: '4', 5: '5')",
+    },
+    Object {
+      "prop": "$merged",
+      "raws": Object {
+        "before": "
+",
+        "between": ": ",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": Object {
+          "column": 41,
+          "line": 3,
+        },
+        "input": Input {
+          "css": "$array: (1: '1', 2: '2', 3: '3')
+$second_array: (4: '4', 5: '5')
+$merged: map-merge($array, $second_array)
+
+@each $num, $str in $merged
+    .link-#{$str}
+        z-index: $num
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 3,
+        },
+      },
+      "type": "decl",
+      "value": "map-merge($array, $second_array)",
+    },
+  ],
+  "raws": Object {
+    "before": "",
+    "semicolon": undefined,
+  },
+  "source": Object {
+    "end": Object {
+      "column": 22,
+      "line": 7,
+    },
+    "input": Input {
+      "css": "$array: (1: '1', 2: '2', 3: '3')
+$second_array: (4: '4', 5: '5')
+$merged: map-merge($array, $second_array)
+
+@each $num, $str in $merged
+    .link-#{$str}
+        z-index: $num
+",
+      "id": "<input css 1>",
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "root",
+}
+`;
