@@ -1,0 +1,1706 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`functions.sass 1`] = `
+Object {
+  "nodes": Array [
+    Object {
+      "nodes": Array [
+        Object {
+          "nodes": Array [
+            Object {
+              "prop": "$list",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 20,
+                  "line": 3,
+                },
+                "input": Input {
+                  "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 3,
+                },
+              },
+              "type": "decl",
+              "value": "a b i",
+            },
+            Object {
+              "prop": "content",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 27,
+                  "line": 4,
+                },
+                "input": Input {
+                  "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 4,
+                },
+              },
+              "type": "decl",
+              "value": "'#{$list}'",
+            },
+            Object {
+              "nodes": Array [
+                Object {
+                  "prop": "$len",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 31,
+                      "line": 6,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 6,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "length($list)",
+                },
+                Object {
+                  "prop": "content",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 30,
+                      "line": 7,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 7,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "'#{$len}'",
+                },
+              ],
+              "raws": Object {
+                "before": "
+        ",
+                "between": "",
+              },
+              "selector": ".len",
+              "source": Object {
+                "end": Object {
+                  "column": 31,
+                  "line": 7,
+                },
+                "input": Input {
+                  "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 5,
+                },
+              },
+              "type": "rule",
+            },
+            Object {
+              "nodes": Array [
+                Object {
+                  "prop": "$child",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 33,
+                      "line": 9,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 9,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "nth($list, 2)",
+                },
+                Object {
+                  "prop": "content",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 32,
+                      "line": 10,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 10,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "'#{$child}'",
+                },
+              ],
+              "raws": Object {
+                "before": "
+        ",
+                "between": "",
+              },
+              "selector": ".second-child",
+              "source": Object {
+                "end": Object {
+                  "column": 33,
+                  "line": 10,
+                },
+                "input": Input {
+                  "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 8,
+                },
+              },
+              "type": "rule",
+            },
+            Object {
+              "nodes": Array [
+                Object {
+                  "prop": "$list2",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 40,
+                      "line": 12,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 12,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "set-nth($list, 3, c)",
+                },
+                Object {
+                  "prop": "content",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 32,
+                      "line": 13,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 13,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "'#{$list2}'",
+                },
+              ],
+              "raws": Object {
+                "before": "
+        ",
+                "between": "",
+              },
+              "selector": ".set-nth-#3-to-c",
+              "source": Object {
+                "end": Object {
+                  "column": 33,
+                  "line": 13,
+                },
+                "input": Input {
+                  "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 11,
+                },
+              },
+              "type": "rule",
+            },
+            Object {
+              "nodes": Array [
+                Object {
+                  "prop": "$list2",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 25,
+                      "line": 15,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 15,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "1 2 3",
+                },
+                Object {
+                  "prop": "$joined",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 47,
+                      "line": 16,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 16,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "join($list, $list2, comma)",
+                },
+                Object {
+                  "prop": "content",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 33,
+                      "line": 17,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 17,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "'#{$joined}'",
+                },
+              ],
+              "raws": Object {
+                "before": "
+        ",
+                "between": "",
+              },
+              "selector": ".join-comma-1-2-3",
+              "source": Object {
+                "end": Object {
+                  "column": 34,
+                  "line": 17,
+                },
+                "input": Input {
+                  "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 14,
+                },
+              },
+              "type": "rule",
+            },
+            Object {
+              "nodes": Array [
+                Object {
+                  "prop": "$list2",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 43,
+                      "line": 19,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 19,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "append($list, d, space)",
+                },
+                Object {
+                  "prop": "content",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 32,
+                      "line": 20,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 20,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "'#{$list2}'",
+                },
+              ],
+              "raws": Object {
+                "before": "
+        ",
+                "between": "",
+              },
+              "selector": ".append-space-d",
+              "source": Object {
+                "end": Object {
+                  "column": 33,
+                  "line": 20,
+                },
+                "input": Input {
+                  "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 18,
+                },
+              },
+              "type": "rule",
+            },
+            Object {
+              "nodes": Array [
+                Object {
+                  "prop": "$list2",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 25,
+                      "line": 22,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 22,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "1 2 3",
+                },
+                Object {
+                  "prop": "$zipped",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 39,
+                      "line": 23,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 23,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "zip($list, $list2)",
+                },
+                Object {
+                  "prop": "content",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 33,
+                      "line": 24,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 24,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "'#{$zipped}'",
+                },
+              ],
+              "raws": Object {
+                "before": "
+        ",
+                "between": "",
+              },
+              "selector": ".zip-1-2-3",
+              "source": Object {
+                "end": Object {
+                  "column": 34,
+                  "line": 24,
+                },
+                "input": Input {
+                  "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 21,
+                },
+              },
+              "type": "rule",
+            },
+            Object {
+              "nodes": Array [
+                Object {
+                  "prop": "$index",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 35,
+                      "line": 26,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 26,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "index($list, i)",
+                },
+                Object {
+                  "prop": "content",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 32,
+                      "line": 27,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 27,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "'#{$index}'",
+                },
+              ],
+              "raws": Object {
+                "before": "
+        ",
+                "between": "",
+              },
+              "selector": ".index-of-i",
+              "source": Object {
+                "end": Object {
+                  "column": 33,
+                  "line": 27,
+                },
+                "input": Input {
+                  "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 25,
+                },
+              },
+              "type": "rule",
+            },
+            Object {
+              "nodes": Array [
+                Object {
+                  "prop": "$separator",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 45,
+                      "line": 29,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 29,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "list-separator($list)",
+                },
+                Object {
+                  "prop": "content",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 36,
+                      "line": 30,
+                    },
+                    "input": Input {
+                      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 30,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "'#{$separator}'",
+                },
+              ],
+              "raws": Object {
+                "before": "
+        ",
+                "between": "",
+              },
+              "selector": ".list-separator",
+              "source": Object {
+                "end": Object {
+                  "column": 37,
+                  "line": 30,
+                },
+                "input": Input {
+                  "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 28,
+                },
+              },
+              "type": "rule",
+            },
+          ],
+          "raws": Object {
+            "before": "
+    ",
+            "between": "",
+          },
+          "selector": ".list",
+          "source": Object {
+            "end": Object {
+              "column": 37,
+              "line": 30,
+            },
+            "input": Input {
+              "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 2,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "before": "",
+        "between": "",
+      },
+      "selector": ".functions",
+      "source": Object {
+        "end": Object {
+          "column": 37,
+          "line": 30,
+        },
+        "input": Input {
+          "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "type": "rule",
+    },
+  ],
+  "raws": Object {
+    "before": "",
+    "semicolon": undefined,
+  },
+  "source": Object {
+    "end": Object {
+      "column": 37,
+      "line": 30,
+    },
+    "input": Input {
+      "css": ".functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
+",
+      "id": "<input css 1>",
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "root",
+}
+`;
