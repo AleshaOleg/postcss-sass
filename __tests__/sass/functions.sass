@@ -1,0 +1,30 @@
+.functions
+    .list
+        $list: a b i
+        content: '#{$list}'
+        .len
+            $len: length($list)
+            content: '#{$len}'
+        .second-child
+            $child: nth($list, 2)
+            content: '#{$child}'
+        .set-nth-#3-to-c
+            $list2: set-nth($list, 3, c)
+            content: '#{$list2}'
+        .join-comma-1-2-3
+            $list2: 1 2 3
+            $joined: join($list, $list2, comma)
+            content: '#{$joined}'
+        .append-space-d
+            $list2: append($list, d, space)
+            content: '#{$list2}'
+        .zip-1-2-3
+            $list2: 1 2 3
+            $zipped: zip($list, $list2)
+            content: '#{$zipped}'
+        .index-of-i
+            $index: index($list, i)
+            content: '#{$index}'
+        .list-separator
+            $separator: list-separator($list)
+            content: '#{$separator}'
