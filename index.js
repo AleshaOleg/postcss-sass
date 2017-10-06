@@ -27,6 +27,7 @@ function sum(arg1, arg2) {
     return arg1 + arg2;
 }
 
+// do not change next line
 global.postcssSass = {};
 
 function process(source, node, parent, input) {
@@ -55,27 +56,24 @@ function process(source, node, parent, input) {
         }
         case 'ruleset': {
             // Loop to find the deepest ruleset node
-            var pseudoClassFirst = false;
+            let pseudoClassFirst = false;
             // Define new selector
-            var selector = '';
+            let selector = '';
             global.postcssSass.multiRuleProp = '';
             node.content.forEach(contentNode => {
                 switch (contentNode.type) {
                     case 'block': {
                         // Create Rule node
-                        var rule = postcss.rule();
+                        const rule = postcss.rule();
 
                         // Object to store raws for Rule
-                        var rRaws = {
-                            before: global.postcssSass.before ||
-                            DEFAULT_RAWS_RULE.before,
+                        const ruleRaws = {
+                            before: global.postcssSass.before || DEFAULT_RAWS_RULE.before,
                             between: DEFAULT_RAWS_RULE.between
                         };
 
-                        /* Variable to store spaces and symbols
-						 before declaration property */
+                        /* Variable to store spaces and symbols before declaration property */
                         global.postcssSass.before = '';
-
                         global.postcssSass.comment = false;
 
                         // Look up throw all nodes in current ruleset node
@@ -93,7 +91,7 @@ function process(source, node, parent, input) {
                                 end: node.end,
                                 input: input
                             };
-                            rule.raws = rRaws;
+                            rule.raws = ruleRaws;
                             parent.nodes.push(rule);
                         }
                         break;
@@ -134,24 +132,24 @@ function process(source, node, parent, input) {
             break;
         }
         case 'block': {
-            /* If nested rules exist,
-			wrap current rule in new rule node */
+            /* If nested rules exist, wrap current rule in new rule node */
             if (global.postcssSass.multiRule) {
-                var multiRule = postcss.rule();
-                multiRule.source = {
-                    start: {
-                        line: node.start.line - 1,
-                        column: node.start.column
+                const multiRule = Object.assign(postcss.rule(), {
+                    source: {
+                        start: {
+                            line: node.start.line - 1,
+                            column: node.start.column
+                        },
+                        end: node.end,
+                        input: input
                     },
-                    end: node.end,
-                    input: input
-                };
-                multiRule.parent = parent;
-                multiRule.selector = global.postcssSass.multiRuleProp;
-                multiRule.raws = {
-                    before: global.postcssSass.before || DEFAULT_RAWS_RULE.before,
-                    between: DEFAULT_RAWS_RULE.between
-                };
+                    parent,
+                    selector: global.postcssSass.multiRuleProp,
+                    raws: {
+                        before: global.postcssSass.before || DEFAULT_RAWS_RULE.before,
+                        between: DEFAULT_RAWS_RULE.between
+                    }
+                });
                 parent.push(multiRule);
                 parent = multiRule;
             }
@@ -163,12 +161,12 @@ function process(source, node, parent, input) {
             break;
         }
         case 'declaration': {
-            var isBlockInside = false;
+            let isBlockInside = false;
             // Create Declaration node
-            var decl = postcss.decl();
-            decl.prop = '';
+            const declarationNode = postcss.decl();
+            declarationNode.prop = '';
             // Object to store raws for Declaration
-            var dRaws = {
+            const declarationRaws = {
                 before: global.postcssSass.before || DEFAULT_RAWS_DECL.before,
                 between: DEFAULT_RAWS_DECL.between,
                 semicolon: DEFAULT_RAWS_DECL.semicolon
@@ -181,28 +179,27 @@ function process(source, node, parent, input) {
             node.content.forEach((contentNode) => {
                 switch (contentNode.type) {
                     case 'property': {
-                        /* global.property to detect is property is
-						already defined in current object */
+                        /* global.property to detect is property is already defined in current object */
                         global.postcssSass.property = true;
                         global.postcssSass.multiRuleProp = contentNode.content[0].content;
-                        bindedProcess(contentNode, decl);
+                        bindedProcess(contentNode, declarationNode);
                         break;
                     }
                     case 'propertyDelimiter': {
                         if (global.postcssSass.property && !global.postcssSass.betweenBefore) {
                             /* If property is already defined and there's no ':' before it */
-                            dRaws.between += contentNode.content;
+                            declarationRaws.between += contentNode.content;
                             global.postcssSass.multiRuleProp += contentNode.content;
                         } else {
                             /* If ':' goes before property declaration, like :width 100px */
                             global.postcssSass.betweenBefore = true;
-                            dRaws.before += contentNode.content;
+                            declarationRaws.before += contentNode.content;
                             global.postcssSass.multiRuleProp += contentNode.content;
                         }
                         break;
                     }
                     case 'space': {
-                        dRaws.between += contentNode.content;
+                        declarationRaws.between += contentNode.content;
                         break;
                     }
                     case 'value': {
@@ -218,30 +215,30 @@ function process(source, node, parent, input) {
                                 break;
                             }
                             case 'variable': {
-                                decl.value = '$';
-                                bindedProcess(contentNode, decl);
+                                declarationNode.value = '$';
+                                bindedProcess(contentNode, declarationNode);
                                 break;
                             }
                             case 'color': {
-                                decl.value = '#';
-                                bindedProcess(contentNode, decl);
+                                declarationNode.value = '#';
+                                bindedProcess(contentNode, declarationNode);
                                 break;
                             }
                             case 'number': {
                                 if (contentNode.content.length > 1) {
-                                    decl.value = contentNode.content.reduce(sum, '');
+                                    declarationNode.value = contentNode.content.reduce(sum, '');
                                 } else {
-                                    bindedProcess(contentNode, decl);
+                                    bindedProcess(contentNode, declarationNode);
                                 }
                                 break;
                             }
                             case 'parentheses': {
-                                decl.value = '(';
-                                bindedProcess(contentNode, decl);
+                                declarationNode.value = '(';
+                                bindedProcess(contentNode, declarationNode);
                                 break;
                             }
                             default: {
-                                bindedProcess(contentNode, decl);
+                                bindedProcess(contentNode, declarationNode);
                             }
                         }
                         break;
@@ -254,14 +251,14 @@ function process(source, node, parent, input) {
 
             if (!isBlockInside) {
                 // Set parameters for Declaration node
-                decl.source = {
+                declarationNode.source = {
                     start: node.start,
                     end: node.end,
                     input: input
                 };
-                decl.parent = parent;
-                decl.raws = dRaws;
-                parent.nodes.push(decl);
+                declarationNode.parent = parent;
+                declarationNode.raws = declarationRaws;
+                parent.nodes.push(declarationNode);
             }
             break;
         }
@@ -307,24 +304,23 @@ function process(source, node, parent, input) {
         }
         case 'singlelineComment':
         case 'multilineComment': {
-            // Create a new node for comment
-            var comment = postcss.comment();
-            var text = node.content;
-            // Clear comment text from spaces/symbols
-            var textClear = text.trim();
-            comment.text = textClear;
-            // Found spaces/symbols before comment
-            var left = text.search(/\S/);
+            const rawText = node.content;
+            const text = rawText.trim();
+
+            const left = rawText.search(/\S/); // this finds all spaces?
+            const right = rawText.length - text.length - left; // thus it is 0?
+
             global.postcssSass.comment = true;
-            // Found spaces/symbols after comment
-            var right = text.length - textClear.length - left;
-            // Raws for current comment node
-            comment.raws = {
-                before: global.postcssSass.before || DEFAULT_COMMENT_DECL.before,
-                left: new Array(left + 1).join(' '),
-                right: new Array(right + 1).join(' '),
-                commentType: node.type === 'singlelineComment' ? 'single' : 'multi'
-            };
+
+            const comment = Object.assign(postcss.comment(), {
+                text,
+                raws: {
+                    before: global.postcssSass.before || DEFAULT_COMMENT_DECL.before,
+                    left: new Array(left + 1).join(' '),
+                    right: new Array(right + 1).join(' '),
+                    commentType: node.type === 'singlelineComment' ? 'single' : 'multi'
+                }
+            });
 
             parent.nodes.push(comment);
             break;
@@ -358,7 +354,7 @@ function process(source, node, parent, input) {
 }
 
 module.exports = function sassToPostCssTree(source, opts) {
-    var data = {
+    const data = {
         node: gonzales.parse(source.toString('utf8'), { syntax: 'sass' }),
         input: new Input(source, opts),
         parent: null
