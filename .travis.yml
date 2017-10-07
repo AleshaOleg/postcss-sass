@@ -9,3 +9,4 @@ notifications:
     - me@aleshaoleg.me
   on_success: never
   on_failure: always
+after_success: 'npm run coveralls'

@@ -21,15 +21,17 @@
     "postcss": "^6.0.6"
   },
   "devDependencies": {
+    "coveralls": "^3.0.0",
     "eslint": "^4.1.1",
     "eslint-config-postcss": "^2.0.2",
+    "istanbul": "^0.4.5",
     "jest": "^20.0.4",
     "lint-staged": "^4.0.1",
     "pre-commit": "^1.2.2"
   },
   "scripts": {
-    "coverage": "jest --coverage",
-    "test": "jest && eslint *.js",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "test": "jest --coverage && eslint *.js",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
@@ -41,9 +43,18 @@
       "jest": true
     },
     "rules": {
-      "indent": ["error", 4, { "SwitchCase": 1 }],
+      "indent": [
+        "error",
+        4,
+        {
+          "SwitchCase": 1
+        }
+      ],
       "complexity": "off",
-      "max-len": ["error", 120]
+      "max-len": [
+        "error",
+        120
+      ]
     }
   },
   "pre-commit": [
