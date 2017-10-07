@@ -40,7 +40,9 @@
       "jest": true
     },
     "rules": {
-      "complexity": "off"
+      "indent": ["error", 4, { "SwitchCase": 1 }],
+      "complexity": "off",
+      "max-len": ["error", 120]
     }
   },
   "pre-commit": [
