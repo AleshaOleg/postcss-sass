@@ -27,7 +27,7 @@ function sum(arg1, arg2) {
     return arg1 + arg2;
 }
 
-// do not change next line
+// Do not change next line
 global.postcssSass = {};
 
 function process(source, node, parent, input) {
@@ -72,7 +72,7 @@ function process(source, node, parent, input) {
                             between: DEFAULT_RAWS_RULE.between
                         };
 
-                        /* Variable to store spaces and symbols before declaration property */
+                        // Variable to store spaces and symbols before declaration property
                         global.postcssSass.before = '';
                         global.postcssSass.comment = false;
 
@@ -106,6 +106,17 @@ function process(source, node, parent, input) {
                                 }
                                 case 'class': {
                                     selector += '.';
+                                    if (innerContentNode.content.length > 1) {
+                                        innerContentNode.content.forEach((classContentNode) => {
+                                            if (classContentNode.content.constructor !== Array ) {
+                                                selector += classContentNode.content;
+                                            } else {
+                                                classContentNode.content.forEach((interpolationContentNode) => {
+                                                    selector += `\${${interpolationContentNode.content}}`;
+                                                });
+                                            }
+                                        });
+                                    }
                                     break;
                                 }
                                 case 'typeSelector': {
@@ -122,7 +133,9 @@ function process(source, node, parent, input) {
                                 }
                                 default:
                             }
-                            selector += innerContentNode.content;
+                            if (innerContentNode.content.length === 1) {
+                                selector += innerContentNode.content;
+                            }
                         });
                         break;
                     }
@@ -132,7 +145,7 @@ function process(source, node, parent, input) {
             break;
         }
         case 'block': {
-            /* If nested rules exist, wrap current rule in new rule node */
+            // If nested rules exist, wrap current rule in new rule node
             if (global.postcssSass.multiRule) {
                 const multiRule = Object.assign(postcss.rule(), {
                     source: {
@@ -295,10 +308,6 @@ function process(source, node, parent, input) {
                         }
                     }
                 });
-            } else if (node.content[0].content.constructor === Array) { // NPE ???
-                parent.value += node.content[0].content.reduce(sum, '');
-            } else {
-                parent.value += node.content[0].content;
             }
             break;
         }
@@ -307,8 +316,8 @@ function process(source, node, parent, input) {
             const rawText = node.content;
             const text = rawText.trim();
 
-            const left = rawText.search(/\S/); // this finds all spaces?
-            const right = rawText.length - text.length - left; // thus it is 0?
+            const left = rawText.search(/\S/);
+            const right = rawText.length - text.length - left;
 
             global.postcssSass.comment = true;
 
@@ -335,6 +344,8 @@ function process(source, node, parent, input) {
                 case 'rule': {
                     if (global.postcssSass.comment) {
                         global.postcssSass.before = '\n' + node.content;
+                    } else if (global.postcssSass.loop) {
+                        parent.selector += node.content;
                     } else {
                         global.postcssSass.before = (global.postcssSass.before || '\n') + node.content;
                     }
@@ -346,6 +357,40 @@ function process(source, node, parent, input) {
         }
         case 'declarationDelimiter': {
             global.postcssSass.before += node.content;
+            break;
+        }
+        case 'loop': {
+            const loop = postcss.rule();
+            global.postcssSass.loop = true;
+            loop.selector = '';
+            loop.raws = {
+                before: global.postcssSass.before || DEFAULT_RAWS_RULE.before,
+                between: DEFAULT_RAWS_RULE.between
+            };
+            node.content.forEach((contentNode, i) => {
+                if (node.content[i + 1] && node.content[i + 1].type === 'block') {
+                    global.postcssSass.loop = false;
+                }
+                bindedProcess(contentNode, loop);
+            });
+            parent.nodes.push(loop);
+            global.postcssSass.before = '';
+            break;
+        }
+        case 'atkeyword': {
+            parent.selector += `@${node.content}`;
+            break;
+        }
+        case 'operator': {
+            parent.selector += node.content;
+            break;
+        }
+        case 'variable': {
+            parent.selector += `\$${node.content[0].content}`;
+            break;
+        }
+        case 'ident': {
+            parent.selector += node.content;
             break;
         }
         default:
