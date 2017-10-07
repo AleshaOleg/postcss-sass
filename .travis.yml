@@ -3,7 +3,6 @@ cache: yarn
 node_js:
   - stable
   - "6"
-  - "4"
 notifications:
   email:
     - olegaleshkin@gmail.com
