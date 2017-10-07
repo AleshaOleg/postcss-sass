@@ -31,8 +31,8 @@ function sum(arg1, arg2) {
 global.postcssSass = {};
 
 function process(source, node, parent, input) {
-    function bindedProcess(innerNode, innerParent) {
-        return process(source, innerNode, innerParent || parent, input);
+    function bindedProcess(innerNode, innerParent = parent) {
+        return process(source, innerNode, innerParent, input);
     }
 
     switch (node.type) {
