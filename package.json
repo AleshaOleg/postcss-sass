@@ -28,6 +28,7 @@
     "pre-commit": "^1.2.2"
   },
   "scripts": {
+    "coverage": "jest --coverage",
     "test": "jest && eslint *.js",
     "lint-staged": "lint-staged"
   },
