@@ -307,8 +307,8 @@ function process(source, node, parent, input) {
             const rawText = node.content;
             const text = rawText.trim();
 
-            const left = rawText.search(/\S/); // this finds all spaces?
-            const right = rawText.length - text.length - left; // thus it is 0?
+            const left = rawText.search(/\S/);
+            const right = rawText.length - text.length - left;
 
             global.postcssSass.comment = true;
 
