@@ -23,10 +23,6 @@ const DEFAULT_COMMENT_DECL = {
     right: ''
 };
 
-function sum(arg1, arg2) {
-    return arg1 + arg2;
-}
-
 // Do not change next line
 global.postcssSass = {};
 
@@ -239,7 +235,7 @@ function process(source, node, parent, input) {
                             }
                             case 'number': {
                                 if (contentNode.content.length > 1) {
-                                    declarationNode.value = contentNode.content.reduce(sum, '');
+                                    declarationNode.value = contentNode.content.join('');
                                 } else {
                                     bindedProcess(contentNode, declarationNode);
                                 }
@@ -296,12 +292,12 @@ function process(source, node, parent, input) {
                             break;
                         }
                         case 'parentheses': {
-                            parent.value += contentNode.content.reduce(sum, '') + ')';
+                            parent.value += contentNode.content.join('') + ')';
                             break;
                         }
                         default: {
                             if (contentNode.content.constructor === Array) {
-                                parent.value += contentNode.content.reduce(sum, '');
+                                parent.value += contentNode.content.join('');
                             } else {
                                 parent.value += contentNode.content;
                             }
