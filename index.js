@@ -370,7 +370,7 @@ function process(source, node, parent, input) {
                 bindedProcess(contentNode, loop);
             });
             parent.nodes.push(loop);
-            global.postcssSass.before = '';
+            global.postcssSass.before = global.postcssSass.before || '';
             break;
         }
         case 'atkeyword': {
