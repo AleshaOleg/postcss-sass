@@ -61,7 +61,7 @@ function process(source, node, parent, input) {
                     case 'block': {
                         // Create Rule node
                         const rule = postcss.rule();
-
+                        rule.selector = '';
                         // Object to store raws for Rule
                         const ruleRaws = {
                             before: global.postcssSass.before || DEFAULT_RAWS_RULE.before,
@@ -108,7 +108,7 @@ function process(source, node, parent, input) {
                                                 selector += classContentNode.content;
                                             } else {
                                                 classContentNode.content.forEach((interpolationContentNode) => {
-                                                    selector += `\${${interpolationContentNode.content}}`;
+                                                    selector += `\#{${interpolationContentNode.content}}`;
                                                 });
                                             }
                                         });

@@ -140,7 +140,7 @@ $merged: map-merge($array, $second_array)
     ",
             "between": "",
           },
-          "selector": ".link-\${str}",
+          "selector": ".link-#{str}",
           "source": Object {
             "end": Object {
               "column": 22,
