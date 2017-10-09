@@ -382,7 +382,7 @@ function process(source, node, parent, input) {
             break;
         }
         case 'variable': {
-            parent.selector += `\$${node.content[0].content}`;
+            parent.selector += `\#${node.content[0].content}`;
             break;
         }
         case 'ident': {
