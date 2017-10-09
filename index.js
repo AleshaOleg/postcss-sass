@@ -382,7 +382,11 @@ function process(source, node, parent, input) {
             break;
         }
         case 'variable': {
-            parent.selector += `\#${node.content[0].content}`;
+            if (global.postcssSass.loop) {
+                parent.selector += `\$${node.content[0].content}`;
+            } else {
+                parent.selector += `\#${node.content[0].content}`;
+            }
             break;
         }
         case 'ident': {

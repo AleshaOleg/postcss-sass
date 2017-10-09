@@ -171,7 +171,7 @@ $merged: map-merge($array, $second_array)
 ",
         "between": "",
       },
-      "selector": "@each #num, #str in #merged",
+      "selector": "@each $num, $str in $merged",
       "type": "rule",
     },
   ],
