@@ -370,7 +370,7 @@ function process(source, node, parent, input) {
                 bindedProcess(contentNode, loop);
             });
             parent.nodes.push(loop);
-            global.postcssSass.before = '';
+            global.postcssSass.before = global.postcssSass.before || '';
             break;
         }
         case 'atkeyword': {
@@ -382,7 +382,7 @@ function process(source, node, parent, input) {
             break;
         }
         case 'variable': {
-            parent.selector += `\$${node.content[0].content}`;
+            parent.selector += `\#${node.content[0].content}`;
             break;
         }
         case 'ident': {
