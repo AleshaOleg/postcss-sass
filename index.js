@@ -326,8 +326,8 @@ function process(source, node, parent, input) {
                     commentType: node.type === 'singlelineComment' ? 'single' : 'multi'
                 }
             });
-
             parent.nodes.push(comment);
+            global.postcssSass.before = '';
             break;
         }
         case 'space': {
@@ -357,6 +357,7 @@ function process(source, node, parent, input) {
         }
         case 'loop': {
             const loop = postcss.rule();
+            global.postcssSass.comment = false;
             global.postcssSass.loop = true;
             loop.selector = '';
             loop.raws = {
@@ -370,6 +371,7 @@ function process(source, node, parent, input) {
                 bindedProcess(contentNode, loop);
             });
             parent.nodes.push(loop);
+            global.postcssSass.loop = false;
             global.postcssSass.before = global.postcssSass.before || '';
             break;
         }

@@ -21,7 +21,7 @@ it('getSassFromPostCssTree', function () {
 });
 
 // console.log(getCss('basic'));
-// console.log(getTreeFromSass('basic'));
+// console.log(getTreeFromSass('list1comment'));
 // console.log(getPostCssTreeFromSassTree('basic'));
 // getSassFromPostCssTree('basic').then(function (res) {
 //     console.log(res);
