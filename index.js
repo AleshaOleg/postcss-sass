@@ -343,6 +343,12 @@ function process(source, node, parent, input) {
                     commentType: node.type === 'singlelineComment' ? 'single' : 'multi'
                 }
             });
+
+            if (global.postcssSass.beforeMulti) {
+                comment.raws.before += global.postcssSass.beforeMulti;
+                global.postcssSass.beforeMulti = undefined;
+            }
+
             parent.nodes.push(comment);
             global.postcssSass.before = '';
             break;
