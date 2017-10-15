@@ -1,0 +1,244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`map2.sass 1`] = `
+Object {
+  "nodes": Array [
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "red",
+          "raws": Object {
+            "before": "
+  ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 15,
+              "line": 2,
+            },
+            "input": Input {
+              "css": "$button-colors:
+  red: #e74c3c,
+  blue: #3498db,
+  green: #2ecc71,
+
+@each $name, $color in $button-colors
+  .button-#{$name}
+    background-color: $color
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 3,
+              "line": 2,
+            },
+          },
+          "type": "decl",
+          "value": "#e74c3c,",
+        },
+        Object {
+          "prop": "blue",
+          "raws": Object {
+            "before": "
+  ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 16,
+              "line": 3,
+            },
+            "input": Input {
+              "css": "$button-colors:
+  red: #e74c3c,
+  blue: #3498db,
+  green: #2ecc71,
+
+@each $name, $color in $button-colors
+  .button-#{$name}
+    background-color: $color
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 3,
+              "line": 3,
+            },
+          },
+          "type": "decl",
+          "value": "#3498db,",
+        },
+        Object {
+          "prop": "green",
+          "raws": Object {
+            "before": "
+  ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 17,
+              "line": 4,
+            },
+            "input": Input {
+              "css": "$button-colors:
+  red: #e74c3c,
+  blue: #3498db,
+  green: #2ecc71,
+
+@each $name, $color in $button-colors
+  .button-#{$name}
+    background-color: $color
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 3,
+              "line": 4,
+            },
+          },
+          "type": "decl",
+          "value": "#2ecc71,",
+        },
+      ],
+      "raws": Object {
+        "before": "",
+        "between": "",
+      },
+      "selector": "$button-colors:",
+      "source": Object {
+        "end": Object {
+          "column": 18,
+          "line": 4,
+        },
+        "input": Input {
+          "css": "$button-colors:
+  red: #e74c3c,
+  blue: #3498db,
+  green: #2ecc71,
+
+@each $name, $color in $button-colors
+  .button-#{$name}
+    background-color: $color
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "nodes": Array [
+            Object {
+              "prop": "background-color",
+              "raws": Object {
+                "before": "
+    ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 28,
+                  "line": 8,
+                },
+                "input": Input {
+                  "css": "$button-colors:
+  red: #e74c3c,
+  blue: #3498db,
+  green: #2ecc71,
+
+@each $name, $color in $button-colors
+  .button-#{$name}
+    background-color: $color
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 5,
+                  "line": 8,
+                },
+              },
+              "type": "decl",
+              "value": "$color",
+            },
+          ],
+          "raws": Object {
+            "before": "
+  ",
+            "between": "",
+          },
+          "selector": ".button-#{name}",
+          "source": Object {
+            "end": Object {
+              "column": 29,
+              "line": 8,
+            },
+            "input": Input {
+              "css": "$button-colors:
+  red: #e74c3c,
+  blue: #3498db,
+  green: #2ecc71,
+
+@each $name, $color in $button-colors
+  .button-#{$name}
+    background-color: $color
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 3,
+              "line": 7,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": "@each $name, $color in $button-colors",
+      "type": "rule",
+    },
+  ],
+  "raws": Object {
+    "before": "",
+    "semicolon": undefined,
+  },
+  "source": Object {
+    "end": Object {
+      "column": 29,
+      "line": 8,
+    },
+    "input": Input {
+      "css": "$button-colors:
+  red: #e74c3c,
+  blue: #3498db,
+  green: #2ecc71,
+
+@each $name, $color in $button-colors
+  .button-#{$name}
+    background-color: $color
+",
+      "id": "<input css 1>",
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "root",
+}
+`;

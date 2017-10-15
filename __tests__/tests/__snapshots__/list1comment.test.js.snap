@@ -1,0 +1,725 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list1comment.sass 1`] = `
+Object {
+  "nodes": Array [
+    Object {
+      "prop": "$empty",
+      "raws": Object {
+        "before": "",
+        "between": ": ",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": Object {
+          "column": 10,
+          "line": 1,
+        },
+        "input": Input {
+          "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "type": "decl",
+      "value": "()",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "nodes": Array [
+            Object {
+              "prop": "content",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 20,
+                  "line": 5,
+                },
+                "input": Input {
+                  "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 5,
+                },
+              },
+              "type": "decl",
+              "value": "$el",
+            },
+          ],
+          "raws": Object {
+            "before": "
+    ",
+            "between": "",
+          },
+          "selector": ".el-#{el}",
+          "source": Object {
+            "end": Object {
+              "column": 21,
+              "line": 5,
+            },
+            "input": Input {
+              "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 4,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": "@each $el in $empty",
+      "type": "rule",
+    },
+    Object {
+      "prop": "$list-space",
+      "raws": Object {
+        "before": "
+
+",
+        "between": ": ",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": Object {
+          "column": 24,
+          "line": 7,
+        },
+        "input": Input {
+          "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 7,
+        },
+      },
+      "type": "decl",
+      "value": "\\"1\\" \\"2\\" \\"3\\"",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "nodes": Array [
+            Object {
+              "prop": "content",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 20,
+                  "line": 11,
+                },
+                "input": Input {
+                  "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 11,
+                },
+              },
+              "type": "decl",
+              "value": "$el",
+            },
+          ],
+          "raws": Object {
+            "before": "
+    ",
+            "between": "",
+          },
+          "selector": ".el-#{el}",
+          "source": Object {
+            "end": Object {
+              "column": 21,
+              "line": 11,
+            },
+            "input": Input {
+              "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 10,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": "@each $el in $list-space",
+      "type": "rule",
+    },
+    Object {
+      "prop": "$list-comma",
+      "raws": Object {
+        "before": "
+
+",
+        "between": ": ",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": Object {
+          "column": 28,
+          "line": 13,
+        },
+        "input": Input {
+          "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 13,
+        },
+      },
+      "type": "decl",
+      "value": "(\\"4\\", \\"5\\", \\"6\\")",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "nodes": Array [
+            Object {
+              "prop": "content",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 20,
+                  "line": 17,
+                },
+                "input": Input {
+                  "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 17,
+                },
+              },
+              "type": "decl",
+              "value": "$el",
+            },
+          ],
+          "raws": Object {
+            "before": "
+    ",
+            "between": "",
+          },
+          "selector": ".el-#{el}",
+          "source": Object {
+            "end": Object {
+              "column": 21,
+              "line": 17,
+            },
+            "input": Input {
+              "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 16,
+            },
+          },
+          "type": "rule",
+        },
+        Object {
+          "raws": Object {
+            "before": "
+        
+",
+            "commentType": "single",
+            "left": " ",
+            "right": "",
+          },
+          "text": "Comment",
+          "type": "comment",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": "@each $el in $list-comma",
+      "type": "rule",
+    },
+    Object {
+      "prop": "$list-2-dim",
+      "raws": Object {
+        "before": "
+
+",
+        "between": ": ",
+        "semicolon": false,
+      },
+      "source": Object {
+        "end": Object {
+          "column": 27,
+          "line": 20,
+        },
+        "input": Input {
+          "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 20,
+        },
+      },
+      "type": "decl",
+      "value": "((7 8) (9 10))",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "nodes": Array [
+            Object {
+              "nodes": Array [
+                Object {
+                  "prop": "content",
+                  "raws": Object {
+                    "before": "
+            ",
+                    "between": ": ",
+                    "semicolon": false,
+                  },
+                  "source": Object {
+                    "end": Object {
+                      "column": 25,
+                      "line": 25,
+                    },
+                    "input": Input {
+                      "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+                      "id": "<input css 1>",
+                    },
+                    "start": Object {
+                      "column": 13,
+                      "line": 25,
+                    },
+                  },
+                  "type": "decl",
+                  "value": "$el2",
+                },
+              ],
+              "raws": Object {
+                "before": "
+        ",
+                "between": "",
+              },
+              "selector": ".el-#{el2}",
+              "source": Object {
+                "end": Object {
+                  "column": 26,
+                  "line": 25,
+                },
+                "input": Input {
+                  "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 24,
+                },
+              },
+              "type": "rule",
+            },
+          ],
+          "raws": Object {
+            "before": "
+    ",
+            "between": "",
+          },
+          "selector": "@each $el2 in $el",
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": "@each $el in $list-2-dim",
+      "type": "rule",
+    },
+  ],
+  "raws": Object {
+    "before": "",
+    "semicolon": undefined,
+  },
+  "source": Object {
+    "end": Object {
+      "column": 26,
+      "line": 25,
+    },
+    "input": Input {
+      "css": "$empty: ()
+
+@each $el in $empty
+    .el-#{$el}
+        content: $el
+
+$list-space: \\"1\\" \\"2\\" \\"3\\"
+
+@each $el in $list-space
+    .el-#{$el}
+        content: $el
+
+$list-comma: (\\"4\\", \\"5\\", \\"6\\")
+
+@each $el in $list-comma
+    .el-#{$el}
+        content: $el
+        
+// Comment
+$list-2-dim: ((7 8) (9 10))
+
+@each $el in $list-2-dim
+    @each $el2 in $el
+        .el-#{$el2}
+            content: $el2
+",
+      "id": "<input css 1>",
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "root",
+}
+`;

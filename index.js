@@ -56,6 +56,7 @@ function process(source, node, parent, input) {
             // Define new selector
             let selector = '';
             global.postcssSass.multiRuleProp = '';
+
             node.content.forEach(contentNode => {
                 switch (contentNode.type) {
                     case 'block': {
@@ -107,9 +108,15 @@ function process(source, node, parent, input) {
                                             if (classContentNode.content.constructor !== Array ) {
                                                 selector += classContentNode.content;
                                             } else {
-                                                classContentNode.content.forEach((interpolationContentNode) => {
-                                                    selector += `\#{${interpolationContentNode.content}}`;
-                                                });
+                                                switch (classContentNode.type) {
+                                                    case 'interpolation': {
+                                                        classContentNode.content.forEach((interpolationContentNode) => {
+                                                            selector += `\#{${interpolationContentNode.content}}`;
+                                                        });
+                                                        break;
+                                                    }
+                                                    default:
+                                                }
                                             }
                                         });
                                     }
@@ -143,6 +150,9 @@ function process(source, node, parent, input) {
         case 'block': {
             // If nested rules exist, wrap current rule in new rule node
             if (global.postcssSass.multiRule) {
+                if (global.postcssSass.multiRulePropVariable) {
+                    global.postcssSass.multiRuleProp = `\$${global.postcssSass.multiRuleProp}`;
+                }
                 const multiRule = Object.assign(postcss.rule(), {
                     source: {
                         start: {
@@ -152,12 +162,12 @@ function process(source, node, parent, input) {
                         end: node.end,
                         input: input
                     },
-                    parent,
-                    selector: global.postcssSass.multiRuleProp,
                     raws: {
                         before: global.postcssSass.before || DEFAULT_RAWS_RULE.before,
                         between: DEFAULT_RAWS_RULE.between
-                    }
+                    },
+                    parent,
+                    selector: global.postcssSass.multiRuleProp
                 });
                 parent.push(multiRule);
                 parent = multiRule;
@@ -167,6 +177,9 @@ function process(source, node, parent, input) {
 
             // Looking for declaration node in block node
             node.content.forEach(contentNode => bindedProcess(contentNode));
+            if (global.postcssSass.multiRule) {
+                global.postcssSass.beforeMulti = global.postcssSass.before;
+            }
             break;
         }
         case 'declaration': {
@@ -174,6 +187,7 @@ function process(source, node, parent, input) {
             // Create Declaration node
             const declarationNode = postcss.decl();
             declarationNode.prop = '';
+
             // Object to store raws for Declaration
             const declarationRaws = {
                 before: global.postcssSass.before || DEFAULT_RAWS_DECL.before,
@@ -191,6 +205,7 @@ function process(source, node, parent, input) {
                         /* global.property to detect is property is already defined in current object */
                         global.postcssSass.property = true;
                         global.postcssSass.multiRuleProp = contentNode.content[0].content;
+                        global.postcssSass.multiRulePropVariable = contentNode.content[0].type === 'variable';
                         bindedProcess(contentNode, declarationNode);
                         break;
                     }
@@ -256,8 +271,6 @@ function process(source, node, parent, input) {
                 }
             });
 
-            global.postcssSass.before = '';
-
             if (!isBlockInside) {
                 // Set parameters for Declaration node
                 declarationNode.source = {
@@ -269,6 +282,10 @@ function process(source, node, parent, input) {
                 declarationNode.raws = declarationRaws;
                 parent.nodes.push(declarationNode);
             }
+
+            global.postcssSass.before = '';
+            global.postcssSass.multiRuleProp = '';
+            global.postcssSass.property = false;
             break;
         }
         case 'property': {
@@ -358,12 +375,17 @@ function process(source, node, parent, input) {
         case 'loop': {
             const loop = postcss.rule();
             global.postcssSass.comment = false;
+            global.postcssSass.multiRule = false;
             global.postcssSass.loop = true;
             loop.selector = '';
             loop.raws = {
                 before: global.postcssSass.before || DEFAULT_RAWS_RULE.before,
                 between: DEFAULT_RAWS_RULE.between
             };
+            if (global.postcssSass.beforeMulti) {
+                loop.raws.before += global.postcssSass.beforeMulti;
+                global.postcssSass.beforeMulti = undefined;
+            }
             node.content.forEach((contentNode, i) => {
                 if (node.content[i + 1] && node.content[i + 1].type === 'block') {
                     global.postcssSass.loop = false;
@@ -372,7 +394,6 @@ function process(source, node, parent, input) {
             });
             parent.nodes.push(loop);
             global.postcssSass.loop = false;
-            global.postcssSass.before = global.postcssSass.before || '';
             break;
         }
         case 'atkeyword': {
