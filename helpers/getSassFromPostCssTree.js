@@ -1,7 +1,6 @@
 var fs = require('fs');
 var postcss = require('postcss');
 var postcssSass = require('../');
-var stringify = require('../stringify');
 
 module.exports = function (fileName) {
     var source = fs.readFileSync(
@@ -12,8 +11,7 @@ module.exports = function (fileName) {
     return postcss().process(
         source,
         {
-            parser: postcssSass,
-            stringifier: stringify
+            syntax: postcssSass
         }).then(function (result) {
         return result.content; // Sass with transformations
     });
