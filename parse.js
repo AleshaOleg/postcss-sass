@@ -428,10 +428,17 @@ function process(source, node, parent, input) {
 }
 
 module.exports = function sassToPostCssTree(source, opts) {
-    const data = {
-        node: gonzales.parse(source.toString('utf8'), { syntax: 'sass' }),
-        input: new Input(source, opts),
-        parent: null
-    };
-    return process(source, data.node, data.parent, data.input);
+    const input = new Input(source, opts);
+    let node;
+    try {
+        node = gonzales.parse(source.toString('utf8'), { syntax: 'sass' });
+    } catch (ex) {
+        if (ex.name === 'Parsing error') {
+            throw input.error(ex.message, ex.line, 1);
+        } else {
+            throw ex;
+        }
+    }
+
+    return process(source, node, null, input);
 };
