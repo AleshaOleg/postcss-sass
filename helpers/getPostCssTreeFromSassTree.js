@@ -6,5 +6,5 @@ module.exports = function (fileName) {
         './__tests__/sass/' + fileName + '.sass',
         'utf-8'
     );
-    return sassToPostCss(source);
+    return sassToPostCss.parse(source);
 };

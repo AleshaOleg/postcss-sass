@@ -14,7 +14,7 @@ it('parse Sass as postcss syntax', function () {
     expect(typeof postcss()
         .process(
             'div\n  a\n    color: red\n  li\n    color: green',
-            { parser: postcssSass }
+            { syntax: postcssSass }
         ).root)
         .toBe('object');
 });
