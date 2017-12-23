@@ -1,8 +1,8 @@
-var getCss = require('../helpers/getCss');
-var getTreeFromSass = require('../helpers/getTreeFromSass');
-var getPostCssTreeFromSassTree =
+const getCss = require('../helpers/getCss');
+const getTreeFromSass = require('../helpers/getTreeFromSass');
+const getPostCssTreeFromSassTree =
     require('../helpers/getPostCssTreeFromSassTree');
-var getSassFromPostCssTree = require('../helpers/getSassFromPostCssTree');
+const getSassFromPostCssTree = require('../helpers/getSassFromPostCssTree');
 
 it('getCss', function () {
     expect(typeof getCss).toBe('function');

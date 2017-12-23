@@ -1,6 +1,6 @@
-var Stringifier = require('postcss/lib/stringifier');
+const Stringifier = require('postcss/lib/stringifier');
 
-var SassStringifier = function (builder) {
+const SassStringifier = function (builder) {
     Stringifier.call(this, builder);
 };
 
@@ -18,7 +18,7 @@ SassStringifier.prototype.has = function has(value) {
 };
 
 SassStringifier.prototype.block = function (node, start) {
-    var between = node.raws.sssBetween || '';
+    const between = node.raws.sssBetween || '';
     this.builder(start + between, node, 'start');
     if (this.has(node.nodes)) {
         this.body(node);
@@ -26,8 +26,8 @@ SassStringifier.prototype.block = function (node, start) {
 };
 
 SassStringifier.prototype.decl = function (node) {
-    var between = node.raws.between || DEFAULT_RAW.colon;
-    var string  = node.prop + between + this.rawValue(node, 'value');
+    const between = node.raws.between || DEFAULT_RAW.colon;
+    const string  = node.prop + between + this.rawValue(node, 'value');
     if (node.important) {
         string += '!important';
     }
@@ -35,9 +35,9 @@ SassStringifier.prototype.decl = function (node) {
 };
 
 SassStringifier.prototype.comment = function (node) {
-    var left  = this.has(node.raws.left) ?
+    const left  = this.has(node.raws.left) ?
         node.raws.left : DEFAULT_RAW.commentLeft;
-    var right = this.has(node.raws.right) ?
+    const right = this.has(node.raws.right) ?
         node.raws.right : DEFAULT_RAW.commentRight;
 
     if (node.raws.commentType === 'single') {

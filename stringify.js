@@ -1,4 +1,4 @@
-var Stringifier = require('./stringifier');
+const Stringifier = require('./stringifier');
 
 module.exports = function stringify(node, builder) {
     var str = new Stringifier(builder);

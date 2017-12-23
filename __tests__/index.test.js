@@ -1,6 +1,6 @@
-var postcss = require('postcss');
-var gonzales = require('gonzales-pe');
-var postcssSass = require('../');
+const postcss = require('postcss');
+const gonzales = require('gonzales-pe');
+const postcssSass = require('../');
 
 it('PostCSS dependency', function () {
     expect(typeof postcss).toBe('function');
@@ -18,4 +18,3 @@ it('parse Sass as postcss syntax', function () {
         ).root)
         .toBe('object');
 });
-

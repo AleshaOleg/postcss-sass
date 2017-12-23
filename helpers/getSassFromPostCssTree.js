@@ -1,9 +1,9 @@
-var fs = require('fs');
-var postcss = require('postcss');
-var postcssSass = require('../');
+const fs = require('fs');
+const postcss = require('postcss');
+const postcssSass = require('../');
 
 module.exports = function (fileName) {
-    var source = fs.readFileSync(
+    const source = fs.readFileSync(
         './__tests__/sass/' + fileName + '.sass',
         'utf-8'
     );
@@ -16,4 +16,3 @@ module.exports = function (fileName) {
         return result.content; // Sass with transformations
     });
 };
-

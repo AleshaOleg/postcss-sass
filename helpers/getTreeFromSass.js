@@ -1,8 +1,8 @@
-var fs = require('fs');
-var gonzales = require('gonzales-pe');
+const fs = require('fs');
+const gonzales = require('gonzales-pe');
 
 module.exports = function (fileName) {
-    var source = fs.readFileSync(
+    const source = fs.readFileSync(
         './__tests__/sass/' + fileName + '.sass',
         'utf-8'
     );

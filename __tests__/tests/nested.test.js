@@ -1,4 +1,4 @@
-var getPostCssTreeFromSass = require('../../helpers/getPostCssTreeFromSassTree');
+const getPostCssTreeFromSass = require('../../helpers/getPostCssTreeFromSassTree');
 
 it('nested.sass', function () {
     expect(getPostCssTreeFromSass('nested')).toMatchSnapshot();
