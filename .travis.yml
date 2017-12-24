@@ -6,7 +6,6 @@ node_js:
 notifications:
   email:
     - olegaleshkin@gmail.com
-    - me@aleshaoleg.me
   on_success: never
   on_failure: always
 after_success: 'npm run coveralls'
