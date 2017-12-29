@@ -52,7 +52,6 @@ function process(
         return root;
     } else if (node.type === 'ruleset') {
         // Loop to find the deepest ruleset node
-        var pseudoClassFirst = false;
         // Define new selector
         var selector = '';
         global.postcssSass.multiRuleProp = '';
@@ -105,6 +104,7 @@ function process(
                 }
             } else if (node.content[rContent].type === 'selector') {
                 // Creates selector for rule
+                if (rContent) selector += ', ';
                 for (
                     var sCurrentContent = 0;
                     sCurrentContent < node.content[rContent].length;
@@ -116,18 +116,6 @@ function process(
                     } else if (node.content[rContent]
                         .content[sCurrentContent].type === 'class') {
                         selector += '.';
-                    } else if (node.content[rContent]
-                        .content[sCurrentContent].type === 'typeSelector') {
-                        if (node.content[rContent]
-                            .content[sCurrentContent + 1] &&
-                            node.content[rContent]
-                                .content[sCurrentContent + 1]
-                                .type === 'pseudoClass' &&
-                            pseudoClassFirst) {
-                            selector += ', ';
-                        } else {
-                            pseudoClassFirst = true;
-                        }
                     } else if (node.content[rContent]
                         .content[sCurrentContent].type === 'pseudoClass') {
                         selector += ':';
