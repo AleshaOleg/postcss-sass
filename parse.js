@@ -49,7 +49,6 @@ function process(node, parent, input, globalPostcssSass) {
         }
         case 'ruleset': {
             // Loop to find the deepest ruleset node
-            let pseudoClassFirst = false;
             // Define new selector
             let selector = '';
             globalPostcssSass.multiRuleProp = '';
@@ -92,7 +91,7 @@ function process(node, parent, input, globalPostcssSass) {
                     }
                     case 'selector': {
                         // Creates selector for rule
-                        contentNode.content.forEach((innerContentNode, i, nodes) => {
+                        contentNode.content.forEach(innerContentNode => {
                             switch (innerContentNode.type) {
                                 case 'id': {
                                     selector += '#';
@@ -119,14 +118,6 @@ function process(node, parent, input, globalPostcssSass) {
                                     }
                                     break;
                                 }
-                                case 'typeSelector': {
-                                    if (pseudoClassFirst && nodes[i + 1] && nodes[i + 1].type === 'pseudoClass') {
-                                        selector += ', ';
-                                    } else {
-                                        pseudoClassFirst = true;
-                                    }
-                                    break;
-                                }
                                 case 'pseudoClass': {
                                     selector += ':';
                                     break;
@@ -137,6 +128,10 @@ function process(node, parent, input, globalPostcssSass) {
                                 selector += innerContentNode.content;
                             }
                         });
+                        break;
+                    }
+                    case 'delimiter': {
+                        selector += ', ';
                         break;
                     }
                     default:
