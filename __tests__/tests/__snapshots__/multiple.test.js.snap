@@ -37,6 +37,13 @@ Object {
 .a,
 .b
     color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
 ",
               "id": "<input css 1>",
             },
@@ -77,6 +84,13 @@ Object {
 
 .a,
 .b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
     color: red
 ",
           "id": "<input css 1>",
@@ -122,6 +136,13 @@ Object {
 .a,
 .b
     color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
 ",
               "id": "<input css 1>",
             },
@@ -140,7 +161,7 @@ Object {
 ",
         "between": "",
       },
-      "selector": ".a, .b",
+      "selector": ".a,.b",
       "source": Object {
         "end": Object {
           "column": 15,
@@ -164,6 +185,13 @@ Object {
 
 .a,
 .b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
     color: red
 ",
           "id": "<input css 1>",
@@ -209,6 +237,13 @@ Object {
 .a,
 .b
     color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
 ",
               "id": "<input css 1>",
             },
@@ -251,6 +286,13 @@ Object {
 
 .a,
 .b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
     color: red
 ",
           "id": "<input css 1>",
@@ -296,6 +338,13 @@ Object {
 .a,
 .b
     color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
 ",
               "id": "<input css 1>",
             },
@@ -338,6 +387,13 @@ Object {
 
 .a,
 .b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
     color: red
 ",
           "id": "<input css 1>",
@@ -383,6 +439,13 @@ Object {
 .a,
 .b
     color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
 ",
               "id": "<input css 1>",
             },
@@ -425,6 +488,13 @@ Object {
 
 .a,
 .b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
     color: red
 ",
           "id": "<input css 1>",
@@ -470,6 +540,13 @@ Object {
 .a,
 .b
     color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
 ",
               "id": "<input css 1>",
             },
@@ -488,7 +565,8 @@ Object {
 ",
         "between": "",
       },
-      "selector": ".a, .b",
+      "selector": ".a,
+.b",
       "source": Object {
         "end": Object {
           "column": 15,
@@ -513,12 +591,271 @@ Object {
 .a,
 .b
     color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
 ",
           "id": "<input css 1>",
         },
         "start": Object {
           "column": 1,
           "line": 16,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "nodes": Array [
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 18,
+                  "line": 22,
+                },
+                "input": Input {
+                  "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 22,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+          ],
+          "raws": Object {
+            "before": "
+    ",
+            "between": "",
+          },
+          "selector": ".a, .b",
+          "source": Object {
+            "end": Object {
+              "column": 19,
+              "line": 22,
+            },
+            "input": Input {
+              "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 21,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": ".container",
+      "source": Object {
+        "end": Object {
+          "column": 1,
+          "line": 23,
+        },
+        "input": Input {
+          "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 20,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 25,
+            },
+            "input": Input {
+              "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 25,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": ".a:not(.b) + .b",
+      "source": Object {
+        "end": Object {
+          "column": 15,
+          "line": 25,
+        },
+        "input": Input {
+          "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 24,
         },
       },
       "type": "rule",
@@ -531,7 +868,7 @@ Object {
   "source": Object {
     "end": Object {
       "column": 15,
-      "line": 18,
+      "line": 25,
     },
     "input": Input {
       "css": ".a, .b
@@ -551,6 +888,13 @@ Object {
 
 .a,
 .b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
     color: red
 ",
       "id": "<input css 1>",
