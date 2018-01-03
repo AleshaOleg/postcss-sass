@@ -31,7 +31,8 @@
   },
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "test": "jest --coverage && eslint *.js",
+    "pretest": "eslint *.js __tests__ helpers",
+    "test": "jest --coverage",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
@@ -39,9 +40,6 @@
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss/es5",
-    "env": {
-      "jest": true
-    },
     "rules": {
       "indent": [
         "error",
@@ -55,7 +53,17 @@
         "error",
         120
       ]
-    }
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/**/*"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
   },
   "pre-commit": [
     "test",
