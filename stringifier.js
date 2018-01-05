@@ -26,10 +26,10 @@ SassStringifier.prototype.block = function (node, start) {
 };
 
 SassStringifier.prototype.decl = function (node) {
-    const between = node.raws.between || DEFAULT_RAW.colon;
-    const string  = node.prop + between + this.rawValue(node, 'value');
+    const between = this.raw(node, 'between', 'colon');
+    let string = node.prop + between + this.rawValue(node, 'value');
     if (node.important) {
-        string += '!important';
+        string += node.raws.important || ' !important';
     }
     this.builder(string, node);
 };
