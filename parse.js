@@ -186,11 +186,11 @@ function process(node, parent, input, globalPostcssSass) {
             declarationNode.prop = '';
 
             // Object to store raws for Declaration
-            const declarationRaws = {
+            const declarationRaws = Object.assign(declarationNode.raws, {
                 before: globalPostcssSass.before || DEFAULT_RAWS_DECL.before,
                 between: DEFAULT_RAWS_DECL.between,
                 semicolon: DEFAULT_RAWS_DECL.semicolon
-            };
+            });
 
             globalPostcssSass.property = false;
             globalPostcssSass.betweenBefore = false;
@@ -276,7 +276,6 @@ function process(node, parent, input, globalPostcssSass) {
                     input: input
                 };
                 declarationNode.parent = parent;
-                declarationNode.raws = declarationRaws;
                 parent.nodes.push(declarationNode);
             }
 
@@ -302,7 +301,13 @@ function process(node, parent, input, globalPostcssSass) {
                 node.content.forEach(contentNode => {
                     switch (contentNode.type) {
                         case 'important': {
+                            parent.raws.important = contentNode.content;
                             parent.important = true;
+                            const match = parent.value.match(/^(.*?)(\s*)$/);
+                            if (match) {
+                                parent.raws.important = match[2] + parent.raws.important;
+                                parent.value = match[1];
+                            }
                             break;
                         }
                         case 'parentheses': {

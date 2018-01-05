@@ -12,6 +12,7 @@ Object {
             "before": "
     ",
             "between": ": ",
+            "important": " !important",
             "semicolon": false,
           },
           "source": Object {
@@ -34,7 +35,7 @@ Object {
             },
           },
           "type": "decl",
-          "value": "red ",
+          "value": "red",
         },
         Object {
           "nodes": Array [
@@ -45,6 +46,7 @@ Object {
                 "before": "
         ",
                 "between": ": ",
+                "important": " !important",
                 "semicolon": false,
               },
               "source": Object {
@@ -67,7 +69,7 @@ Object {
                 },
               },
               "type": "decl",
-              "value": "none ",
+              "value": "none",
             },
             Object {
               "prop": "color",
