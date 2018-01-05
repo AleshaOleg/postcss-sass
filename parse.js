@@ -23,10 +23,38 @@ const DEFAULT_COMMENT_DECL = {
     right: ''
 };
 
+function extractNodeSource(lines, node) {
+    if (typeof node.content === 'string') {
+        return node.content;
+    }
+
+    const nodeLines = lines.slice(
+        node.start.line - 1,
+        node.end.line
+    );
+
+    // Adjust first and last columns
+    if (nodeLines.length === 1) {
+        // single line node
+        nodeLines[0] = nodeLines[0].substring(
+            node.start.column - 1,
+            node.end.column
+        );
+    } else {
+        // multi line node
+        nodeLines[0] = nodeLines[0].substring(node.start.column - 1);
+        nodeLines[nodeLines.length - 1] =
+            nodeLines[nodeLines.length - 1].substring(0, node.end.column);
+    }
+    return nodeLines.join('\n');
+}
+
 function process(node, parent, input, globalPostcssSass) {
     function bindedProcess(innerNode, innerParent = parent) {
         return process(innerNode, innerParent, input, globalPostcssSass);
     }
+
+    const lines = input.css.split('\n');
 
     switch (node.type) {
         case 'stylesheet': {
@@ -49,7 +77,6 @@ function process(node, parent, input, globalPostcssSass) {
         }
         case 'ruleset': {
             // Loop to find the deepest ruleset node
-            let pseudoClassFirst = false;
             // Define new selector
             let selector = '';
             globalPostcssSass.multiRuleProp = '';
@@ -77,7 +104,7 @@ function process(node, parent, input, globalPostcssSass) {
 
                         if (rule.nodes.length !== 0) {
                             // Write selector to Rule, and remove last whitespace
-                            rule.selector = selector;
+                            rule.selector = selector.trim();
                             // Set parameters for Rule node
                             rule.parent = parent;
                             rule.source = {
@@ -90,53 +117,10 @@ function process(node, parent, input, globalPostcssSass) {
                         }
                         break;
                     }
+                    case 'delimiter':
+                    case 'space':
                     case 'selector': {
-                        // Creates selector for rule
-                        contentNode.content.forEach((innerContentNode, i, nodes) => {
-                            switch (innerContentNode.type) {
-                                case 'id': {
-                                    selector += '#';
-                                    break;
-                                }
-                                case 'class': {
-                                    selector += '.';
-                                    if (innerContentNode.content.length > 1) {
-                                        innerContentNode.content.forEach((classContentNode) => {
-                                            if (classContentNode.content.constructor !== Array ) {
-                                                selector += classContentNode.content;
-                                            } else {
-                                                switch (classContentNode.type) {
-                                                    case 'interpolation': {
-                                                        classContentNode.content.forEach((interpolationContentNode) => {
-                                                            selector += `\#{${interpolationContentNode.content}}`;
-                                                        });
-                                                        break;
-                                                    }
-                                                    default:
-                                                }
-                                            }
-                                        });
-                                    }
-                                    break;
-                                }
-                                case 'typeSelector': {
-                                    if (pseudoClassFirst && nodes[i + 1] && nodes[i + 1].type === 'pseudoClass') {
-                                        selector += ', ';
-                                    } else {
-                                        pseudoClassFirst = true;
-                                    }
-                                    break;
-                                }
-                                case 'pseudoClass': {
-                                    selector += ':';
-                                    break;
-                                }
-                                default:
-                            }
-                            if (innerContentNode.content.length === 1) {
-                                selector += innerContentNode.content;
-                            }
-                        });
+                        selector += extractNodeSource(lines, contentNode);
                         break;
                     }
                     default:

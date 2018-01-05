@@ -1,0 +1,909 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`multiple.sass 1`] = `
+Object {
+  "nodes": Array [
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 2,
+            },
+            "input": Input {
+              "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 2,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+      ],
+      "raws": Object {
+        "before": "",
+        "between": "",
+      },
+      "selector": ".a, .b",
+      "source": Object {
+        "end": Object {
+          "column": 15,
+          "line": 2,
+        },
+        "input": Input {
+          "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 1,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 5,
+            },
+            "input": Input {
+              "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 5,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": ".a,.b",
+      "source": Object {
+        "end": Object {
+          "column": 15,
+          "line": 5,
+        },
+        "input": Input {
+          "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 4,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 8,
+            },
+            "input": Input {
+              "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 8,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": ".a .b",
+      "source": Object {
+        "end": Object {
+          "column": 15,
+          "line": 8,
+        },
+        "input": Input {
+          "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 7,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 11,
+            },
+            "input": Input {
+              "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 11,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": ".a + .b",
+      "source": Object {
+        "end": Object {
+          "column": 15,
+          "line": 11,
+        },
+        "input": Input {
+          "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 10,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 14,
+            },
+            "input": Input {
+              "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 14,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": ".a.b",
+      "source": Object {
+        "end": Object {
+          "column": 15,
+          "line": 14,
+        },
+        "input": Input {
+          "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 13,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 18,
+            },
+            "input": Input {
+              "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 18,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": ".a,
+.b",
+      "source": Object {
+        "end": Object {
+          "column": 15,
+          "line": 18,
+        },
+        "input": Input {
+          "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 16,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "nodes": Array [
+            Object {
+              "prop": "color",
+              "raws": Object {
+                "before": "
+        ",
+                "between": ": ",
+                "semicolon": false,
+              },
+              "source": Object {
+                "end": Object {
+                  "column": 18,
+                  "line": 22,
+                },
+                "input": Input {
+                  "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+                  "id": "<input css 1>",
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 22,
+                },
+              },
+              "type": "decl",
+              "value": "red",
+            },
+          ],
+          "raws": Object {
+            "before": "
+    ",
+            "between": "",
+          },
+          "selector": ".a, .b",
+          "source": Object {
+            "end": Object {
+              "column": 19,
+              "line": 22,
+            },
+            "input": Input {
+              "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 21,
+            },
+          },
+          "type": "rule",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": ".container",
+      "source": Object {
+        "end": Object {
+          "column": 1,
+          "line": 23,
+        },
+        "input": Input {
+          "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 20,
+        },
+      },
+      "type": "rule",
+    },
+    Object {
+      "nodes": Array [
+        Object {
+          "prop": "color",
+          "raws": Object {
+            "before": "
+    ",
+            "between": ": ",
+            "semicolon": false,
+          },
+          "source": Object {
+            "end": Object {
+              "column": 14,
+              "line": 25,
+            },
+            "input": Input {
+              "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+              "id": "<input css 1>",
+            },
+            "start": Object {
+              "column": 5,
+              "line": 25,
+            },
+          },
+          "type": "decl",
+          "value": "red",
+        },
+      ],
+      "raws": Object {
+        "before": "
+
+",
+        "between": "",
+      },
+      "selector": ".a:not(.b) + .b",
+      "source": Object {
+        "end": Object {
+          "column": 15,
+          "line": 25,
+        },
+        "input": Input {
+          "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+          "id": "<input css 1>",
+        },
+        "start": Object {
+          "column": 1,
+          "line": 24,
+        },
+      },
+      "type": "rule",
+    },
+  ],
+  "raws": Object {
+    "before": "",
+    "semicolon": undefined,
+  },
+  "source": Object {
+    "end": Object {
+      "column": 15,
+      "line": 25,
+    },
+    "input": Input {
+      "css": ".a, .b
+    color: red
+
+.a,.b
+    color: red
+
+.a .b
+    color: red
+
+.a + .b
+    color: red
+
+.a.b
+    color: red
+
+.a,
+.b
+    color: red
+
+.container
+    .a, .b
+        color: red
+
+.a:not(.b) + .b
+    color: red
+",
+      "id": "<input css 1>",
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+    },
+  },
+  "type": "root",
+}
+`;
