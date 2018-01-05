@@ -27,6 +27,7 @@
     "istanbul": "^0.4.5",
     "jest": "^22.0.4",
     "lint-staged": "^6.0.0",
+    "postcss-parser-tests": "^6.1.0",
     "pre-commit": "^1.2.2"
   },
   "scripts": {

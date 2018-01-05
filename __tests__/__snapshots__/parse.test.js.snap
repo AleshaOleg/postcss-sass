@@ -1,0 +1,2981 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parses alt.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  :\\",
+            \\"between\\": \\"  \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"float\\",
+          \\"value\\": \\"left\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 2,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 2,
+              \\"column\\": 14
+            },
+            \\"input\\": {
+              \\"file\\": \\"alt.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  :\\",
+            \\"between\\": \\"  \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"width\\",
+          \\"value\\": \\"274px\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 3,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 3,
+              \\"column\\": 15
+            },
+            \\"input\\": {
+              \\"file\\": \\"alt.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"height\\",
+          \\"value\\": \\"75px\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 4,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 4,
+              \\"column\\": 14
+            },
+            \\"input\\": {
+              \\"file\\": \\"alt.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"margin\\",
+          \\"value\\": \\"0\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 5,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 5,
+              \\"column\\": 11
+            },
+            \\"input\\": {
+              \\"file\\": \\"alt.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n    \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"repeat\\",
+              \\"value\\": \\"no-repeat\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 7,
+                  \\"column\\": 5
+                },
+                \\"end\\": {
+                  \\"line\\": 7,
+                  \\"column\\": 21
+                },
+                \\"input\\": {
+                  \\"file\\": \\"alt.sass\\"
+                }
+              }
+            },
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n    :\\",
+                \\"between\\": \\" \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"image\\",
+              \\"value\\": \\"none\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 8,
+                  \\"column\\": 5
+                },
+                \\"end\\": {
+                  \\"line\\": 8,
+                  \\"column\\": 15
+                },
+                \\"input\\": {
+                  \\"file\\": \\"alt.sass\\"
+                }
+              }
+            }
+          ],
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 6,
+              \\"column\\": 1
+            },
+            \\"end\\": {
+              \\"line\\": 8,
+              \\"column\\": 16
+            },
+            \\"input\\": {
+              \\"file\\": \\"alt.sass\\"
+            }
+          },
+          \\"selector\\": \\"background:\\"
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\",
+                \\"between\\": \\"\\"
+              },
+              \\"type\\": \\"rule\\",
+              \\"nodes\\": [
+                {
+                  \\"raws\\": {
+                    \\"before\\": \\"\\\\n    \\",
+                    \\"between\\": \\": \\",
+                    \\"semicolon\\": false
+                  },
+                  \\"type\\": \\"decl\\",
+                  \\"prop\\": \\"color\\",
+                  \\"value\\": \\"green\\",
+                  \\"source\\": {
+                    \\"start\\": {
+                      \\"line\\": 10,
+                      \\"column\\": 5
+                    },
+                    \\"end\\": {
+                      \\"line\\": 10,
+                      \\"column\\": 16
+                    },
+                    \\"input\\": {
+                      \\"file\\": \\"alt.sass\\"
+                    }
+                  }
+                }
+              ],
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 9,
+                  \\"column\\": 1
+                },
+                \\"end\\": {
+                  \\"line\\": 10,
+                  \\"column\\": 17
+                },
+                \\"input\\": {
+                  \\"file\\": \\"alt.sass\\"
+                }
+              },
+              \\"selector\\": \\"\\"
+            }
+          ],
+          \\"selector\\": \\"a:hover, a:visited\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 9,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 10,
+              \\"column\\": 17
+            },
+            \\"input\\": {
+              \\"file\\": \\"alt.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\",
+                \\"between\\": \\"\\"
+              },
+              \\"type\\": \\"rule\\",
+              \\"nodes\\": [
+                {
+                  \\"raws\\": {
+                    \\"before\\": \\"\\\\n    \\",
+                    \\"between\\": \\": \\",
+                    \\"semicolon\\": false
+                  },
+                  \\"type\\": \\"decl\\",
+                  \\"prop\\": \\"color\\",
+                  \\"value\\": \\"red\\",
+                  \\"source\\": {
+                    \\"start\\": {
+                      \\"line\\": 12,
+                      \\"column\\": 5
+                    },
+                    \\"end\\": {
+                      \\"line\\": 12,
+                      \\"column\\": 14
+                    },
+                    \\"input\\": {
+                      \\"file\\": \\"alt.sass\\"
+                    }
+                  }
+                },
+                {
+                  \\"raws\\": {
+                    \\"before\\": \\"\\\\n    :\\",
+                    \\"between\\": \\" \\",
+                    \\"semicolon\\": false
+                  },
+                  \\"type\\": \\"decl\\",
+                  \\"prop\\": \\"background-color\\",
+                  \\"value\\": \\"green\\",
+                  \\"source\\": {
+                    \\"start\\": {
+                      \\"line\\": 13,
+                      \\"column\\": 5
+                    },
+                    \\"end\\": {
+                      \\"line\\": 13,
+                      \\"column\\": 27
+                    },
+                    \\"input\\": {
+                      \\"file\\": \\"alt.sass\\"
+                    }
+                  }
+                }
+              ],
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 11,
+                  \\"column\\": 1
+                },
+                \\"end\\": {
+                  \\"line\\": 13,
+                  \\"column\\": 28
+                },
+                \\"input\\": {
+                  \\"file\\": \\"alt.sass\\"
+                }
+              },
+              \\"selector\\": \\"\\"
+            }
+          ],
+          \\"selector\\": \\"b:hover\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 11,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 13,
+              \\"column\\": 28
+            },
+            \\"input\\": {
+              \\"file\\": \\"alt.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\",
+                \\"between\\": \\"\\"
+              },
+              \\"type\\": \\"rule\\",
+              \\"nodes\\": [
+                {
+                  \\"raws\\": {
+                    \\"before\\": \\"\\\\n    \\",
+                    \\"between\\": \\": \\",
+                    \\"semicolon\\": false
+                  },
+                  \\"type\\": \\"decl\\",
+                  \\"prop\\": \\"nosp\\",
+                  \\"value\\": \\"1 + 2\\",
+                  \\"source\\": {
+                    \\"start\\": {
+                      \\"line\\": 15,
+                      \\"column\\": 5
+                    },
+                    \\"end\\": {
+                      \\"line\\": 15,
+                      \\"column\\": 15
+                    },
+                    \\"input\\": {
+                      \\"file\\": \\"alt.sass\\"
+                    }
+                  }
+                },
+                {
+                  \\"raws\\": {
+                    \\"before\\": \\"\\\\n    \\",
+                    \\"between\\": \\" : \\",
+                    \\"semicolon\\": false
+                  },
+                  \\"type\\": \\"decl\\",
+                  \\"prop\\": \\"sp\\",
+                  \\"value\\": \\"1 + 2\\",
+                  \\"source\\": {
+                    \\"start\\": {
+                      \\"line\\": 16,
+                      \\"column\\": 5
+                    },
+                    \\"end\\": {
+                      \\"line\\": 16,
+                      \\"column\\": 14
+                    },
+                    \\"input\\": {
+                      \\"file\\": \\"alt.sass\\"
+                    }
+                  }
+                }
+              ],
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 14,
+                  \\"column\\": 1
+                },
+                \\"end\\": {
+                  \\"line\\": 16,
+                  \\"column\\": 15
+                },
+                \\"input\\": {
+                  \\"file\\": \\"alt.sass\\"
+                }
+              },
+              \\"selector\\": \\"\\"
+            }
+          ],
+          \\"selector\\": \\"const\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 14,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 16,
+              \\"column\\": 15
+            },
+            \\"input\\": {
+              \\"file\\": \\"alt.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"h1\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 16,
+          \\"column\\": 15
+        },
+        \\"input\\": {
+          \\"file\\": \\"alt.sass\\"
+        }
+      }
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 16,
+      \\"column\\": 15
+    },
+    \\"input\\": {
+      \\"file\\": \\"alt.sass\\"
+    }
+  }
+}"
+`;
+
+exports[`parses basic.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    :\\",
+            \\"between\\": \\" \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"font\\",
+          \\"value\\": \\"Arial\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 4,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 4,
+              \\"column\\": 15
+            },
+            \\"input\\": {
+              \\"file\\": \\"basic.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    :\\",
+            \\"between\\": \\" \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"background\\",
+          \\"value\\": \\"blue\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 5,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 5,
+              \\"column\\": 20
+            },
+            \\"input\\": {
+              \\"file\\": \\"basic.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"body\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 3,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 5,
+          \\"column\\": 21
+        },
+        \\"input\\": {
+          \\"file\\": \\"basic.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    :\\",
+            \\"between\\": \\" \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"width\\",
+          \\"value\\": \\"700px\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 8,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 8,
+              \\"column\\": 16
+            },
+            \\"input\\": {
+              \\"file\\": \\"basic.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    :\\",
+            \\"between\\": \\" \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"height\\",
+          \\"value\\": \\"100\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 9,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 9,
+              \\"column\\": 15
+            },
+            \\"input\\": {
+              \\"file\\": \\"basic.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        :\\",
+                \\"between\\": \\" \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"height\\",
+              \\"value\\": \\"300px\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 12,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 12,
+                  \\"column\\": 21
+                },
+                \\"input\\": {
+                  \\"file\\": \\"basic.sass\\"
+                }
+              }
+            },
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\"\\"
+              },
+              \\"type\\": \\"rule\\",
+              \\"nodes\\": [
+                {
+                  \\"raws\\": {
+                    \\"before\\": \\"\\\\n            :\\",
+                    \\"between\\": \\" \\",
+                    \\"semicolon\\": false
+                  },
+                  \\"type\\": \\"decl\\",
+                  \\"prop\\": \\"font-size\\",
+                  \\"value\\": \\"50px\\",
+                  \\"source\\": {
+                    \\"start\\": {
+                      \\"line\\": 14,
+                      \\"column\\": 13
+                    },
+                    \\"end\\": {
+                      \\"line\\": 14,
+                      \\"column\\": 27
+                    },
+                    \\"input\\": {
+                      \\"file\\": \\"basic.sass\\"
+                    }
+                  }
+                },
+                {
+                  \\"raws\\": {
+                    \\"before\\": \\"\\\\n            :\\",
+                    \\"between\\": \\"     \\",
+                    \\"semicolon\\": false
+                  },
+                  \\"type\\": \\"decl\\",
+                  \\"prop\\": \\"color\\",
+                  \\"value\\": \\"blue\\",
+                  \\"source\\": {
+                    \\"start\\": {
+                      \\"line\\": 15,
+                      \\"column\\": 13
+                    },
+                    \\"end\\": {
+                      \\"line\\": 15,
+                      \\"column\\": 27
+                    },
+                    \\"input\\": {
+                      \\"file\\": \\"basic.sass\\"
+                    }
+                  }
+                }
+              ],
+              \\"selector\\": \\"h1\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 13,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 15,
+                  \\"column\\": 28
+                },
+                \\"input\\": {
+                  \\"file\\": \\"basic.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\"#header\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 11,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 16,
+              \\"column\\": 1
+            },
+            \\"input\\": {
+              \\"file\\": \\"basic.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"#page\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 7,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 16,
+          \\"column\\": 1
+        },
+        \\"input\\": {
+          \\"file\\": \\"basic.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\"\\"
+              },
+              \\"type\\": \\"rule\\",
+              \\"nodes\\": [
+                {
+                  \\"raws\\": {
+                    \\"before\\": \\"\\\\n            :\\",
+                    \\"between\\": \\" \\",
+                    \\"semicolon\\": false
+                  },
+                  \\"type\\": \\"decl\\",
+                  \\"prop\\": \\"width\\",
+                  \\"value\\": \\"100px\\",
+                  \\"source\\": {
+                    \\"start\\": {
+                      \\"line\\": 20,
+                      \\"column\\": 13
+                    },
+                    \\"end\\": {
+                      \\"line\\": 20,
+                      \\"column\\": 24
+                    },
+                    \\"input\\": {
+                      \\"file\\": \\"basic.sass\\"
+                    }
+                  }
+                }
+              ],
+              \\"selector\\": \\"#column.left\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 19,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 20,
+                  \\"column\\": 25
+                },
+                \\"input\\": {
+                  \\"file\\": \\"basic.sass\\"
+                }
+              }
+            },
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\"\\"
+              },
+              \\"type\\": \\"rule\\",
+              \\"nodes\\": [
+                {
+                  \\"raws\\": {
+                    \\"before\\": \\"\\\\n            :\\",
+                    \\"between\\": \\" \\",
+                    \\"semicolon\\": false
+                  },
+                  \\"type\\": \\"decl\\",
+                  \\"prop\\": \\"width\\",
+                  \\"value\\": \\"600px\\",
+                  \\"source\\": {
+                    \\"start\\": {
+                      \\"line\\": 22,
+                      \\"column\\": 13
+                    },
+                    \\"end\\": {
+                      \\"line\\": 22,
+                      \\"column\\": 24
+                    },
+                    \\"input\\": {
+                      \\"file\\": \\"basic.sass\\"
+                    }
+                  }
+                }
+              ],
+              \\"selector\\": \\"#column.right\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 21,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 22,
+                  \\"column\\": 25
+                },
+                \\"input\\": {
+                  \\"file\\": \\"basic.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\"#container.top\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 18,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 23,
+              \\"column\\": 4
+            },
+            \\"input\\": {
+              \\"file\\": \\"basic.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        :\\",
+                \\"between\\": \\" \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"background\\",
+              \\"value\\": \\"brown\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 24,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 24,
+                  \\"column\\": 25
+                },
+                \\"input\\": {
+                  \\"file\\": \\"basic.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\"#container.bottom\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 23,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 24,
+              \\"column\\": 26
+            },
+            \\"input\\": {
+              \\"file\\": \\"basic.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"#content.user.show\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 17,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 24,
+          \\"column\\": 26
+        },
+        \\"input\\": {
+          \\"file\\": \\"basic.sass\\"
+        }
+      }
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 24,
+      \\"column\\": 26
+    },
+    \\"input\\": {
+      \\"file\\": \\"basic.sass\\"
+    }
+  }
+}"
+`;
+
+exports[`parses basic2.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"background\\",
+          \\"value\\": \\"#000\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 2,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 2,
+              \\"column\\": 20
+            },
+            \\"input\\": {
+              \\"file\\": \\"basic2.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"body\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 2,
+          \\"column\\": 21
+        },
+        \\"input\\": {
+          \\"file\\": \\"basic2.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"background\\",
+          \\"value\\": \\"#000\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 5,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 5,
+              \\"column\\": 20
+            },
+            \\"input\\": {
+              \\"file\\": \\"basic2.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"background\\",
+              \\"value\\": \\"#f00\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 8,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 8,
+                  \\"column\\": 24
+                },
+                \\"input\\": {
+                  \\"file\\": \\"basic2.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".two\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 7,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 8,
+              \\"column\\": 25
+            },
+            \\"input\\": {
+              \\"file\\": \\"basic2.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"background\\",
+              \\"value\\": \\"#f00\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 11,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 11,
+                  \\"column\\": 24
+                },
+                \\"input\\": {
+                  \\"file\\": \\"basic2.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".three\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 10,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 11,
+              \\"column\\": 25
+            },
+            \\"input\\": {
+              \\"file\\": \\"basic2.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\".one\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 4,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 11,
+          \\"column\\": 25
+        },
+        \\"input\\": {
+          \\"file\\": \\"basic2.sass\\"
+        }
+      }
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 11,
+      \\"column\\": 25
+    },
+    \\"input\\": {
+      \\"file\\": \\"basic2.sass\\"
+    }
+  }
+}"
+`;
+
+exports[`parses comments.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"left\\": \\" \\",
+            \\"right\\": \\"\\",
+            \\"commentType\\": \\"single\\"
+          },
+          \\"type\\": \\"comment\\",
+          \\"text\\": \\"Comment1\\"
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"color\\",
+          \\"value\\": \\"red\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 3,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 3,
+              \\"column\\": 14
+            },
+            \\"input\\": {
+              \\"file\\": \\"comments.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"left\\": \\" \\",
+            \\"right\\": \\" \\",
+            \\"commentType\\": \\"multi\\"
+          },
+          \\"type\\": \\"comment\\",
+          \\"text\\": \\"Comment2\\"
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"background-color\\",
+          \\"value\\": \\"blue\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 5,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 5,
+              \\"column\\": 26
+            },
+            \\"input\\": {
+              \\"file\\": \\"comments.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\".comments\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 5,
+          \\"column\\": 27
+        },
+        \\"input\\": {
+          \\"file\\": \\"comments.sass\\"
+        }
+      }
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 5,
+      \\"column\\": 27
+    },
+    \\"input\\": {
+      \\"file\\": \\"comments.sass\\"
+    }
+  }
+}"
+`;
+
+exports[`parses important.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false,
+            \\"important\\": \\" !important\\"
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"color\\",
+          \\"value\\": \\"red\\",
+          \\"important\\": true,
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 2,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 2,
+              \\"column\\": 25
+            },
+            \\"input\\": {
+              \\"file\\": \\"important.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false,
+                \\"important\\": \\" !important\\"
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"image\\",
+              \\"value\\": \\"none\\",
+              \\"important\\": true,
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 4,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 4,
+                  \\"column\\": 30
+                },
+                \\"input\\": {
+                  \\"file\\": \\"important.sass\\"
+                }
+              }
+            },
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"color\\",
+              \\"value\\": \\"red\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 5,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 5,
+                  \\"column\\": 18
+                },
+                \\"input\\": {
+                  \\"file\\": \\"important.sass\\"
+                }
+              }
+            }
+          ],
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 3,
+              \\"column\\": 1
+            },
+            \\"end\\": {
+              \\"line\\": 5,
+              \\"column\\": 19
+            },
+            \\"input\\": {
+              \\"file\\": \\"important.sass\\"
+            }
+          },
+          \\"selector\\": \\"background:\\"
+        }
+      ],
+      \\"selector\\": \\".important\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 5,
+          \\"column\\": 19
+        },
+        \\"input\\": {
+          \\"file\\": \\"important.sass\\"
+        }
+      }
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 5,
+      \\"column\\": 19
+    },
+    \\"input\\": {
+      \\"file\\": \\"important.sass\\"
+    }
+  }
+}"
+`;
+
+exports[`parses list1.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$empty\\",
+      \\"value\\": \\"()\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 1,
+          \\"column\\": 10
+        },
+        \\"input\\": {
+          \\"file\\": \\"list1.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"content\\",
+              \\"value\\": \\"$el\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 5,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 5,
+                  \\"column\\": 20
+                },
+                \\"input\\": {
+                  \\"file\\": \\"list1.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".el-#{el}\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 4,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 5,
+              \\"column\\": 21
+            },
+            \\"input\\": {
+              \\"file\\": \\"list1.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"@each $el in $empty\\"
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$list-space\\",
+      \\"value\\": \\"\\\\\\"1\\\\\\" \\\\\\"2\\\\\\" \\\\\\"3\\\\\\"\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 7,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 7,
+          \\"column\\": 24
+        },
+        \\"input\\": {
+          \\"file\\": \\"list1.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"content\\",
+              \\"value\\": \\"$el\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 11,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 11,
+                  \\"column\\": 20
+                },
+                \\"input\\": {
+                  \\"file\\": \\"list1.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".el-#{el}\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 10,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 11,
+              \\"column\\": 21
+            },
+            \\"input\\": {
+              \\"file\\": \\"list1.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"@each $el in $list-space\\"
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$list-comma\\",
+      \\"value\\": \\"(\\\\\\"4\\\\\\", \\\\\\"5\\\\\\", \\\\\\"6\\\\\\")\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 13,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 13,
+          \\"column\\": 28
+        },
+        \\"input\\": {
+          \\"file\\": \\"list1.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"content\\",
+              \\"value\\": \\"$el\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 17,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 17,
+                  \\"column\\": 20
+                },
+                \\"input\\": {
+                  \\"file\\": \\"list1.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".el-#{el}\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 16,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 17,
+              \\"column\\": 21
+            },
+            \\"input\\": {
+              \\"file\\": \\"list1.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"@each $el in $list-comma\\"
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$list-2-dim\\",
+      \\"value\\": \\"((7 8) (9 10))\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 19,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 19,
+          \\"column\\": 27
+        },
+        \\"input\\": {
+          \\"file\\": \\"list1.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\"\\"
+              },
+              \\"type\\": \\"rule\\",
+              \\"nodes\\": [
+                {
+                  \\"raws\\": {
+                    \\"before\\": \\"\\\\n            \\",
+                    \\"between\\": \\": \\",
+                    \\"semicolon\\": false
+                  },
+                  \\"type\\": \\"decl\\",
+                  \\"prop\\": \\"content\\",
+                  \\"value\\": \\"$el2\\",
+                  \\"source\\": {
+                    \\"start\\": {
+                      \\"line\\": 24,
+                      \\"column\\": 13
+                    },
+                    \\"end\\": {
+                      \\"line\\": 24,
+                      \\"column\\": 25
+                    },
+                    \\"input\\": {
+                      \\"file\\": \\"list1.sass\\"
+                    }
+                  }
+                }
+              ],
+              \\"selector\\": \\".el-#{el2}\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 23,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 24,
+                  \\"column\\": 26
+                },
+                \\"input\\": {
+                  \\"file\\": \\"list1.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\"@each $el2 in $el\\"
+        }
+      ],
+      \\"selector\\": \\"@each $el in $list-2-dim\\"
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 24,
+      \\"column\\": 26
+    },
+    \\"input\\": {
+      \\"file\\": \\"list1.sass\\"
+    }
+  }
+}"
+`;
+
+exports[`parses list1comment.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$empty\\",
+      \\"value\\": \\"()\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 1,
+          \\"column\\": 10
+        },
+        \\"input\\": {
+          \\"file\\": \\"list1comment.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"content\\",
+              \\"value\\": \\"$el\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 5,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 5,
+                  \\"column\\": 20
+                },
+                \\"input\\": {
+                  \\"file\\": \\"list1comment.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".el-#{el}\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 4,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 5,
+              \\"column\\": 21
+            },
+            \\"input\\": {
+              \\"file\\": \\"list1comment.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"@each $el in $empty\\"
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$list-space\\",
+      \\"value\\": \\"\\\\\\"1\\\\\\" \\\\\\"2\\\\\\" \\\\\\"3\\\\\\"\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 7,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 7,
+          \\"column\\": 24
+        },
+        \\"input\\": {
+          \\"file\\": \\"list1comment.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"content\\",
+              \\"value\\": \\"$el\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 11,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 11,
+                  \\"column\\": 20
+                },
+                \\"input\\": {
+                  \\"file\\": \\"list1comment.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".el-#{el}\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 10,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 11,
+              \\"column\\": 21
+            },
+            \\"input\\": {
+              \\"file\\": \\"list1comment.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"@each $el in $list-space\\"
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$list-comma\\",
+      \\"value\\": \\"(\\\\\\"4\\\\\\", \\\\\\"5\\\\\\", \\\\\\"6\\\\\\")\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 13,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 13,
+          \\"column\\": 28
+        },
+        \\"input\\": {
+          \\"file\\": \\"list1comment.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"content\\",
+              \\"value\\": \\"$el\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 17,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 17,
+                  \\"column\\": 20
+                },
+                \\"input\\": {
+                  \\"file\\": \\"list1comment.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".el-#{el}\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 16,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 17,
+              \\"column\\": 21
+            },
+            \\"input\\": {
+              \\"file\\": \\"list1comment.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n        \\\\n\\",
+            \\"left\\": \\" \\",
+            \\"right\\": \\"\\",
+            \\"commentType\\": \\"single\\"
+          },
+          \\"type\\": \\"comment\\",
+          \\"text\\": \\"Comment\\"
+        }
+      ],
+      \\"selector\\": \\"@each $el in $list-comma\\"
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$list-2-dim\\",
+      \\"value\\": \\"((7 8) (9 10))\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 20,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 20,
+          \\"column\\": 27
+        },
+        \\"input\\": {
+          \\"file\\": \\"list1comment.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\"\\"
+              },
+              \\"type\\": \\"rule\\",
+              \\"nodes\\": [
+                {
+                  \\"raws\\": {
+                    \\"before\\": \\"\\\\n            \\",
+                    \\"between\\": \\": \\",
+                    \\"semicolon\\": false
+                  },
+                  \\"type\\": \\"decl\\",
+                  \\"prop\\": \\"content\\",
+                  \\"value\\": \\"$el2\\",
+                  \\"source\\": {
+                    \\"start\\": {
+                      \\"line\\": 25,
+                      \\"column\\": 13
+                    },
+                    \\"end\\": {
+                      \\"line\\": 25,
+                      \\"column\\": 25
+                    },
+                    \\"input\\": {
+                      \\"file\\": \\"list1comment.sass\\"
+                    }
+                  }
+                }
+              ],
+              \\"selector\\": \\".el-#{el2}\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 24,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 25,
+                  \\"column\\": 26
+                },
+                \\"input\\": {
+                  \\"file\\": \\"list1comment.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\"@each $el2 in $el\\"
+        }
+      ],
+      \\"selector\\": \\"@each $el in $list-2-dim\\"
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 25,
+      \\"column\\": 26
+    },
+    \\"input\\": {
+      \\"file\\": \\"list1comment.sass\\"
+    }
+  }
+}"
+`;
+
+exports[`parses little.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"color\\",
+          \\"value\\": \\"red\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 2,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 2,
+              \\"column\\": 14
+            },
+            \\"input\\": {
+              \\"file\\": \\"little.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"background-color\\",
+          \\"value\\": \\"green\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 3,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 3,
+              \\"column\\": 27
+            },
+            \\"input\\": {
+              \\"file\\": \\"little.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        :\\",
+                \\"between\\": \\" \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"font\\",
+              \\"value\\": \\"Arial\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 5,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 5,
+                  \\"column\\": 19
+                },
+                \\"input\\": {
+                  \\"file\\": \\"little.sass\\"
+                }
+              }
+            },
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        :\\",
+                \\"between\\": \\" \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"background\\",
+              \\"value\\": \\"blue\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 6,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 6,
+                  \\"column\\": 24
+                },
+                \\"input\\": {
+                  \\"file\\": \\"little.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".class\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 4,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 6,
+              \\"column\\": 25
+            },
+            \\"input\\": {
+              \\"file\\": \\"little.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\".little\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 6,
+          \\"column\\": 25
+        },
+        \\"input\\": {
+          \\"file\\": \\"little.sass\\"
+        }
+      }
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 6,
+      \\"column\\": 25
+    },
+    \\"input\\": {
+      \\"file\\": \\"little.sass\\"
+    }
+  }
+}"
+`;
+
+exports[`parses map1.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$array\\",
+      \\"value\\": \\"(1: '1', 2: '2', 3: '3')\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 1,
+          \\"column\\": 32
+        },
+        \\"input\\": {
+          \\"file\\": \\"map1.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$second_array\\",
+      \\"value\\": \\"(4: '4', 5: '5')\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 2,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 2,
+          \\"column\\": 31
+        },
+        \\"input\\": {
+          \\"file\\": \\"map1.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$merged\\",
+      \\"value\\": \\"map-merge($array, $second_array)\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 3,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 3,
+          \\"column\\": 41
+        },
+        \\"input\\": {
+          \\"file\\": \\"map1.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"z-index\\",
+              \\"value\\": \\"$num\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 7,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 7,
+                  \\"column\\": 21
+                },
+                \\"input\\": {
+                  \\"file\\": \\"map1.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".link-#{str}\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 6,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 7,
+              \\"column\\": 22
+            },
+            \\"input\\": {
+              \\"file\\": \\"map1.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"@each $num, $str in $merged\\"
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 7,
+      \\"column\\": 22
+    },
+    \\"input\\": {
+      \\"file\\": \\"map1.sass\\"
+    }
+  }
+}"
+`;
+
+exports[`parses map2.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"red\\",
+          \\"value\\": \\"#e74c3c,\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 2,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 2,
+              \\"column\\": 15
+            },
+            \\"input\\": {
+              \\"file\\": \\"map2.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"blue\\",
+          \\"value\\": \\"#3498db,\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 3,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 3,
+              \\"column\\": 16
+            },
+            \\"input\\": {
+              \\"file\\": \\"map2.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"green\\",
+          \\"value\\": \\"#2ecc71,\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 4,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 4,
+              \\"column\\": 17
+            },
+            \\"input\\": {
+              \\"file\\": \\"map2.sass\\"
+            }
+          }
+        }
+      ],
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 4,
+          \\"column\\": 18
+        },
+        \\"input\\": {
+          \\"file\\": \\"map2.sass\\"
+        }
+      },
+      \\"selector\\": \\"$button-colors:\\"
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n    \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"background-color\\",
+              \\"value\\": \\"$color\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 8,
+                  \\"column\\": 5
+                },
+                \\"end\\": {
+                  \\"line\\": 8,
+                  \\"column\\": 28
+                },
+                \\"input\\": {
+                  \\"file\\": \\"map2.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".button-#{name}\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 7,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 8,
+              \\"column\\": 29
+            },
+            \\"input\\": {
+              \\"file\\": \\"map2.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"@each $name, $color in $button-colors\\"
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 8,
+      \\"column\\": 29
+    },
+    \\"input\\": {
+      \\"file\\": \\"map2.sass\\"
+    }
+  }
+}"
+`;
+
+exports[`parses map2comment.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"left\\": \\" \\",
+        \\"right\\": \\" \\",
+        \\"commentType\\": \\"multi\\"
+      },
+      \\"type\\": \\"comment\\",
+      \\"text\\": \\"Comment\\"
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"red\\",
+          \\"value\\": \\"#e74c3c,\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 3,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 3,
+              \\"column\\": 15
+            },
+            \\"input\\": {
+              \\"file\\": \\"map2comment.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"blue\\",
+          \\"value\\": \\"#3498db,\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 4,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 4,
+              \\"column\\": 16
+            },
+            \\"input\\": {
+              \\"file\\": \\"map2comment.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"green\\",
+          \\"value\\": \\"#2ecc71,\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 5,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 5,
+              \\"column\\": 17
+            },
+            \\"input\\": {
+              \\"file\\": \\"map2comment.sass\\"
+            }
+          }
+        }
+      ],
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 2,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 5,
+          \\"column\\": 18
+        },
+        \\"input\\": {
+          \\"file\\": \\"map2comment.sass\\"
+        }
+      },
+      \\"selector\\": \\"$button-colors:\\"
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"left\\": \\" \\",
+        \\"right\\": \\"\\",
+        \\"commentType\\": \\"single\\"
+      },
+      \\"type\\": \\"comment\\",
+      \\"text\\": \\"Comment\\"
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n    \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"background-color\\",
+              \\"value\\": \\"$color\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 10,
+                  \\"column\\": 5
+                },
+                \\"end\\": {
+                  \\"line\\": 10,
+                  \\"column\\": 28
+                },
+                \\"input\\": {
+                  \\"file\\": \\"map2comment.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".button-#{name}\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 9,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 10,
+              \\"column\\": 29
+            },
+            \\"input\\": {
+              \\"file\\": \\"map2comment.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"@each $name, $color in $button-colors\\"
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 10,
+      \\"column\\": 29
+    },
+    \\"input\\": {
+      \\"file\\": \\"map2comment.sass\\"
+    }
+  }
+}"
+`;
+
+exports[`parses nested.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"color\\",
+              \\"value\\": \\"red\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 3,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 3,
+                  \\"column\\": 18
+                },
+                \\"input\\": {
+                  \\"file\\": \\"nested.sass\\"
+                }
+              }
+            },
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"repeat\\",
+              \\"value\\": \\"no-repeat\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 4,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 4,
+                  \\"column\\": 25
+                },
+                \\"input\\": {
+                  \\"file\\": \\"nested.sass\\"
+                }
+              }
+            }
+          ],
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 2,
+              \\"column\\": 1
+            },
+            \\"end\\": {
+              \\"line\\": 4,
+              \\"column\\": 26
+            },
+            \\"input\\": {
+              \\"file\\": \\"nested.sass\\"
+            }
+          },
+          \\"selector\\": \\"background:\\"
+        }
+      ],
+      \\"selector\\": \\".nested\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 4,
+          \\"column\\": 26
+        },
+        \\"input\\": {
+          \\"file\\": \\"nested.sass\\"
+        }
+      }
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 4,
+      \\"column\\": 26
+    },
+    \\"input\\": {
+      \\"file\\": \\"nested.sass\\"
+    }
+  }
+}"
+`;
+
+exports[`parses variables.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$red\\",
+      \\"value\\": \\"red\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 1,
+          \\"column\\": 9
+        },
+        \\"input\\": {
+          \\"file\\": \\"variables.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"color\\",
+          \\"value\\": \\"$red\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 4,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 4,
+              \\"column\\": 15
+            },
+            \\"input\\": {
+              \\"file\\": \\"variables.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"a\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 3,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 4,
+          \\"column\\": 16
+        },
+        \\"input\\": {
+          \\"file\\": \\"variables.sass\\"
+        }
+      }
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 4,
+      \\"column\\": 16
+    },
+    \\"input\\": {
+      \\"file\\": \\"variables.sass\\"
+    }
+  }
+}"
+`;
