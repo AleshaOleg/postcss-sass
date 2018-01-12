@@ -32,7 +32,7 @@
   },
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "pretest": "eslint *.js __tests__ helpers",
+    "pretest": "eslint *.js __tests__",
     "test": "jest --coverage",
     "lint-staged": "lint-staged"
   },
