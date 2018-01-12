@@ -23,6 +23,19 @@ const DEFAULT_COMMENT_DECL = {
     right: ''
 };
 
+function extractSource(lines, start, end) {
+    const nodeLines = lines.slice(
+        start.line - 1,
+        end.line
+    );
+
+    nodeLines[0] = nodeLines[0].substring(start.column - 1);
+    const last = nodeLines.length - 1;
+    nodeLines[last] = nodeLines[last].substring(0, end.column);
+
+    return nodeLines.join('');
+}
+
 function process(node, parent, input, globalPostcssSass) {
     function bindedProcess(innerNode, innerParent = parent) {
         return process(innerNode, innerParent, input, globalPostcssSass);
@@ -49,9 +62,6 @@ function process(node, parent, input, globalPostcssSass) {
         }
         case 'ruleset': {
             // Loop to find the deepest ruleset node
-            let pseudoClassFirst = false;
-            // Define new selector
-            let selector = '';
             globalPostcssSass.multiRuleProp = '';
 
             node.content.forEach(contentNode => {
@@ -76,8 +86,14 @@ function process(node, parent, input, globalPostcssSass) {
                             .forEach(innerContentNode => bindedProcess(innerContentNode, rule));
 
                         if (rule.nodes.length !== 0) {
-                            // Write selector to Rule, and remove last whitespace
-                            rule.selector = selector;
+                            // Write selector to Rule
+                            rule.selector = globalPostcssSass.extractSource(
+                                node.start,
+                                contentNode.start
+                            ).slice(0, -1).replace(/\s+$/, spaces => {
+                                ruleRaws.between = spaces;
+                                return '';
+                            });
                             // Set parameters for Rule node
                             rule.parent = parent;
                             rule.source = {
@@ -88,55 +104,6 @@ function process(node, parent, input, globalPostcssSass) {
                             rule.raws = ruleRaws;
                             parent.nodes.push(rule);
                         }
-                        break;
-                    }
-                    case 'selector': {
-                        // Creates selector for rule
-                        contentNode.content.forEach((innerContentNode, i, nodes) => {
-                            switch (innerContentNode.type) {
-                                case 'id': {
-                                    selector += '#';
-                                    break;
-                                }
-                                case 'class': {
-                                    selector += '.';
-                                    if (innerContentNode.content.length > 1) {
-                                        innerContentNode.content.forEach((classContentNode) => {
-                                            if (classContentNode.content.constructor !== Array ) {
-                                                selector += classContentNode.content;
-                                            } else {
-                                                switch (classContentNode.type) {
-                                                    case 'interpolation': {
-                                                        classContentNode.content.forEach((interpolationContentNode) => {
-                                                            selector += `\#{${interpolationContentNode.content}}`;
-                                                        });
-                                                        break;
-                                                    }
-                                                    default:
-                                                }
-                                            }
-                                        });
-                                    }
-                                    break;
-                                }
-                                case 'typeSelector': {
-                                    if (pseudoClassFirst && nodes[i + 1] && nodes[i + 1].type === 'pseudoClass') {
-                                        selector += ', ';
-                                    } else {
-                                        pseudoClassFirst = true;
-                                    }
-                                    break;
-                                }
-                                case 'pseudoClass': {
-                                    selector += ':';
-                                    break;
-                                }
-                                default:
-                            }
-                            if (innerContentNode.content.length === 1) {
-                                selector += innerContentNode.content;
-                            }
-                        });
                         break;
                     }
                     default:
@@ -229,7 +196,7 @@ function process(node, parent, input, globalPostcssSass) {
                             case 'block': {
                                 isBlockInside = true;
                                 // If nested rules exist
-                                if (typeof contentNode.content[0].content === 'object') {
+                                if (Array.isArray(contentNode.content[0].content)) {
                                     globalPostcssSass.multiRule = true;
                                 }
                                 bindedProcess(contentNode.content[0]);
@@ -442,5 +409,7 @@ module.exports = function sassToPostCssTree(source, opts) {
         }
     }
 
-    return process(node, null, input, {});
+    return process(node, null, input, {
+        extractSource: extractSource.bind(null, input.css.match(/^.*(\r?\n|$)/gm))
+    });
 };
