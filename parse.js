@@ -86,6 +86,7 @@ function process(node, parent, input, globalPostcssSass) {
                                 input: input
                             };
                             rule.raws = ruleRaws;
+
                             parent.nodes.push(rule);
                         }
                         break;
@@ -108,7 +109,7 @@ function process(node, parent, input, globalPostcssSass) {
                                                 switch (classContentNode.type) {
                                                     case 'interpolation': {
                                                         classContentNode.content.forEach((interpolationContentNode) => {
-                                                            selector += `\#{${interpolationContentNode.content}}`;
+                                                            selector += `\#{${interpolationContentNode.content}`;
                                                         });
                                                         break;
                                                     }
@@ -130,6 +131,20 @@ function process(node, parent, input, globalPostcssSass) {
                                 case 'pseudoClass': {
                                     selector += ':';
                                     break;
+                                }
+
+                                case 'attributeSelector': {
+                                  selector += '[';
+                                  for (let attr of innerContentNode.content) {
+                                    let type = attr.type;
+                                    if (type === 'attributeName' || type === 'attributeValue') {
+                                      selector += attr.content[0].content;
+                                    } else if (type === 'attributeMatch') {
+                                      selector += attr.content;
+                                    }
+                                  }
+                                  selector += ']';
+                                  break;
                                 }
                                 default:
                             }
@@ -157,7 +172,7 @@ function process(node, parent, input, globalPostcssSass) {
                             column: node.start.column
                         },
                         end: node.end,
-                        input: input
+                        input
                     },
                     raws: {
                         before: globalPostcssSass.before || DEFAULT_RAWS_RULE.before,
@@ -166,14 +181,16 @@ function process(node, parent, input, globalPostcssSass) {
                     parent,
                     selector: globalPostcssSass.multiRuleProp
                 });
-                parent.push(multiRule);
+                parent.nodes.push(multiRule);
                 parent = multiRule;
             }
 
             globalPostcssSass.before = '';
 
             // Looking for declaration node in block node
-            node.content.forEach(contentNode => bindedProcess(contentNode));
+            node.content.forEach(contentNode => {
+              bindedProcess(contentNode, parent)
+            });
             if (globalPostcssSass.multiRule) {
                 globalPostcssSass.beforeMulti = globalPostcssSass.before;
             }
@@ -235,13 +252,8 @@ function process(node, parent, input, globalPostcssSass) {
                                 bindedProcess(contentNode.content[0]);
                                 break;
                             }
-                            case 'variable': {
-                                declarationNode.value = '$';
-                                bindedProcess(contentNode, declarationNode);
-                                break;
-                            }
-                            case 'color': {
-                                declarationNode.value = '#';
+                            case 'variable' || 'color': {
+                                //declarationNode.value = '$';
                                 bindedProcess(contentNode, declarationNode);
                                 break;
                             }
@@ -293,6 +305,7 @@ function process(node, parent, input, globalPostcssSass) {
             break;
         }
         case 'value': {
+          console.log(node);
             if (!parent.value) {
                 parent.value = '';
             }
@@ -314,11 +327,62 @@ function process(node, parent, input, globalPostcssSass) {
                             parent.value += contentNode.content.join('') + ')';
                             break;
                         }
+
+                        case 'id':
+                        case 'color': {
+                          parent.value += `#${contentNode.content}`;
+                          break;
+                        }
+
+                        case 'variable': {
+                          parent.value += `$${contentNode.content}`;
+                          break;
+                        }
+
+                        case 'placeholder': {
+                          parent.value += `%${contentNode.content}`;
+                          break;
+                        }
+
+                        case 'class': {
+                          parent.value += `.${contentNode.content}`;
+                          break;
+                        }
+
+                        case 'percentage': {
+                          parent.value += `${contentNode.content}%`;
+                          break;
+                        }
+
+                        case 'uri': {
+                          parent.value += `url(${contentNode.content[0].content})`;
+                          break;
+                        }
+
+                        case 'function': {
+                          for (let val of contentNode.content) {
+                            if (val.type === 'arguments') {
+                              parent.value += '(';
+                              for (let arg of val.content) {
+                                if (arg.type === 'string') {
+                                  parent.value += arg.content;
+                                }
+                              }
+                              parent.value += ')';
+
+                            } else {
+                              parent.value += val.content;
+                            }
+                          }
+                          break;
+                        }
+
+
                         default: {
                             if (contentNode.content.constructor === Array) {
-                                parent.value += contentNode.content.join('');
+                              parent.value += contentNode.content.join('');
                             } else {
-                                parent.value += contentNode.content;
+                              parent.value += contentNode.content;
                             }
                         }
                     }
@@ -405,8 +469,8 @@ function process(node, parent, input, globalPostcssSass) {
             break;
         }
         case 'atkeyword': {
-            parent.selector += `@${node.content}`;
-            break;
+          parent.selector += `@${node.content[0].content}`;
+          break;
         }
         case 'operator': {
             parent.selector += node.content;
@@ -424,7 +488,174 @@ function process(node, parent, input, globalPostcssSass) {
             parent.selector += node.content;
             break;
         }
-        default:
+
+        case 'include':
+        case 'mixin': {
+          // Create Rule node
+          let mixin = postcss.rule();
+          mixin.type = node.type;
+
+          mixin.name = '';
+          mixin.params = '';
+
+          // Object to store raws for Rule
+          mixin.raws = {
+              before: globalPostcssSass.before || DEFAULT_RAWS_RULE.before,
+              between: DEFAULT_RAWS_RULE.between
+          };
+
+          /* Variable to store spaces and symbols
+           before declaration property */
+          globalPostcssSass.before = '';
+          globalPostcssSass.comment = false;
+
+
+          globalPostcssSass.multiRuleProp = '';
+          node.content.forEach(contentNode => {
+              if (contentNode.type === 'block') {
+                // Look up throw all nodes in current ruleset node
+                for (let rCurrentContent of node.content){
+                  if (rCurrentContent.type === 'block')
+                      bindedProcess(rCurrentContent, mixin);
+                }
+              } else if (contentNode.type === 'ident') {
+                mixin.name = contentNode.content;
+              } else if (contentNode.type === 'arguments') {
+                mixin.params = '(';
+
+                for (let argumentContent of contentNode.content) {
+                  if (argumentContent.type === 'dimension') {
+                    for (let child of argumentContent.content) {
+                      mixin.params += child.content;
+                    }
+                  } else {
+                    mixin.params += argumentContent.type === 'variable'
+                      ? `$${argumentContent.content[0].content}`
+                      : argumentContent.content
+                  }
+                }
+
+                mixin.params += ')';
+
+              } else if (contentNode.type !== 'atkeyword' && contentNode.type !== 'operator'){
+                mixin.raws.after = contentNode.content;
+              }
+
+
+          });
+
+          // Set parameters for Mixin node
+          mixin.parent = parent;
+          mixin.source = {
+              start: node.start,
+              end: node.end,
+              input: input
+          };
+          parent.nodes.push(mixin);
+
+          break;
+        }
+
+        case 'extend': {
+          // Create Extend node
+          let extend = postcss.decl();
+          extend.type = 'extend';
+          extend.prop = '';
+          // Object to store raws for Extend
+          let dRaws = {
+              before: globalPostcssSass.before || DEFAULT_RAWS_DECL.before,
+              between: DEFAULT_RAWS_DECL.between,
+              semicolon: DEFAULT_RAWS_DECL.semicolon
+          };
+
+          globalPostcssSass.property = false;
+          globalPostcssSass.betweenBefore = false;
+          globalPostcssSass.comment = false;
+          // Looking for property and value node in ex node
+          node.content.forEach(extContent => {
+            if (extContent.type === 'atkeyword') {
+              extend.prop += `@${extContent.content[0].content}`;
+            } else if (extContent.type === 'space') {
+                dRaws.between += extContent.content;
+            } else if (extContent.type === 'selector') {
+                extContent.type = 'value';
+                bindedProcess(extContent, extend);
+            }
+          });
+
+          globalPostcssSass.before = '';
+
+          // Set parameters for Declaration node
+          extend.source = {
+              start: node.start,
+              end: node.end,
+              input: input
+          };
+          extend.parent = parent;
+          extend.raws = dRaws;
+          parent.nodes.push(extend);
+
+          break;
+        }
+
+        case 'atrule': {
+          // Create Rule node
+          let atrule = postcss.atRule();
+          atrule.params = '';
+
+          // Object to store raws for Rule
+          atrule.raws = {
+              before: globalPostcssSass.before || DEFAULT_RAWS_RULE.before,
+              between: DEFAULT_RAWS_RULE.between
+          };
+
+          /* Variable to store spaces and symbols
+           before declaration property */
+          globalPostcssSass.before = '';
+          globalPostcssSass.comment = false;
+
+
+          globalPostcssSass.multiRuleProp = '';
+
+          node.content.forEach((contentNode, i) => {
+            let type = contentNode.type;
+            if (type === 'atkeyword') {
+              atrule.name = contentNode.content[0].content;
+
+                atrule.nodes = [];
+            } else if (type === 'space') {
+              if (i === 1 || i === 2) {
+                atrule.raws.between += contentNode.content;
+              } else {
+                if (!atrule.raws.after)
+                  atrule.raws.after = '';
+                atrule.raws.after += contentNode.content;
+              }
+            } else if (type === 'ident') {
+              atrule.params += contentNode.content;
+            } else if (type === 'block') {
+              bindedProcess(contentNode, atrule);
+            }
+          });
+
+          globalPostcssSass.before = '';
+
+          // Set parameters for Declaration node
+          atrule.source = {
+              start: node.start,
+              end: node.end,
+              input: input
+          };
+          atrule.parent = parent;
+          parent.nodes.push(atrule);
+
+          break;
+        }
+
+        default: {
+          break;
+        }
+
     }
     return null;
 }
@@ -441,6 +672,5 @@ module.exports = function sassToPostCssTree(source, opts) {
             throw ex;
         }
     }
-
     return process(node, null, input, {});
 };
