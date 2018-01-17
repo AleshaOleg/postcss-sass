@@ -3089,6 +3089,214 @@ exports[`parses nested.sass 1`] = `
 }"
 `;
 
+exports[`parses selectors.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\"\\\\n\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"color\\",
+          \\"value\\": \\"red\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 2,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 2,
+              \\"column\\": 14
+            },
+            \\"input\\": {
+              \\"file\\": \\"selectors.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\".a, .b\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 2,
+          \\"column\\": 15
+        },
+        \\"input\\": {
+          \\"file\\": \\"selectors.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\\\n\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"color\\",
+          \\"value\\": \\"red\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 5,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 5,
+              \\"column\\": 14
+            },
+            \\"input\\": {
+              \\"file\\": \\"selectors.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\".a,.b\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 4,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 5,
+          \\"column\\": 15
+        },
+        \\"input\\": {
+          \\"file\\": \\"selectors.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\\\n\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"color\\",
+          \\"value\\": \\"red\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 8,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 8,
+              \\"column\\": 14
+            },
+            \\"input\\": {
+              \\"file\\": \\"selectors.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\".a,.b, .c, .b,.e\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 7,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 8,
+          \\"column\\": 15
+        },
+        \\"input\\": {
+          \\"file\\": \\"selectors.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\\\n\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"color\\",
+          \\"value\\": \\"red\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 12,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 12,
+              \\"column\\": 12
+            },
+            \\"input\\": {
+              \\"file\\": \\"selectors.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\".a,\\\\n.b\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 10,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 12,
+          \\"column\\": 13
+        },
+        \\"input\\": {
+          \\"file\\": \\"selectors.sass\\"
+        }
+      }
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 12,
+      \\"column\\": 13
+    },
+    \\"input\\": {
+      \\"file\\": \\"selectors.sass\\"
+    }
+  }
+}"
+`;
+
 exports[`parses variables.sass 1`] = `
 "{
   \\"raws\\": {
