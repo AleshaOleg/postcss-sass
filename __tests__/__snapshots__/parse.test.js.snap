@@ -2096,6 +2096,208 @@ exports[`parses list1comment.sass 1`] = `
 }"
 `;
 
+exports[`parses list2comment.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$list-comma\\",
+      \\"value\\": \\"(\\\\\\"4\\\\\\", \\\\\\"5\\\\\\", \\\\\\"6\\\\\\")\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 1,
+          \\"column\\": 28
+        },
+        \\"input\\": {
+          \\"file\\": \\"list2comment.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\\\n\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"content\\",
+              \\"value\\": \\"$el\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 5,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 5,
+                  \\"column\\": 20
+                },
+                \\"input\\": {
+                  \\"file\\": \\"list2comment.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\".el-#{$el}\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 4,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 5,
+              \\"column\\": 21
+            },
+            \\"input\\": {
+              \\"file\\": \\"list2comment.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n\\\\n\\",
+            \\"left\\": \\" \\",
+            \\"right\\": \\"\\",
+            \\"commentType\\": \\"single\\"
+          },
+          \\"type\\": \\"comment\\",
+          \\"text\\": \\"Comment22\\"
+        }
+      ],
+      \\"selector\\": \\"@each $el in $list-comma\\"
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\",
+        \\"between\\": \\": \\",
+        \\"semicolon\\": false
+      },
+      \\"type\\": \\"decl\\",
+      \\"prop\\": \\"$list-2-dim\\",
+      \\"value\\": \\"((7 8) (9 10))\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 8,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 8,
+          \\"column\\": 27
+        },
+        \\"input\\": {
+          \\"file\\": \\"list2comment.sass\\"
+        }
+      }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\\\n\\",
+        \\"between\\": \\"\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n    \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n        \\",
+                \\"between\\": \\"\\\\n\\"
+              },
+              \\"type\\": \\"rule\\",
+              \\"nodes\\": [
+                {
+                  \\"raws\\": {
+                    \\"before\\": \\"\\\\n            \\",
+                    \\"between\\": \\": \\",
+                    \\"semicolon\\": false
+                  },
+                  \\"type\\": \\"decl\\",
+                  \\"prop\\": \\"content\\",
+                  \\"value\\": \\"$el2\\",
+                  \\"source\\": {
+                    \\"start\\": {
+                      \\"line\\": 13,
+                      \\"column\\": 13
+                    },
+                    \\"end\\": {
+                      \\"line\\": 13,
+                      \\"column\\": 25
+                    },
+                    \\"input\\": {
+                      \\"file\\": \\"list2comment.sass\\"
+                    }
+                  }
+                }
+              ],
+              \\"selector\\": \\".el-#{$el2}\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 12,
+                  \\"column\\": 9
+                },
+                \\"end\\": {
+                  \\"line\\": 13,
+                  \\"column\\": 26
+                },
+                \\"input\\": {
+                  \\"file\\": \\"list2comment.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\"@each $el2 in $el\\"
+        }
+      ],
+      \\"selector\\": \\"@each $el in $list-2-dim\\"
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 13,
+      \\"column\\": 26
+    },
+    \\"input\\": {
+      \\"file\\": \\"list2comment.sass\\"
+    }
+  }
+}"
+`;
+
 exports[`parses little.sass 1`] = `
 "{
   \\"raws\\": {

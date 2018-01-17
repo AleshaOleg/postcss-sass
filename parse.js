@@ -331,7 +331,7 @@ function process(node, parent, input, globalPostcssSass) {
                 }
                 case 'rule': {
                     if (globalPostcssSass.comment) {
-                        globalPostcssSass.before = '\n' + node.content;
+                        globalPostcssSass.before += node.content;
                     } else if (globalPostcssSass.loop) {
                         parent.selector += node.content;
                     } else {
