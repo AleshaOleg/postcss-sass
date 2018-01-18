@@ -1,6 +1,6 @@
 const Stringifier = require('./stringifier');
 
 module.exports = function stringify(node, builder) {
-    var str = new Stringifier(builder);
+    let str = new Stringifier(builder);
     str.stringify(node);
 };

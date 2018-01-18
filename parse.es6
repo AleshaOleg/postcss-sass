@@ -48,7 +48,7 @@ function process(node, parent, input, globalPostcssSass) {
             root.source = {
                 start: node.start,
                 end: node.end,
-                input: input
+                input
             };
             // Raws for root node
             root.raws = {
@@ -99,7 +99,7 @@ function process(node, parent, input, globalPostcssSass) {
                             rule.source = {
                                 start: node.start,
                                 end: node.end,
-                                input: input
+                                input
                             };
                             rule.raws = ruleRaws;
                             parent.nodes.push(rule);
@@ -124,7 +124,7 @@ function process(node, parent, input, globalPostcssSass) {
                             column: node.start.column
                         },
                         end: node.end,
-                        input: input
+                        input
                     },
                     raws: {
                         before: globalPostcssSass.before || DEFAULT_RAWS_RULE.before,
@@ -240,7 +240,7 @@ function process(node, parent, input, globalPostcssSass) {
                 declarationNode.source = {
                     start: node.start,
                     end: node.end,
-                    input: input
+                    input
                 };
                 declarationNode.parent = parent;
                 parent.nodes.push(declarationNode);
