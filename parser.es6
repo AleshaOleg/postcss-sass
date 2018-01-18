@@ -309,20 +309,16 @@ class SassParser {
         return this.comment(node, parent, 'multi');
     }
     comment(node, parent, commentType) {
-        const rawText = node.content;
-        const text = rawText.trim();
-
-        const left = rawText.search(/\S/);
-        const right = rawText.length - text.length - left;
+        const text = node.content.match(/^(\s*)((?:\S[\s\S]*?)?)(\s*)$/);
 
         this.raws.comment = true;
 
         const comment = Object.assign(postcss.comment(), {
-            text,
+            text: text[2],
             raws: {
                 before: this.raws.before || DEFAULT_COMMENT_DECL.before,
-                left: new Array(left + 1).join(' '),
-                right: new Array(right + 1).join(' '),
+                left: text[1],
+                right: text[3],
                 commentType
             }
         });
