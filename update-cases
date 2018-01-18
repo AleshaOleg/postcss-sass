@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+const parse = require('./parse');
+const path  = require('path');
+const fs    = require('fs');
+const stringify = require('postcss-scss').stringify;
+
+const dir = path.join(__dirname, '__tests__', 'cases');
+fs.readdirSync(dir).filter((i) => {
+    return path.extname(i) === '.sass';
+}).forEach((name) => {
+    const sssFile  = path.join(dir, name);
+    const scssFile  = sssFile.replace(/\.\w+$/, '.scss');
+    const sss      = fs.readFileSync(sssFile).toString();
+    const root     = parse(sss, { from: name });
+    fs.writeFileSync(scssFile, root.toString(stringify).replace(/\n+\{\n*?/g, '{').replace(/\s*\n*\}\n*?/g, '}').replace(/\{(\{[\s\S]+\})\}/g, '$1'));
+});

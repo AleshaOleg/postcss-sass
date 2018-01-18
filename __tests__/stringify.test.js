@@ -4,21 +4,21 @@ const fs   = require('fs');
 const stringify = require('../stringify');
 const parse     = require('../parse');
 
-let tests = fs
-    .readdirSync(path.join(__dirname, 'sass'))
+const tests = fs
+    .readdirSync(path.join(__dirname, 'cases'))
     .filter(i => path.extname(i) === '.sass' );
 
 function read(file) {
-    return fs.readFileSync(path.join(__dirname, 'sass', file)).toString();
+    return fs.readFileSync(path.join(__dirname, 'cases', file)).toString();
 }
 
 function run(sass) {
-    let root = parse(sass);
-    let output = root.toString(stringify);
+    const root = parse(sass);
+    const output = root.toString(stringify);
     expect(sass.trim()).toEqual(output.trim());
 }
 
-for ( let name of tests ) {
+for ( const name of tests ) {
     it('stringifies ' + name, () => {
         run(read(name));
     });

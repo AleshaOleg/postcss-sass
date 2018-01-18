@@ -9,6 +9,7 @@ npm-debug.log
 .babelrc
 
 __tests__/
+update-cases
 .travis.yml
 
 .idea/
