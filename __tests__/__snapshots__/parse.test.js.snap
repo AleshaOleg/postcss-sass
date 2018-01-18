@@ -1225,6 +1225,16 @@ exports[`parses comments.sass 1`] = `
           \\"file\\": \\"comments.sass\\"
         }
       }
+    },
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\\\n\\",
+        \\"left\\": \\"\\\\n \\",
+        \\"right\\": \\"\\\\n \\",
+        \\"commentType\\": \\"multi\\"
+      },
+      \\"type\\": \\"comment\\",
+      \\"text\\": \\"* multi\\\\n * line\\"
     }
   ],
   \\"source\\": {
@@ -1233,8 +1243,8 @@ exports[`parses comments.sass 1`] = `
       \\"column\\": 1
     },
     \\"end\\": {
-      \\"line\\": 5,
-      \\"column\\": 27
+      \\"line\\": 9,
+      \\"column\\": 4
     },
     \\"input\\": {
       \\"file\\": \\"comments.sass\\"
