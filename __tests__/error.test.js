@@ -16,16 +16,9 @@ it('should throw a CssSyntaxError', (done) => {
 });
 
 it('should throw original error', (done) => {
-    let sholdThrowErr;
     const errorHolder = {
         toString: () => {
-            // Should handle first call for `new Input(source, opts)`
-            if (sholdThrowErr) {
-                throw new Error('Error in parser.');
-            } else {
-                sholdThrowErr = true;
-                return '';
-            }
+            throw new Error('Error in parser.');
         }
     };
 
