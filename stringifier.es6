@@ -1,21 +1,13 @@
 import Stringifier from 'postcss/lib/stringifier';
 
-const DEFAULT_RAW = {
-    colon:        ': ',
-    commentLeft:  ' ',
-    commentRight: ' '
-};
-
 class SassStringifier extends Stringifier {
-
 
     has(value) {
         return typeof value !== 'undefined';
     }
 
     block(node, start) {
-        const between = node.raws.sssBetween || '';
-        this.builder(start + between, node, 'start');
+        this.builder(start, node, 'start');
         if (this.has(node.nodes)) {
             this.body(node);
         }
@@ -31,14 +23,13 @@ class SassStringifier extends Stringifier {
     }
 
     comment(node) {
-        const left  = this.has(node.raws.left) ?
-            node.raws.left : DEFAULT_RAW.commentLeft;
-        const right = this.has(node.raws.right) ?
-            node.raws.right : DEFAULT_RAW.commentRight;
+        const left  = this.raw(node, 'left',  'commentLeft');
+        const right = this.raw(node, 'right', 'commentRight');
 
-        if (node.raws.commentType === 'single') {
-            this.builder('//' + left + node.text + right, node);
-        } else if (node.raws.commentType === 'multi') {
+        if ( node.raws.inline ) {
+            const text = node.raws.text || node.text;
+            this.builder('//' + left + text + right, node);
+        } else {
             this.builder('/*' + left + node.text + right + '*/', node);
         }
     }

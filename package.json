@@ -32,6 +32,7 @@
     "jest": "^22.0.4",
     "lint-staged": "^6.0.0",
     "postcss-parser-tests": "^6.1.0",
+    "postcss-scss": "^1.0.3",
     "pre-commit": "^1.2.2"
   },
   "scripts": {
@@ -56,11 +57,11 @@
           "SwitchCase": 1
         }
       ],
-      "complexity": "off",
       "max-len": [
         "error",
         120
-      ]
+      ],
+      "prefer-const": "error"
     },
     "overrides": [
       {

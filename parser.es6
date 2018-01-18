@@ -303,12 +303,12 @@ class SassParser {
         }
     }
     singlelineComment(node, parent) {
-        return this.comment(node, parent, 'single');
+        return this.comment(node, parent, true);
     }
     multilineComment(node, parent) {
-        return this.comment(node, parent, 'multi');
+        return this.comment(node, parent, false);
     }
-    comment(node, parent, commentType) {
+    comment(node, parent, inline) {
         const text = node.content.match(/^(\s*)((?:\S[\s\S]*?)?)(\s*)$/);
 
         this.raws.comment = true;
@@ -319,7 +319,7 @@ class SassParser {
                 before: this.raws.before || DEFAULT_COMMENT_DECL.before,
                 left: text[1],
                 right: text[3],
-                commentType
+                inline
             }
         });
 

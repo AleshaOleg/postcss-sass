@@ -1149,7 +1149,7 @@ exports[`parses comments.sass 1`] = `
             \\"before\\": \\"\\\\n    \\",
             \\"left\\": \\" \\",
             \\"right\\": \\"\\",
-            \\"commentType\\": \\"single\\"
+            \\"inline\\": true
           },
           \\"type\\": \\"comment\\",
           \\"text\\": \\"Comment1\\"
@@ -1182,7 +1182,7 @@ exports[`parses comments.sass 1`] = `
             \\"before\\": \\"\\\\n    \\",
             \\"left\\": \\" \\",
             \\"right\\": \\" \\",
-            \\"commentType\\": \\"multi\\"
+            \\"inline\\": false
           },
           \\"type\\": \\"comment\\",
           \\"text\\": \\"Comment2\\"
@@ -1231,7 +1231,7 @@ exports[`parses comments.sass 1`] = `
         \\"before\\": \\"\\\\n\\",
         \\"left\\": \\"\\\\n \\",
         \\"right\\": \\"\\\\n \\",
-        \\"commentType\\": \\"multi\\"
+        \\"inline\\": false
       },
       \\"type\\": \\"comment\\",
       \\"text\\": \\"* multi\\\\n * line\\"
@@ -1992,7 +1992,7 @@ exports[`parses list1comment.sass 1`] = `
             \\"before\\": \\"\\\\n\\\\n\\",
             \\"left\\": \\" \\",
             \\"right\\": \\"\\",
-            \\"commentType\\": \\"single\\"
+            \\"inline\\": true
           },
           \\"type\\": \\"comment\\",
           \\"text\\": \\"Comment\\"
@@ -2194,7 +2194,7 @@ exports[`parses list2comment.sass 1`] = `
             \\"before\\": \\"\\\\n\\\\n\\",
             \\"left\\": \\" \\",
             \\"right\\": \\"\\",
-            \\"commentType\\": \\"single\\"
+            \\"inline\\": true
           },
           \\"type\\": \\"comment\\",
           \\"text\\": \\"Comment22\\"
@@ -2803,7 +2803,7 @@ exports[`parses map2comment.sass 1`] = `
         \\"before\\": \\"\\",
         \\"left\\": \\" \\",
         \\"right\\": \\" \\",
-        \\"commentType\\": \\"multi\\"
+        \\"inline\\": false
       },
       \\"type\\": \\"comment\\",
       \\"text\\": \\"Comment\\"
@@ -2905,7 +2905,7 @@ exports[`parses map2comment.sass 1`] = `
         \\"before\\": \\"\\\\n\\\\n\\",
         \\"left\\": \\" \\",
         \\"right\\": \\"\\",
-        \\"commentType\\": \\"single\\"
+        \\"inline\\": true
       },
       \\"type\\": \\"comment\\",
       \\"text\\": \\"Comment\\"
