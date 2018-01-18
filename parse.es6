@@ -1,6 +1,6 @@
-const postcss = require('postcss');
-const gonzales = require('gonzales-pe');
-const Input = require('postcss/lib/input');
+import postcss from 'postcss';
+import gonzales from 'gonzales-pe';
+import Input from 'postcss/lib/input';
 
 const DEFAULT_RAWS_ROOT = {
     before: ''
@@ -396,7 +396,7 @@ function process(node, parent, input, globalPostcssSass) {
     return null;
 }
 
-module.exports = function sassToPostCssTree(source, opts) {
+export default function sassToPostCssTree(source, opts) {
     const input = new Input(source, opts);
     let node;
     try {
@@ -412,4 +412,4 @@ module.exports = function sassToPostCssTree(source, opts) {
     return process(node, null, input, {
         extractSource: extractSource.bind(null, input.css.match(/^.*(\r?\n|$)/gm))
     });
-};
+}

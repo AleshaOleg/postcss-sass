@@ -1,8 +1,4 @@
-const Stringifier = require('postcss/lib/stringifier');
-
-const SassStringifier = function (builder) {
-    Stringifier.call(this, builder);
-};
+import Stringifier from 'postcss/lib/stringifier';
 
 const DEFAULT_RAW = {
     colon:        ': ',
@@ -10,42 +6,43 @@ const DEFAULT_RAW = {
     commentRight: ' '
 };
 
-SassStringifier.prototype = Object.create(Stringifier.prototype);
-SassStringifier.prototype.constructor = Stringifier;
+class SassStringifier extends Stringifier {
 
-SassStringifier.prototype.has = function has(value) {
-    return typeof value !== 'undefined';
-};
 
-SassStringifier.prototype.block = function (node, start) {
-    const between = node.raws.sssBetween || '';
-    this.builder(start + between, node, 'start');
-    if (this.has(node.nodes)) {
-        this.body(node);
+    has(value) {
+        return typeof value !== 'undefined';
     }
-};
 
-SassStringifier.prototype.decl = function (node) {
-    const between = this.raw(node, 'between', 'colon');
-    let string = node.prop + between + this.rawValue(node, 'value');
-    if (node.important) {
-        string += node.raws.important || ' !important';
+    block(node, start) {
+        const between = node.raws.sssBetween || '';
+        this.builder(start + between, node, 'start');
+        if (this.has(node.nodes)) {
+            this.body(node);
+        }
     }
-    this.builder(string, node);
-};
 
-SassStringifier.prototype.comment = function (node) {
-    const left  = this.has(node.raws.left) ?
-        node.raws.left : DEFAULT_RAW.commentLeft;
-    const right = this.has(node.raws.right) ?
-        node.raws.right : DEFAULT_RAW.commentRight;
-
-    if (node.raws.commentType === 'single') {
-        this.builder('//' + left + node.text + right, node);
-    } else if (node.raws.commentType === 'multi') {
-        this.builder('/*' + left + node.text + right + '*/', node);
+    decl(node) {
+        const between = this.raw(node, 'between', 'colon');
+        let string = node.prop + between + this.rawValue(node, 'value');
+        if (node.important) {
+            string += node.raws.important || ' !important';
+        }
+        this.builder(string, node);
     }
-};
+
+    comment(node) {
+        const left  = this.has(node.raws.left) ?
+            node.raws.left : DEFAULT_RAW.commentLeft;
+        const right = this.has(node.raws.right) ?
+            node.raws.right : DEFAULT_RAW.commentRight;
+
+        if (node.raws.commentType === 'single') {
+            this.builder('//' + left + node.text + right, node);
+        } else if (node.raws.commentType === 'multi') {
+            this.builder('/*' + left + node.text + right + '*/', node);
+        }
+    }
+}
 
 
-module.exports = SassStringifier;
+export default SassStringifier;
