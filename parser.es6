@@ -99,7 +99,7 @@ class SassParser {
                         .filter(({ type }) => type === 'block')
                         .forEach(innerContentNode => this.process(innerContentNode, rule));
 
-                    if (rule.nodes.length !== 0) {
+                    if (rule.nodes.length) {
                         // Write selector to Rule
                         rule.selector = this.extractSource(
                             node.start,
@@ -274,7 +274,7 @@ class SassParser {
             parent.value = '';
         }
         // Set value for Declaration node
-        if (node.content.length > 0) {
+        if (node.content.length) {
             node.content.forEach(contentNode => {
                 switch (contentNode.type) {
                     case 'important': {

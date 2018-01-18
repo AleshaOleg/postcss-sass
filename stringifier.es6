@@ -2,24 +2,15 @@ import Stringifier from 'postcss/lib/stringifier';
 
 class SassStringifier extends Stringifier {
 
-    has(value) {
-        return typeof value !== 'undefined';
-    }
-
     block(node, start) {
         this.builder(start, node, 'start');
-        if (this.has(node.nodes)) {
+        if ( node.nodes && node.nodes.length ) {
             this.body(node);
         }
     }
 
     decl(node) {
-        const between = this.raw(node, 'between', 'colon');
-        let string = node.prop + between + this.rawValue(node, 'value');
-        if (node.important) {
-            string += node.raws.important || ' !important';
-        }
-        this.builder(string, node);
+        super.decl(node, false);
     }
 
     comment(node) {
@@ -27,8 +18,7 @@ class SassStringifier extends Stringifier {
         const right = this.raw(node, 'right', 'commentRight');
 
         if ( node.raws.inline ) {
-            const text = node.raws.text || node.text;
-            this.builder('//' + left + text + right, node);
+            this.builder('//' + left + node.text + right, node);
         } else {
             this.builder('/*' + left + node.text + right + '*/', node);
         }
