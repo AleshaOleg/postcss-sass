@@ -5,11 +5,11 @@ const stringify = require('../stringify');
 const parse     = require('../parse');
 
 let tests = fs
-    .readdirSync(path.join(__dirname, 'sass'))
+    .readdirSync(path.join(__dirname, 'cases'))
     .filter(i => path.extname(i) === '.sass' );
 
 function read(file) {
-    return fs.readFileSync(path.join(__dirname, 'sass', file)).toString();
+    return fs.readFileSync(path.join(__dirname, 'cases', file)).toString();
 }
 
 function run(sass) {
