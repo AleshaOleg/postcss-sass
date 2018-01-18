@@ -5,6 +5,9 @@
 node_modules/
 npm-debug.log
 
+*.es6
+.babelrc
+
 __tests__/
 .travis.yml
 

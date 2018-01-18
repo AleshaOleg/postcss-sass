@@ -21,6 +21,10 @@
     "postcss": "^6.0.15"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-precompile-charcodes": "^1.1.0",
+    "babel-preset-env": "^1.6.1",
     "coveralls": "^3.0.0",
     "eslint": "^4.14.0",
     "eslint-config-postcss": "^2.0.2",
@@ -31,16 +35,19 @@
     "pre-commit": "^1.2.2"
   },
   "scripts": {
+    "prepack": "npm run build",
+    "clean": "rm *.js || echo 'Already cleaned'",
+    "build": "npm run clean && babel -s inline -d ./ *.es6",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "pretest": "eslint *.js __tests__",
-    "test": "jest --coverage",
+    "pretest": "eslint *.es6 __tests__",
+    "test": "npm run build && jest --coverage",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "*.js": "eslint"
   },
   "eslintConfig": {
-    "extends": "eslint-config-postcss/es5",
+    "extends": "eslint-config-postcss",
     "rules": {
       "indent": [
         "error",
@@ -64,6 +71,24 @@
           "jest": true
         }
       }
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": "last 1 version",
+            "node": 4
+          },
+          "loose": true
+        }
+      ]
+    ],
+    "plugins": [
+      "add-module-exports",
+      "precompile-charcodes"
     ]
   },
   "pre-commit": [

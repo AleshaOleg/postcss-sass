@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     parse:     require('./parse'),
     stringify: require('./stringify')
 };
