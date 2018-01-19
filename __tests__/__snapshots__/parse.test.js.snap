@@ -3307,6 +3307,76 @@ exports[`parses selectors.sass 1`] = `
 }"
 `;
 
+exports[`parses variable-interpolation.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\"\\\\n\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"#{$var}\\",
+          \\"value\\": \\"10px\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 2,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 2,
+              \\"column\\": 15
+            },
+            \\"input\\": {
+              \\"file\\": \\"variable-interpolation.sass\\"
+            }
+          }
+        }
+      ],
+      \\"selector\\": \\"a\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 2,
+          \\"column\\": 16
+        },
+        \\"input\\": {
+          \\"file\\": \\"variable-interpolation.sass\\"
+        }
+      }
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 2,
+      \\"column\\": 16
+    },
+    \\"input\\": {
+      \\"file\\": \\"variable-interpolation.sass\\"
+    }
+  }
+}"
+`;
+
 exports[`parses variables.sass 1`] = `
 "{
   \\"raws\\": {

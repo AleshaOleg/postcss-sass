@@ -264,10 +264,23 @@ class SassParser {
     }
     property(node, parent) {
         // Set property for Declaration node
-        if (node.content[0].type === 'variable') {
-            parent.prop += '$';
+        switch (node.content[0].type) {
+            case 'variable': {
+                parent.prop += '$';
+                break;
+            }
+            case 'interpolation': {
+                this.raws.interpolation = true;
+                parent.prop += '#{';
+                break;
+            }
+            default:
         }
         parent.prop += node.content[0].content;
+        if (this.raws.interpolation) {
+            parent.prop += '}';
+            this.raws.interpolation = false;
+        }
     }
     value(node, parent) {
         if (!parent.value) {
