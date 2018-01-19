@@ -144,7 +144,7 @@ class SassParser {
                     between: DEFAULT_RAWS_RULE.between
                 },
                 parent,
-                selector: this.raws.multiRuleProp
+                selector: (this.raws.customProperty ? '--' : '') + this.raws.multiRuleProp
             });
             parent.push(multiRule);
             parent = multiRule;
@@ -177,6 +177,9 @@ class SassParser {
         // Looking for property and value node in declaration node
         node.content.forEach((contentNode) => {
             switch (contentNode.type) {
+                case 'customProperty':
+                    this.raws.customProperty = true;
+                    // fall through
                 case 'property': {
                     /* global.property to detect is property is already defined in current object */
                     this.raws.property = true;
@@ -259,8 +262,13 @@ class SassParser {
         }
 
         this.raws.before = '';
+        this.raws.customProperty = false;
         this.raws.multiRuleProp = '';
         this.raws.property = false;
+    }
+    customProperty(node, parent) {
+        this.property(node, parent);
+        parent.prop = `--${parent.prop}`;
     }
     property(node, parent) {
         // Set property for Declaration node
