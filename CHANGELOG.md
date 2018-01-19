@@ -8,10 +8,10 @@
 * Added Stringifier.
 
 ## 0.3.0
-* Refactoring (@sdwvit)
-* List/map
-* Loop
-* Move to ES6 syntax (@gucong3000)
-* Test cases for `stylelint` (@gucong3000)
-* Multiline comments (@gucong3000)
-* Interpolation
+* Refactoring (@sdwvit).
+* List/map.
+* Loop.
+* Move to ES6 syntax (@gucong3000).
+* Test cases for `stylelint` (@gucong3000).
+* Multiline comments (@gucong3000).
+* Interpolation.
