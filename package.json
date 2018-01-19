@@ -42,6 +42,7 @@
     "clean": "rm *.js || echo 'Already cleaned'",
     "build": "npm run clean && babel -s inline -d ./ *.es6",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "prepublishOnly": "npm run build",
     "pretest": "eslint *.es6 __tests__",
     "test": "jest"
   },
