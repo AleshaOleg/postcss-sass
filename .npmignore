@@ -9,7 +9,9 @@ npm-debug.log
 .babelrc
 
 __tests__/
+coverage/
 update-cases
+.gitignore
 .travis.yml
 
 .idea/
