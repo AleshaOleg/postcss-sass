@@ -22,30 +22,28 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-precompile-charcodes": "^1.1.0",
     "babel-preset-env": "^1.6.1",
     "coveralls": "^3.0.0",
     "eslint": "^4.14.0",
     "eslint-config-postcss": "^2.0.2",
+    "husky": "^0.14.3",
     "istanbul": "^0.4.5",
     "jest": "^22.0.4",
-    "lint-staged": "^6.0.0",
     "postcss-parser-tests": "^6.1.0",
-    "postcss-scss": "^1.0.3",
-    "pre-commit": "^1.2.2"
+    "postcss-scss": "^1.0.3"
   },
   "scripts": {
+    "precommit": "npm test",
     "prepack": "npm run build",
     "clean": "rm *.js || echo 'Already cleaned'",
     "build": "npm run clean && babel -s inline -d ./ *.es6",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "pretest": "eslint *.es6 __tests__",
-    "test": "npm run build && jest --coverage",
-    "lint-staged": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": "eslint"
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss",
@@ -74,6 +72,18 @@
       }
     ]
   },
+  "jest": {
+    "collectCoverage": true,
+    "moduleFileExtensions": [
+      "es6",
+      "js",
+      "json"
+    ],
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.es6$": "babel-jest"
+    }
+  },
   "babel": {
     "presets": [
       [
@@ -92,9 +102,5 @@
       "precompile-charcodes"
     ]
   },
-  "pre-commit": [
-    "test",
-    "lint-staged"
-  ],
   "main": "index.js"
 }

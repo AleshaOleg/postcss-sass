@@ -1,6 +1,7 @@
 const path = require('path');
 const fs   = require('fs');
 
+const postcss   = require('postcss');
 const stringify = require('../stringify');
 const parse     = require('../parse');
 
@@ -23,3 +24,7 @@ for ( const name of tests ) {
         run(read(name));
     });
 }
+
+it('stringifies empty block', () => {
+    expect(postcss.parse('a{}').toString(stringify)).toEqual('a');
+});
