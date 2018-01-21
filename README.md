@@ -1,4 +1,4 @@
-# postcss-sass [![Build Status](https://travis-ci.org/AleshaOleg/postcss-sass.svg?branch=master)](https://travis-ci.org/AleshaOleg/postcss-sass) [![Coverage Status](https://coveralls.io/repos/github/AleshaOleg/postcss-sass/badge.svg)](https://coveralls.io/github/AleshaOleg/postcss-sass)
+# postcss-sass [![Build Status](https://travis-ci.org/AleshaOleg/postcss-sass.svg?branch=master)](https://travis-ci.org/AleshaOleg/postcss-sass) [![Coverage Status](https://coveralls.io/repos/github/AleshaOleg/postcss-sass/badge.svg)](https://coveralls.io/github/AleshaOleg/postcss-sass) [![Greenkeeper badge](https://badges.greenkeeper.io/AleshaOleg/postcss-sass.svg)](https://greenkeeper.io/)
 
 A [Sass](http://sass-lang.com/) parser for [PostCSS](https://github.com/postcss/postcss), using [gonzales-pe](https://github.com/tonyganch/gonzales-pe).
 
