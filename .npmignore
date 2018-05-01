@@ -1,5 +1,4 @@
 .gitignore
-.npmignore
 .editorconfig
 
 node_modules/
@@ -13,6 +12,3 @@ coverage/
 update-cases
 .gitignore
 .travis.yml
-
-.idea/
-
