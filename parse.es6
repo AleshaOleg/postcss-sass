@@ -1,12 +1,12 @@
-import Input from 'postcss/lib/input';
+const Input = require('postcss/lib/input')
 
-import Parser from './parser';
+const Parser = require('./parser')
 
-export default function sassParse(sass, opts) {
-    const input = new Input(sass, opts);
+module.exports = (sass, opts) => {
+  const input = new Input(sass, opts)
 
-    const parser = new Parser(input);
-    parser.parse();
+  const parser = new Parser(input)
+  parser.parse()
 
-    return parser.root;
+  return parser.root
 }

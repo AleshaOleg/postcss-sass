@@ -29,7 +29,15 @@
     "babel-preset-env": "^1.6.1",
     "coveralls": "^3.0.0",
     "eslint": "^4.19.1",
-    "eslint-config-postcss": "^3.0.0",
+    "eslint-config-logux": "^23.0.0",
+    "eslint-config-postcss": "^3.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.15.1",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^3.1.0",
     "husky": "^0.14.3",
     "istanbul": "^0.4.5",
     "jest": "^22.4.3",
@@ -48,30 +56,16 @@
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
     "rules": {
-      "indent": [
-        "error",
-        4,
-        {
-          "SwitchCase": 1
-        }
-      ],
       "max-len": [
         "error",
         120
-      ],
-      "prefer-const": "error"
-    },
-    "overrides": [
-      {
-        "files": [
-          "**/__tests__/**/*"
-        ],
-        "env": {
-          "jest": true
-        }
-      }
-    ]
+      ]
+    }
   },
   "jest": {
     "collectCoverage": true,
@@ -80,6 +74,7 @@
       "js",
       "json"
     ],
+    "testPathIgnorePatterns": ["<rootDir>/__tests__/utils"],
     "testEnvironment": "node",
     "transform": {
       "^.+\\.es6$": "babel-jest"
@@ -92,14 +87,13 @@
         {
           "targets": {
             "browsers": "last 1 version",
-            "node": 4
+            "node": 6
           },
           "loose": true
         }
       ]
     ],
     "plugins": [
-      "add-module-exports",
       "precompile-charcodes"
     ]
   },

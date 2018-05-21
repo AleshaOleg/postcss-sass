@@ -1,6 +1,6 @@
-import Stringifier from './stringifier';
+const Stringifier = require('./stringifier')
 
-export default function stringify(node, builder) {
-    const str = new Stringifier(builder);
-    str.stringify(node);
+module.exports = (node, builder) => {
+  const str = new Stringifier(builder)
+  str.stringify(node)
 }

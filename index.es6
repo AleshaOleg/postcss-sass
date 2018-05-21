@@ -1,6 +1,6 @@
-import parse from './parse';
-import stringify from './stringify';
-export default {
-    parse,
-    stringify
-};
+const parse = require('./parse')
+const stringify = require('./stringify')
+module.exports = {
+  parse,
+  stringify
+}
