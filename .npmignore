@@ -8,6 +8,5 @@ npm-debug.log
 
 __tests__/
 coverage/
-update-cases.es6
 .gitignore
 .travis.yml
