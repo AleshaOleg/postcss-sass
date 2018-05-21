@@ -312,6 +312,10 @@ class SassParser {
                         parent.value += contentNode.content.join('') + ')';
                         break;
                     }
+                    case 'percentage': {
+                        parent.value += contentNode.content.join('') + '%';
+                        break;
+                    }
                     default: {
                         if (contentNode.content.constructor === Array) {
                             parent.value += contentNode.content.join('');
