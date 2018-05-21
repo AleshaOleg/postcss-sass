@@ -60,6 +60,11 @@
       "ecmaVersion": 6,
       "sourceType": "module"
     },
+    "settings": {
+      "node": {
+        "tryExtensions": [".js", ".es6"]
+      }
+    },
     "rules": {
       "max-len": [
         "error",
@@ -74,7 +79,9 @@
       "js",
       "json"
     ],
-    "testPathIgnorePatterns": ["<rootDir>/__tests__/utils"],
+    "testPathIgnorePatterns": [
+      "<rootDir>/__tests__/utils"
+    ],
     "testEnvironment": "node",
     "transform": {
       "^.+\\.es6$": "babel-jest"
