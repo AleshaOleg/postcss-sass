@@ -11,7 +11,7 @@ function read(file) {
     return fs.readFileSync(path.join(__dirname, 'cases', file)).toString();
 }
 
-for ( const name of tests ) {
+for (const name of tests) {
     it('convert' + name, () => {
         const sass   = read(name.replace(/\.\w+$/, '.sass'));
         const scss   = read(name);

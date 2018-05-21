@@ -11,7 +11,7 @@ function read(file) {
     return fs.readFileSync(path.join(__dirname, 'cases', file)).toString();
 }
 
-for ( const name of tests ) {
+for (const name of tests) {
     it('parses ' + name, () => {
         const sass   = read(name);
         const root   = parse(sass, { from: name });

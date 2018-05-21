@@ -19,7 +19,7 @@ function run(sass) {
     expect(sass.trim()).toEqual(output.trim());
 }
 
-for ( const name of tests ) {
+for (const name of tests) {
     it('stringifies ' + name, () => {
         run(read(name));
     });
