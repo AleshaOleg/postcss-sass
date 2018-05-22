@@ -181,7 +181,7 @@ class SassParser {
           this.raws.customProperty = true
           // fall through
         case 'property': {
-          /* global.property to detect is property is already defined in current object */
+          /* this.raws.property to detect is property is already defined in current object */
           this.raws.property = true
           this.raws.multiRuleProp = contentNode.content[0].content
           this.raws.multiRulePropVariable = contentNode.content[0].type === 'variable'
