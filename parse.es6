@@ -1,6 +1,6 @@
 const Input = require('postcss/lib/input')
 
-const Parser = require('./parser.es6')
+const Parser = require('./parser')
 
 module.exports = (sass, opts) => {
   const input = new Input(sass, opts)
