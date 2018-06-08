@@ -429,8 +429,11 @@ class SassParser {
       switch (contentNode.type) {
         case 'block': {
           // Create Rule node
-          const atrule = postcss.rule()
-          atrule.type = 'atrule';
+          const atrule = postcss.atRule();
+          atrule.name = node.type === 'atrule'
+            ? 'media'
+            : node.type;
+          atrule.nodes = [];
 
           // Object to store raws for Atrule
           const atRuleRaws = {
@@ -462,15 +465,17 @@ class SassParser {
               return ''
             });
 
-            // save the name of atrule
-            atrule.name = atSelectorString.slice(0, atSelectorString.indexOf(' '));
+            if (node.type === 'atrule') {
+              // save spaces between the name of atrule and parameters
+              atSelectorString = atSelectorString.slice(atSelectorString.indexOf(' '));
+              atRuleRaws.afterName = atSelectorString.slice(0, atSelectorString.search(/[a-z]|\(/i));
 
-            // save spaces between the name of atrule and parameters
-            atSelectorString = atSelectorString.slice(atSelectorString.indexOf(' '));
-            atRuleRaws.afterName = atSelectorString.slice(0, atSelectorString.search(/[a-z]|\(/i));
-
-            // save the parameters of this atRule
-            atrule.params = atSelectorString.slice(atSelectorString.search(/[a-z]|\(/i));
+              // save the parameters of this atRule
+              atrule.params = atSelectorString.slice(atSelectorString.search(/[a-z]|\(/i));
+            } else {
+              // save the parameters of this atRule
+              atrule.params = atSelectorString;
+            }
 
             // Set parameters for Atrule node
             atrule.parent = parent
@@ -488,6 +493,11 @@ class SassParser {
       }
     })
   }
+
+  mixin(node, parent) {
+    this.atrule(node, parent)
+  }
+
 }
 
 module.exports = SassParser
