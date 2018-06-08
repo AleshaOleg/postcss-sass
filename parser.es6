@@ -381,7 +381,7 @@ class SassParser {
   declarationDelimiter (node) {
     this.raws.before += node.content
   }
-  loop (node, parent) {
+/*  loop (node, parent) {
     const loop = postcss.rule()
     this.raws.comment = false
     this.raws.multiRule = false
@@ -403,7 +403,7 @@ class SassParser {
     })
     parent.nodes.push(loop)
     this.raws.loop = false
-  }
+  }*/
   atkeyword (node, parent) {
     parent.selector += `@${ node.content }`
   }
@@ -468,10 +468,10 @@ class SassParser {
             if (node.type === 'atrule') {
               // save spaces between the name of atrule and parameters
               atSelectorString = atSelectorString.slice(atSelectorString.indexOf(' '));
-              atRuleRaws.afterName = atSelectorString.slice(0, atSelectorString.search(/[a-z]|\(/i));
+              atRuleRaws.afterName = atSelectorString.slice(0, atSelectorString.search(/[a-z]|\(|\.|\#|\'|\"|\$/i));
 
               // save the parameters of this atRule
-              atrule.params = atSelectorString.slice(atSelectorString.search(/[a-z]|\(/i));
+              atrule.params = atSelectorString.slice(atSelectorString.search(/[a-z]|\(|\.|\#|\'|\"|\$/i));
             } else {
               // save the parameters of this atRule
               atrule.params = atSelectorString;
@@ -486,6 +486,7 @@ class SassParser {
             }
             atrule.raws = atRuleRaws
             parent.nodes.push(atrule)
+            console.log(atrule);
           }
           break
         }
@@ -502,6 +503,9 @@ class SassParser {
     this.atrule(node, parent)
   }
 
+  loop(node, parent) {
+    this.atrule(node, parent)
+  }
   extend(node, parent) {
     // Loop to find the deepest ruleset node
     this.raws.multiRuleProp = ''
@@ -539,10 +543,10 @@ class SassParser {
 
     // save spaces between the name of atrule and parameters
     atSelectorString = atSelectorString.slice(atSelectorString.indexOf(' '));
-    atRuleRaws.afterName = atSelectorString.slice(0, atSelectorString.search(/[a-z]|\(|\.|\#|\'/i));
+    atRuleRaws.afterName = atSelectorString.slice(0, atSelectorString.search(/[a-z]|\(|\.|\#|\'|\"|\$/i));
 
     // save the parameters of this atRule
-    atrule.params = atSelectorString.slice(atSelectorString.search(/[a-z]|\(|\.|\#|\'/i));
+    atrule.params = atSelectorString.slice(atSelectorString.search(/[a-z]|\(|\.|\#|\'|\"|\$/i));
 
     // Set parameters for Atrule node
     atrule.parent = parent
