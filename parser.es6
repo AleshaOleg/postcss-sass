@@ -498,6 +498,9 @@ class SassParser {
     this.atrule(node, parent)
   }
 
+  include(node, parent) {
+    this.atrule(node, parent)
+  }
 }
 
 module.exports = SassParser
