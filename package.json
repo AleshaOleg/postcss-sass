@@ -44,7 +44,7 @@
     "postcss-parser-tests": "^6.2.1"
   },
   "scripts": {
-    "precommit": "npm test",
+    "precommit": "npm run test && lint-staged",
     "prepack": "npm run build",
     "clean": "rm *.js || echo 'Already cleaned'",
     "build": "npm run clean && babel -s inline -d ./ *.es6",
@@ -105,6 +105,9 @@
     "plugins": [
       "precompile-charcodes"
     ]
+  },
+  "lint-staged": {
+    "*.es6": ["eslint --fix", "git add"]
   },
   "main": "index.js"
 }
