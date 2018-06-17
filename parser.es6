@@ -429,11 +429,11 @@ class SassParser {
       switch (contentNode.type) {
         case 'block': {
           // Create Rule node
-          const atrule = postcss.atRule();
+          const atrule = postcss.atRule()
           atrule.name = node.type === 'atrule'
             ? 'media'
-            : node.type;
-          atrule.nodes = [];
+            : node.type
+          atrule.nodes = []
 
           // Object to store raws for Atrule
           const atRuleRaws = {
@@ -458,23 +458,22 @@ class SassParser {
               contentNode.start
             ).slice(1, -1).replace(/\s+$/, spaces => {
               if (spaces.indexOf('\n') > -1) {
-                atRuleRaws.after = spaces.slice(spaces.indexOf('\n'));
-                spaces = spaces.slice(0, spaces.indexOf('\n'));
+                atRuleRaws.after = spaces.slice(spaces.indexOf('\n'))
+                spaces = spaces.slice(0, spaces.indexOf('\n'))
               }
               atRuleRaws.between = spaces
               return ''
-            });
-
+            })
             if (node.type === 'atrule') {
               // save spaces between the name of atrule and parameters
-              atSelectorString = atSelectorString.slice(atSelectorString.indexOf(' '));
-              atRuleRaws.afterName = atSelectorString.slice(0, atSelectorString.search(/[a-z]|\(|\.|\#|\'|\"|\$/i));
+              atSelectorString = atSelectorString.slice(atSelectorString.indexOf(' '))
+              atRuleRaws.afterName = atSelectorString.slice(0, atSelectorString.search(/[a-z]|\(|\.|#|'|"|\$/i))
 
               // save the parameters of this atRule
-              atrule.params = atSelectorString.slice(atSelectorString.search(/[a-z]|\(|\.|\#|\'|\"|\$/i));
+              atrule.params = atSelectorString.slice(atSelectorString.search(/[a-z]|\(|\.|#|'|"|\$/i))
             } else {
               // save the parameters of this atRule
-              atrule.params = atSelectorString;
+              atrule.params = atSelectorString
             }
 
             // Set parameters for Atrule node
@@ -486,7 +485,6 @@ class SassParser {
             }
             atrule.raws = atRuleRaws
             parent.nodes.push(atrule)
-            console.log(atrule);
           }
           break
         }
@@ -500,19 +498,12 @@ class SassParser {
   }
 
   include(node, parent) {
-    this.atrule(node, parent)
-  }
-
-  loop(node, parent) {
-    this.atrule(node, parent)
-  }
-  extend(node, parent) {
     // Loop to find the deepest ruleset node
     this.raws.multiRuleProp = ''
 
     // Create Rule node
-    const atrule = postcss.atRule();
-    atrule.name = 'extend';
+    const atrule = postcss.atRule()
+    atrule.name = node.type;
 
     // Object to store raws for Atrule
     const atRuleRaws = {
@@ -534,19 +525,15 @@ class SassParser {
       }
     ).replace(/\s+$/, spaces => {
       if (spaces.indexOf('\n') > -1) {
-        atRuleRaws.after = spaces.slice(spaces.indexOf('\n'));
-        spaces = spaces.slice(0, spaces.indexOf('\n'));
+        atRuleRaws.after = spaces.slice(spaces.indexOf('\n'))
+        spaces = spaces.slice(0, spaces.indexOf('\n'))
       }
       atRuleRaws.between = spaces
       return ''
-    });
-
-    // save spaces between the name of atrule and parameters
-    atSelectorString = atSelectorString.slice(atSelectorString.indexOf(' '));
-    atRuleRaws.afterName = atSelectorString.slice(0, atSelectorString.search(/[a-z]|\(|\.|\#|\'|\"|\$/i));
+    })
 
     // save the parameters of this atRule
-    atrule.params = atSelectorString.slice(atSelectorString.search(/[a-z]|\(|\.|\#|\'|\"|\$/i));
+    atrule.params = atSelectorString.slice(1)
 
     // Set parameters for Atrule node
     atrule.parent = parent
@@ -556,6 +543,63 @@ class SassParser {
       input: this.input
     }
     atrule.raws = atRuleRaws
+    parent.nodes.push(atrule)
+  }
+
+  loop(node, parent) {
+    this.atrule(node, parent)
+  }
+  extend(node, parent) {
+    // Loop to find the deepest ruleset node
+    this.raws.multiRuleProp = ''
+
+    // Create Rule node
+    const atrule = postcss.atRule()
+    atrule.name = node.type;
+
+    // Object to store raws for Atrule
+    const atRuleRaws = {
+      before: this.raws.before || DEFAULT_RAWS_RULE.before,
+      between: DEFAULT_RAWS_RULE.between,
+      afterName: ''
+    }
+
+    // Variable to store spaces and symbols before declaration property
+    this.raws.before = ''
+    this.raws.comment = false
+
+    // create a 'selector'('atname' + atRuleRaws.afterName + 'atrule parameters') string from the node
+    let atSelectorString = this.extractSource(
+      node.start,
+      {
+        line: node.content[node.content.length - 1].start.line,
+        column: undefined
+      }
+    ).replace(/\s+$/, spaces => {
+      if (spaces.indexOf('\n') > -1) {
+        atRuleRaws.after = spaces.slice(spaces.indexOf('\n'))
+        spaces = spaces.slice(0, spaces.indexOf('\n'))
+      }
+      atRuleRaws.between = spaces
+      return ''
+    })
+
+    // save spaces between the name of atrule and parameters
+    atSelectorString = atSelectorString.slice(atSelectorString.indexOf(' '))
+    atRuleRaws.afterName = atSelectorString.slice(0, atSelectorString.search(/[a-z]|\(|\.|#|'|"|\$/i))
+
+    // save the parameters of this atRule
+    atrule.params = atSelectorString.slice(atSelectorString.search(/[a-z]|\(|\.|#|'|"|\$/i))
+
+    // Set parameters for Atrule node
+    atrule.parent = parent
+    atrule.source = {
+      start: node.start,
+      end: node.end,
+      input: this.input
+    }
+    atrule.raws = atRuleRaws
+    console.log(atrule);
     parent.nodes.push(atrule)
   }
 }
