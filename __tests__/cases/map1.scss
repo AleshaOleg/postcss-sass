@@ -1,7 +1,0 @@
-$array: (1: '1', 2: '2', 3: '3');
-$second_array: (4: '4', 5: '5');
-$merged: map-merge($array, $second_array);
-
-@each $num, $str in $merged{
-    .link-#{$str}{
-        z-index: $num}}

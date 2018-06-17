@@ -41,8 +41,7 @@
     "husky": "^0.14.3",
     "istanbul": "^0.4.5",
     "jest": "^22.4.3",
-    "postcss-parser-tests": "^6.2.1",
-    "postcss-scss": "^1.0.5"
+    "postcss-parser-tests": "^6.2.1"
   },
   "scripts": {
     "precommit": "npm test",
@@ -62,7 +61,10 @@
     },
     "settings": {
       "node": {
-        "tryExtensions": [".js", ".es6"]
+        "tryExtensions": [
+          ".js",
+          ".es6"
+        ]
       }
     },
     "rules": {
