@@ -503,7 +503,7 @@ class SassParser {
 
     // Create Rule node
     const atrule = postcss.atRule()
-    atrule.name = node.type;
+    atrule.name = node.type
 
     // Object to store raws for Atrule
     const atRuleRaws = {
@@ -555,7 +555,7 @@ class SassParser {
 
     // Create Rule node
     const atrule = postcss.atRule()
-    atrule.name = node.type;
+    atrule.name = node.type
 
     // Object to store raws for Atrule
     const atRuleRaws = {
@@ -599,7 +599,6 @@ class SassParser {
       input: this.input
     }
     atrule.raws = atRuleRaws
-    console.log(atrule);
     parent.nodes.push(atrule)
   }
 }
