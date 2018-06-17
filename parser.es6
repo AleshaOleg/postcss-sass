@@ -381,29 +381,7 @@ class SassParser {
   declarationDelimiter (node) {
     this.raws.before += node.content
   }
-/*  loop (node, parent) {
-    const loop = postcss.rule()
-    this.raws.comment = false
-    this.raws.multiRule = false
-    this.raws.loop = true
-    loop.selector = ''
-    loop.raws = {
-      before: this.raws.before || DEFAULT_RAWS_RULE.before,
-      between: DEFAULT_RAWS_RULE.between
-    }
-    if (this.raws.beforeMulti) {
-      loop.raws.before += this.raws.beforeMulti
-      this.raws.beforeMulti = undefined
-    }
-    node.content.forEach((contentNode, i) => {
-      if (node.content[i + 1] && node.content[i + 1].type === 'block') {
-        this.raws.loop = false
-      }
-      this.process(contentNode, loop)
-    })
-    parent.nodes.push(loop)
-    this.raws.loop = false
-  }*/
+
   atkeyword (node, parent) {
     parent.selector += `@${ node.content }`
   }
@@ -421,7 +399,7 @@ class SassParser {
     parent.selector += node.content
   }
 
-  atrule(node, parent) {
+  atrule (node, parent) {
     // Loop to find the deepest ruleset node
     this.raws.multiRuleProp = ''
 
@@ -430,9 +408,7 @@ class SassParser {
         case 'block': {
           // Create Rule node
           const atrule = postcss.atRule()
-          atrule.name = node.type === 'atrule'
-            ? 'media'
-            : node.type
+          atrule.name = node.type === 'atrule' ? 'media' : node.type
           atrule.nodes = []
 
           // Object to store raws for Atrule
@@ -493,11 +469,11 @@ class SassParser {
     })
   }
 
-  mixin(node, parent) {
+  mixin (node, parent) {
     this.atrule(node, parent)
   }
 
-  include(node, parent) {
+  include (node, parent) {
     // Loop to find the deepest ruleset node
     this.raws.multiRuleProp = ''
 
@@ -517,7 +493,7 @@ class SassParser {
     this.raws.comment = false
 
     // create a 'selector'('atname' + atRuleRaws.afterName + 'atrule parameters') string from the node
-    let atSelectorString = this.extractSource(
+    const atSelectorString = this.extractSource(
       node.start,
       {
         line: node.content[node.content.length - 1].start.line,
@@ -546,10 +522,10 @@ class SassParser {
     parent.nodes.push(atrule)
   }
 
-  loop(node, parent) {
+  loop (node, parent) {
     this.atrule(node, parent)
   }
-  extend(node, parent) {
+  extend (node, parent) {
     // Loop to find the deepest ruleset node
     this.raws.multiRuleProp = ''
 
