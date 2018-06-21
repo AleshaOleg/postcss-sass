@@ -18,7 +18,7 @@
   "homepage": "https://github.com/AleshaOleg/postcss-sass",
   "dependencies": {
     "gonzales-pe": "4.2.3",
-    "postcss": "6.0.22"
+    "postcss": "6.0.23"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
