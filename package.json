@@ -28,7 +28,7 @@
     "babel-plugin-precompile-charcodes": "^1.1.0",
     "babel-preset-env": "^1.6.1",
     "coveralls": "^3.0.0",
-    "eslint": "^4.19.1",
+    "eslint": "^5.0.0",
     "eslint-config-logux": "^23.0.0",
     "eslint-config-postcss": "^3.0.1",
     "eslint-config-standard": "^11.0.0",
