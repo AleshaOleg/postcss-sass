@@ -474,6 +474,14 @@ class SassParser {
   }
 
   include (node, parent) {
+    // if include has content than call this.atrule
+    for (const contentNode of node.content) {
+      if (contentNode.type === 'block') {
+        this.atrule(node, parent)
+        return
+      }
+    }
+
     // Loop to find the deepest ruleset node
     this.raws.multiRuleProp = ''
 
