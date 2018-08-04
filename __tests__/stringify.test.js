@@ -11,12 +11,12 @@ const tests = fs
   .filter(i => path.extname(i) === '.sass')
 
 function run (sass) {
-  const root = parse(sass)
-  const output = root.toString(stringify)
+  let root = parse(sass)
+  let output = root.toString(stringify)
   expect(sass.trim()).toEqual(output.trim())
 }
 
-for (const name of tests) {
+for (let name of tests) {
   it('stringifies ' + name, () => {
     run(read(name))
   })

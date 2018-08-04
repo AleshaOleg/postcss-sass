@@ -13,8 +13,8 @@ module.exports = class SassStringifier extends Stringifier {
   }
 
   comment (node) {
-    const left = this.raw(node, 'left', 'commentLeft')
-    const right = this.raw(node, 'right', 'commentRight')
+    let left = this.raw(node, 'left', 'commentLeft')
+    let right = this.raw(node, 'right', 'commentRight')
 
     if (node.raws.inline) {
       this.builder('//' + left + node.text + right, node)
