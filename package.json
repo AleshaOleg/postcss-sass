@@ -29,7 +29,7 @@
     "babel-preset-env": "^1.7.0",
     "coveralls": "^3.0.0",
     "eslint": "^5.0.0",
-    "eslint-config-logux": "^23.0.0",
+    "eslint-config-logux": "^24.0.0",
     "eslint-config-postcss": "^3.0.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.12.0",
