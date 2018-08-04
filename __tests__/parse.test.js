@@ -8,10 +8,10 @@ const tests = fs
   .readdirSync(path.join(__dirname, 'cases'))
   .filter(i => path.extname(i) === '.sass')
 
-for (const name of tests) {
+for (let name of tests) {
   it('parses ' + name, () => {
-    const sass = read(name)
-    const root = parse(sass, { from: name })
+    let sass = read(name)
+    let root = parse(sass, { from: name })
     expect(jsonify(root)).toMatchSnapshot()
   })
 }

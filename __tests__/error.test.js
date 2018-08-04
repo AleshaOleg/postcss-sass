@@ -3,7 +3,7 @@ const postcssSass = require('../')
 const CssSyntaxError = require('postcss/lib/css-syntax-error')
 
 it('should throw a CssSyntaxError', done => {
-  const sassText = '.foo'
+  let sassText = '.foo'
 
   postcss()
     .process(sassText, { parser: postcssSass })
@@ -16,7 +16,7 @@ it('should throw a CssSyntaxError', done => {
 })
 
 it('should throw original error', done => {
-  const errorHolder = {
+  let errorHolder = {
     toString: () => {
       throw new Error('Error in parser.')
     }

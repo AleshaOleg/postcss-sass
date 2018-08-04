@@ -36,20 +36,20 @@ class SassParser {
     this.root = this.stylesheet(this.node)
   }
   extractSource (start, end) {
-    const nodeLines = this.lines.slice(
+    let nodeLines = this.lines.slice(
       start.line - 1,
       end.line
     )
 
     nodeLines[0] = nodeLines[0].substring(start.column - 1)
-    const last = nodeLines.length - 1
+    let last = nodeLines.length - 1
     nodeLines[last] = nodeLines[last].substring(0, end.column)
 
     return nodeLines.join('')
   }
   stylesheet (node) {
     // Create and set parameters for Root node
-    const root = postcss.root()
+    let root = postcss.root()
     root.source = {
       start: node.start,
       end: node.end,
@@ -82,10 +82,10 @@ class SassParser {
       switch (contentNode.type) {
         case 'block': {
           // Create Rule node
-          const rule = postcss.rule()
+          let rule = postcss.rule()
           rule.selector = ''
           // Object to store raws for Rule
-          const ruleRaws = {
+          let ruleRaws = {
             before: this.raws.before || DEFAULT_RAWS_RULE.before,
             between: DEFAULT_RAWS_RULE.between
           }
@@ -130,7 +130,7 @@ class SassParser {
       if (this.raws.multiRulePropVariable) {
         this.raws.multiRuleProp = `$${ this.raws.multiRuleProp }`
       }
-      const multiRule = Object.assign(postcss.rule(), {
+      let multiRule = Object.assign(postcss.rule(), {
         source: {
           start: {
             line: node.start.line - 1,
@@ -161,11 +161,11 @@ class SassParser {
   declaration (node, parent) {
     let isBlockInside = false
     // Create Declaration node
-    const declarationNode = postcss.decl()
+    let declarationNode = postcss.decl()
     declarationNode.prop = ''
 
     // Object to store raws for Declaration
-    const declarationRaws = Object.assign(declarationNode.raws, {
+    let declarationRaws = Object.assign(declarationNode.raws, {
       before: this.raws.before || DEFAULT_RAWS_DECL.before,
       between: DEFAULT_RAWS_DECL.between,
       semicolon: DEFAULT_RAWS_DECL.semicolon
@@ -301,7 +301,7 @@ class SassParser {
           case 'important': {
             parent.raws.important = contentNode.content
             parent.important = true
-            const match = parent.value.match(/^(.*?)(\s*)$/)
+            let match = parent.value.match(/^(.*?)(\s*)$/)
             if (match) {
               parent.raws.important = match[2] + parent.raws.important
               parent.value = match[1]
@@ -336,11 +336,11 @@ class SassParser {
   comment (node, parent, inline) {
     // https://github.com/nodesecurity/eslint-plugin-security#detect-unsafe-regex
     // eslint-disable-next-line security/detect-unsafe-regex
-    const text = node.content.match(/^(\s*)((?:\S[\s\S]*?)?)(\s*)$/)
+    let text = node.content.match(/^(\s*)((?:\S[\s\S]*?)?)(\s*)$/)
 
     this.raws.comment = true
 
-    const comment = Object.assign(postcss.comment(), {
+    let comment = Object.assign(postcss.comment(), {
       text: text[2],
       raws: {
         before: this.raws.before || DEFAULT_COMMENT_DECL.before,
@@ -382,7 +382,7 @@ class SassParser {
     this.raws.before += node.content
   }
   loop (node, parent) {
-    const loop = postcss.rule()
+    let loop = postcss.rule()
     this.raws.comment = false
     this.raws.multiRule = false
     this.raws.loop = true
