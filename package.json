@@ -21,9 +21,9 @@
     "postcss": "7.0.1"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-env": "^2.4.1",
     "babel-jest": "^23.0.0",
     "babel-plugin-add-module-exports": "^0.3.0",
     "babel-plugin-precompile-charcodes": "^1.1.0",
