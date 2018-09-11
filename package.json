@@ -25,7 +25,7 @@
     "babel-core": "^6.26.3",
     "babel-env": "^2.4.1",
     "babel-jest": "^23.0.0",
-    "babel-plugin-add-module-exports": "^0.3.0",
+    "babel-plugin-add-module-exports": "^1.0.0",
     "babel-plugin-precompile-charcodes": "^1.1.0",
     "coveralls": "^3.0.0",
     "eslint": "^5.3.0",
