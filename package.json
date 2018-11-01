@@ -47,12 +47,12 @@
     "postcss-parser-tests": "^6.2.1"
   },
   "scripts": {
-    "precommit": "npm run test && lint-staged",
-    "prepack": "npm run build",
+    "precommit": "yarn run test && lint-staged",
+    "prepack": "yarn run build",
     "clean": "rm *.js || echo 'Already cleaned'",
-    "build": "npm run clean && babel -s inline -d ./ *.es6",
+    "build": "yarn run clean && babel -s inline -d ./ *.es6 && yarn run test",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "yarn run build",
     "pretest": "eslint *.es6 __tests__",
     "test": "jest"
   },
