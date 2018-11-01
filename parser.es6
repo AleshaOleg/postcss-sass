@@ -365,6 +365,7 @@ class SassParser {
 
     parent.nodes.push(comment)
     this.raws.before = ''
+    comment.parent = parent
   }
   space (node, parent) {
     // Spaces before root and rule
