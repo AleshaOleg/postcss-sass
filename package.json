@@ -49,9 +49,9 @@
   "scripts": {
     "precommit": "yarn run test && lint-staged",
     "clean": "rm *.js || echo 'Already cleaned'",
-    "build": "yarn run clean && babel -s inline -d ./ *.es6 && yarn run test",
+    "build": "yarn run clean && babel -s inline -d ./ *.es6",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "prepublishOnly": "yarn run build",
+    "prepublishOnly": "yarn run build && yarn run test",
     "pretest": "eslint *.es6 __tests__",
     "test": "jest"
   },
