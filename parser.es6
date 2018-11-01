@@ -347,6 +347,14 @@ class SassParser {
         left: text[1],
         right: text[3],
         inline
+      },
+      source: {
+        start: {
+          line: node.start.line,
+          column: node.start.column
+        },
+        end: node.end,
+        input: this.input
       }
     })
 

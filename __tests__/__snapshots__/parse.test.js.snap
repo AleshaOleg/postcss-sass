@@ -1152,7 +1152,20 @@ exports[`parses comments.sass 1`] = `
             \\"inline\\": true
           },
           \\"type\\": \\"comment\\",
-          \\"text\\": \\"Comment1\\"
+          \\"text\\": \\"Comment1\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 2,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 2,
+              \\"column\\": 15
+            },
+            \\"input\\": {
+              \\"file\\": \\"comments.sass\\"
+            }
+          }
         },
         {
           \\"raws\\": {
@@ -1185,7 +1198,20 @@ exports[`parses comments.sass 1`] = `
             \\"inline\\": false
           },
           \\"type\\": \\"comment\\",
-          \\"text\\": \\"Comment2\\"
+          \\"text\\": \\"Comment2\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 4,
+              \\"column\\": 5
+            },
+            \\"end\\": {
+              \\"line\\": 4,
+              \\"column\\": 18
+            },
+            \\"input\\": {
+              \\"file\\": \\"comments.sass\\"
+            }
+          }
         },
         {
           \\"raws\\": {
@@ -1234,7 +1260,20 @@ exports[`parses comments.sass 1`] = `
         \\"inline\\": false
       },
       \\"type\\": \\"comment\\",
-      \\"text\\": \\"* multi\\\\n * line\\"
+      \\"text\\": \\"* multi\\\\n * line\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 6,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 9,
+          \\"column\\": 3
+        },
+        \\"input\\": {
+          \\"file\\": \\"comments.sass\\"
+        }
+      }
     }
   ],
   \\"source\\": {
@@ -2297,7 +2336,20 @@ exports[`parses list1comment.sass 1`] = `
             \\"inline\\": true
           },
           \\"type\\": \\"comment\\",
-          \\"text\\": \\"Comment\\"
+          \\"text\\": \\"Comment\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 19,
+              \\"column\\": 1
+            },
+            \\"end\\": {
+              \\"line\\": 19,
+              \\"column\\": 10
+            },
+            \\"input\\": {
+              \\"file\\": \\"list1comment.sass\\"
+            }
+          }
         }
       ],
       \\"selector\\": \\"@each $el in $list-comma\\"
@@ -2499,7 +2551,20 @@ exports[`parses list2comment.sass 1`] = `
             \\"inline\\": true
           },
           \\"type\\": \\"comment\\",
-          \\"text\\": \\"Comment22\\"
+          \\"text\\": \\"Comment22\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 7,
+              \\"column\\": 1
+            },
+            \\"end\\": {
+              \\"line\\": 7,
+              \\"column\\": 12
+            },
+            \\"input\\": {
+              \\"file\\": \\"list2comment.sass\\"
+            }
+          }
         }
       ],
       \\"selector\\": \\"@each $el in $list-comma\\"
@@ -3108,7 +3173,20 @@ exports[`parses map2comment.sass 1`] = `
         \\"inline\\": false
       },
       \\"type\\": \\"comment\\",
-      \\"text\\": \\"Comment\\"
+      \\"text\\": \\"Comment\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 1,
+          \\"column\\": 13
+        },
+        \\"input\\": {
+          \\"file\\": \\"map2comment.sass\\"
+        }
+      }
     },
     {
       \\"raws\\": {
@@ -3210,7 +3288,20 @@ exports[`parses map2comment.sass 1`] = `
         \\"inline\\": true
       },
       \\"type\\": \\"comment\\",
-      \\"text\\": \\"Comment\\"
+      \\"text\\": \\"Comment\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 7,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 7,
+          \\"column\\": 10
+        },
+        \\"input\\": {
+          \\"file\\": \\"map2comment.sass\\"
+        }
+      }
     },
     {
       \\"raws\\": {
