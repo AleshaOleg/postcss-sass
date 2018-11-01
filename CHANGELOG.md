@@ -22,3 +22,12 @@
 
 ## 0.3.2
 * Fix percentage unit for value of property (@renataogarcia)
+
+## 0.3.3
+* Updated dependencies
+
+## 0.3.4
+* Added `source` and `parent` fields to comment node
+
+## 0.3.5
+* Minor updates in comment node
