@@ -28,7 +28,7 @@
     "babel-jest": "^23.0.0",
     "babel-plugin-add-module-exports": "^1.0.0",
     "babel-plugin-precompile-charcodes": "^1.1.0",
-    "coveralls": "^3.0.0",
+    "coveralls": "^3.0.2",
     "eslint": "^5.12.0",
     "eslint-config-postcss": "^3.0.7",
     "eslint-config-standard": "^12.0.0",
@@ -42,7 +42,7 @@
     "greenkeeper-lockfile": "^1.15.1",
     "husky": "^1.0.0",
     "istanbul": "^0.4.5",
-    "jest": "^22.4.3",
+    "jest": "^24.1.0",
     "lint-staged": "^8.0.0",
     "postcss-parser-tests": "^6.2.1"
   },
