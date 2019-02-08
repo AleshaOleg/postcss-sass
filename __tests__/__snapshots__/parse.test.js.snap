@@ -33,7 +33,6 @@ exports[`parses alt.sass 1`] = `
               \\"column\\": 14
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"alt.sass\\"
             }
           }
@@ -57,7 +56,6 @@ exports[`parses alt.sass 1`] = `
               \\"column\\": 15
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"alt.sass\\"
             }
           }
@@ -81,7 +79,6 @@ exports[`parses alt.sass 1`] = `
               \\"column\\": 14
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"alt.sass\\"
             }
           }
@@ -105,7 +102,6 @@ exports[`parses alt.sass 1`] = `
               \\"column\\": 11
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"alt.sass\\"
             }
           }
@@ -136,7 +132,6 @@ exports[`parses alt.sass 1`] = `
                   \\"column\\": 21
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"alt.sass\\"
                 }
               }
@@ -160,7 +155,6 @@ exports[`parses alt.sass 1`] = `
                   \\"column\\": 15
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"alt.sass\\"
                 }
               }
@@ -176,7 +170,6 @@ exports[`parses alt.sass 1`] = `
               \\"column\\": 16
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"alt.sass\\"
             }
           },
@@ -215,7 +208,6 @@ exports[`parses alt.sass 1`] = `
                       \\"column\\": 16
                     },
                     \\"input\\": {
-                      \\"hasBOM\\": false,
                       \\"file\\": \\"alt.sass\\"
                     }
                   }
@@ -231,7 +223,6 @@ exports[`parses alt.sass 1`] = `
                   \\"column\\": 17
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"alt.sass\\"
                 }
               },
@@ -249,7 +240,6 @@ exports[`parses alt.sass 1`] = `
               \\"column\\": 17
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"alt.sass\\"
             }
           }
@@ -287,7 +277,6 @@ exports[`parses alt.sass 1`] = `
                       \\"column\\": 14
                     },
                     \\"input\\": {
-                      \\"hasBOM\\": false,
                       \\"file\\": \\"alt.sass\\"
                     }
                   }
@@ -311,7 +300,6 @@ exports[`parses alt.sass 1`] = `
                       \\"column\\": 27
                     },
                     \\"input\\": {
-                      \\"hasBOM\\": false,
                       \\"file\\": \\"alt.sass\\"
                     }
                   }
@@ -327,7 +315,6 @@ exports[`parses alt.sass 1`] = `
                   \\"column\\": 28
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"alt.sass\\"
                 }
               },
@@ -345,7 +332,6 @@ exports[`parses alt.sass 1`] = `
               \\"column\\": 28
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"alt.sass\\"
             }
           }
@@ -383,7 +369,6 @@ exports[`parses alt.sass 1`] = `
                       \\"column\\": 15
                     },
                     \\"input\\": {
-                      \\"hasBOM\\": false,
                       \\"file\\": \\"alt.sass\\"
                     }
                   }
@@ -407,7 +392,6 @@ exports[`parses alt.sass 1`] = `
                       \\"column\\": 14
                     },
                     \\"input\\": {
-                      \\"hasBOM\\": false,
                       \\"file\\": \\"alt.sass\\"
                     }
                   }
@@ -423,7 +407,6 @@ exports[`parses alt.sass 1`] = `
                   \\"column\\": 15
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"alt.sass\\"
                 }
               },
@@ -441,7 +424,6 @@ exports[`parses alt.sass 1`] = `
               \\"column\\": 15
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"alt.sass\\"
             }
           }
@@ -458,7 +440,6 @@ exports[`parses alt.sass 1`] = `
           \\"column\\": 15
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"alt.sass\\"
         }
       }
@@ -474,7 +455,6 @@ exports[`parses alt.sass 1`] = `
       \\"column\\": 15
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"alt.sass\\"
     }
   }
@@ -514,7 +494,6 @@ exports[`parses basic.sass 1`] = `
               \\"column\\": 15
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"basic.sass\\"
             }
           }
@@ -538,7 +517,6 @@ exports[`parses basic.sass 1`] = `
               \\"column\\": 20
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"basic.sass\\"
             }
           }
@@ -555,7 +533,6 @@ exports[`parses basic.sass 1`] = `
           \\"column\\": 21
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"basic.sass\\"
         }
       }
@@ -586,7 +563,6 @@ exports[`parses basic.sass 1`] = `
               \\"column\\": 16
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"basic.sass\\"
             }
           }
@@ -610,7 +586,6 @@ exports[`parses basic.sass 1`] = `
               \\"column\\": 15
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"basic.sass\\"
             }
           }
@@ -641,7 +616,6 @@ exports[`parses basic.sass 1`] = `
                   \\"column\\": 21
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"basic.sass\\"
                 }
               }
@@ -672,7 +646,6 @@ exports[`parses basic.sass 1`] = `
                       \\"column\\": 27
                     },
                     \\"input\\": {
-                      \\"hasBOM\\": false,
                       \\"file\\": \\"basic.sass\\"
                     }
                   }
@@ -696,7 +669,6 @@ exports[`parses basic.sass 1`] = `
                       \\"column\\": 27
                     },
                     \\"input\\": {
-                      \\"hasBOM\\": false,
                       \\"file\\": \\"basic.sass\\"
                     }
                   }
@@ -713,7 +685,6 @@ exports[`parses basic.sass 1`] = `
                   \\"column\\": 28
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"basic.sass\\"
                 }
               }
@@ -730,7 +701,6 @@ exports[`parses basic.sass 1`] = `
               \\"column\\": 1
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"basic.sass\\"
             }
           }
@@ -747,7 +717,6 @@ exports[`parses basic.sass 1`] = `
           \\"column\\": 1
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"basic.sass\\"
         }
       }
@@ -792,7 +761,6 @@ exports[`parses basic.sass 1`] = `
                       \\"column\\": 24
                     },
                     \\"input\\": {
-                      \\"hasBOM\\": false,
                       \\"file\\": \\"basic.sass\\"
                     }
                   }
@@ -809,7 +777,6 @@ exports[`parses basic.sass 1`] = `
                   \\"column\\": 25
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"basic.sass\\"
                 }
               }
@@ -840,7 +807,6 @@ exports[`parses basic.sass 1`] = `
                       \\"column\\": 24
                     },
                     \\"input\\": {
-                      \\"hasBOM\\": false,
                       \\"file\\": \\"basic.sass\\"
                     }
                   }
@@ -857,7 +823,6 @@ exports[`parses basic.sass 1`] = `
                   \\"column\\": 25
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"basic.sass\\"
                 }
               }
@@ -874,7 +839,6 @@ exports[`parses basic.sass 1`] = `
               \\"column\\": 4
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"basic.sass\\"
             }
           }
@@ -905,7 +869,6 @@ exports[`parses basic.sass 1`] = `
                   \\"column\\": 25
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"basic.sass\\"
                 }
               }
@@ -922,7 +885,6 @@ exports[`parses basic.sass 1`] = `
               \\"column\\": 26
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"basic.sass\\"
             }
           }
@@ -939,7 +901,6 @@ exports[`parses basic.sass 1`] = `
           \\"column\\": 26
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"basic.sass\\"
         }
       }
@@ -955,7 +916,6 @@ exports[`parses basic.sass 1`] = `
       \\"column\\": 26
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"basic.sass\\"
     }
   }
@@ -995,7 +955,6 @@ exports[`parses basic2.sass 1`] = `
               \\"column\\": 20
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"basic2.sass\\"
             }
           }
@@ -1012,7 +971,6 @@ exports[`parses basic2.sass 1`] = `
           \\"column\\": 21
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"basic2.sass\\"
         }
       }
@@ -1043,7 +1001,6 @@ exports[`parses basic2.sass 1`] = `
               \\"column\\": 20
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"basic2.sass\\"
             }
           }
@@ -1074,7 +1031,6 @@ exports[`parses basic2.sass 1`] = `
                   \\"column\\": 24
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"basic2.sass\\"
                 }
               }
@@ -1091,7 +1047,6 @@ exports[`parses basic2.sass 1`] = `
               \\"column\\": 25
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"basic2.sass\\"
             }
           }
@@ -1122,7 +1077,6 @@ exports[`parses basic2.sass 1`] = `
                   \\"column\\": 24
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"basic2.sass\\"
                 }
               }
@@ -1139,7 +1093,6 @@ exports[`parses basic2.sass 1`] = `
               \\"column\\": 25
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"basic2.sass\\"
             }
           }
@@ -1156,7 +1109,6 @@ exports[`parses basic2.sass 1`] = `
           \\"column\\": 25
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"basic2.sass\\"
         }
       }
@@ -1172,7 +1124,6 @@ exports[`parses basic2.sass 1`] = `
       \\"column\\": 25
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"basic2.sass\\"
     }
   }
@@ -1212,7 +1163,6 @@ exports[`parses comments.sass 1`] = `
               \\"column\\": 15
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"comments.sass\\"
             }
           }
@@ -1236,7 +1186,6 @@ exports[`parses comments.sass 1`] = `
               \\"column\\": 14
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"comments.sass\\"
             }
           }
@@ -1260,7 +1209,6 @@ exports[`parses comments.sass 1`] = `
               \\"column\\": 18
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"comments.sass\\"
             }
           }
@@ -1284,7 +1232,6 @@ exports[`parses comments.sass 1`] = `
               \\"column\\": 26
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"comments.sass\\"
             }
           }
@@ -1301,7 +1248,6 @@ exports[`parses comments.sass 1`] = `
           \\"column\\": 27
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"comments.sass\\"
         }
       }
@@ -1325,7 +1271,6 @@ exports[`parses comments.sass 1`] = `
           \\"column\\": 3
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"comments.sass\\"
         }
       }
@@ -1341,7 +1286,6 @@ exports[`parses comments.sass 1`] = `
       \\"column\\": 4
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"comments.sass\\"
     }
   }
@@ -1381,7 +1325,6 @@ exports[`parses custom-property.sass 1`] = `
               \\"column\\": 24
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"custom-property.sass\\"
             }
           }
@@ -1398,7 +1341,6 @@ exports[`parses custom-property.sass 1`] = `
           \\"column\\": 25
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"custom-property.sass\\"
         }
       }
@@ -1414,7 +1356,6 @@ exports[`parses custom-property.sass 1`] = `
       \\"column\\": 25
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"custom-property.sass\\"
     }
   }
@@ -1461,7 +1402,6 @@ exports[`parses custom-property-set.sass 1`] = `
                   \\"column\\": 19
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"custom-property-set.sass\\"
                 }
               }
@@ -1477,7 +1417,6 @@ exports[`parses custom-property-set.sass 1`] = `
               \\"column\\": 20
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"custom-property-set.sass\\"
             }
           },
@@ -1495,7 +1434,6 @@ exports[`parses custom-property-set.sass 1`] = `
           \\"column\\": 20
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"custom-property-set.sass\\"
         }
       }
@@ -1511,7 +1449,6 @@ exports[`parses custom-property-set.sass 1`] = `
       \\"column\\": 20
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"custom-property-set.sass\\"
     }
   }
@@ -1551,7 +1488,6 @@ exports[`parses global.sass 1`] = `
               \\"column\\": 14
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"global.sass\\"
             }
           }
@@ -1575,7 +1511,6 @@ exports[`parses global.sass 1`] = `
               \\"column\\": 15
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"global.sass\\"
             }
           }
@@ -1599,7 +1534,6 @@ exports[`parses global.sass 1`] = `
               \\"column\\": 14
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"global.sass\\"
             }
           }
@@ -1623,7 +1557,6 @@ exports[`parses global.sass 1`] = `
               \\"column\\": 11
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"global.sass\\"
             }
           }
@@ -1640,7 +1573,6 @@ exports[`parses global.sass 1`] = `
           \\"column\\": 12
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"global.sass\\"
         }
       }
@@ -1656,7 +1588,6 @@ exports[`parses global.sass 1`] = `
       \\"column\\": 12
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"global.sass\\"
     }
   }
@@ -1698,7 +1629,6 @@ exports[`parses important.sass 1`] = `
               \\"column\\": 25
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"important.sass\\"
             }
           }
@@ -1731,7 +1661,6 @@ exports[`parses important.sass 1`] = `
                   \\"column\\": 30
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"important.sass\\"
                 }
               }
@@ -1755,7 +1684,6 @@ exports[`parses important.sass 1`] = `
                   \\"column\\": 18
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"important.sass\\"
                 }
               }
@@ -1771,7 +1699,6 @@ exports[`parses important.sass 1`] = `
               \\"column\\": 19
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"important.sass\\"
             }
           },
@@ -1789,7 +1716,6 @@ exports[`parses important.sass 1`] = `
           \\"column\\": 19
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"important.sass\\"
         }
       }
@@ -1805,7 +1731,6 @@ exports[`parses important.sass 1`] = `
       \\"column\\": 19
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"important.sass\\"
     }
   }
@@ -1838,7 +1763,6 @@ exports[`parses list1.sass 1`] = `
           \\"column\\": 10
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"list1.sass\\"
         }
       }
@@ -1876,7 +1800,6 @@ exports[`parses list1.sass 1`] = `
                   \\"column\\": 20
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"list1.sass\\"
                 }
               }
@@ -1893,7 +1816,6 @@ exports[`parses list1.sass 1`] = `
               \\"column\\": 21
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"list1.sass\\"
             }
           }
@@ -1920,7 +1842,6 @@ exports[`parses list1.sass 1`] = `
           \\"column\\": 24
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"list1.sass\\"
         }
       }
@@ -1958,7 +1879,6 @@ exports[`parses list1.sass 1`] = `
                   \\"column\\": 20
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"list1.sass\\"
                 }
               }
@@ -1975,7 +1895,6 @@ exports[`parses list1.sass 1`] = `
               \\"column\\": 21
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"list1.sass\\"
             }
           }
@@ -2002,7 +1921,6 @@ exports[`parses list1.sass 1`] = `
           \\"column\\": 28
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"list1.sass\\"
         }
       }
@@ -2040,7 +1958,6 @@ exports[`parses list1.sass 1`] = `
                   \\"column\\": 20
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"list1.sass\\"
                 }
               }
@@ -2057,7 +1974,6 @@ exports[`parses list1.sass 1`] = `
               \\"column\\": 21
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"list1.sass\\"
             }
           }
@@ -2084,7 +2000,6 @@ exports[`parses list1.sass 1`] = `
           \\"column\\": 27
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"list1.sass\\"
         }
       }
@@ -2129,7 +2044,6 @@ exports[`parses list1.sass 1`] = `
                       \\"column\\": 25
                     },
                     \\"input\\": {
-                      \\"hasBOM\\": false,
                       \\"file\\": \\"list1.sass\\"
                     }
                   }
@@ -2146,7 +2060,6 @@ exports[`parses list1.sass 1`] = `
                   \\"column\\": 26
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"list1.sass\\"
                 }
               }
@@ -2168,7 +2081,6 @@ exports[`parses list1.sass 1`] = `
       \\"column\\": 26
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"list1.sass\\"
     }
   }
@@ -2201,7 +2113,6 @@ exports[`parses list1comment.sass 1`] = `
           \\"column\\": 10
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"list1comment.sass\\"
         }
       }
@@ -2239,7 +2150,6 @@ exports[`parses list1comment.sass 1`] = `
                   \\"column\\": 20
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"list1comment.sass\\"
                 }
               }
@@ -2256,7 +2166,6 @@ exports[`parses list1comment.sass 1`] = `
               \\"column\\": 21
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"list1comment.sass\\"
             }
           }
@@ -2283,7 +2192,6 @@ exports[`parses list1comment.sass 1`] = `
           \\"column\\": 24
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"list1comment.sass\\"
         }
       }
@@ -2321,7 +2229,6 @@ exports[`parses list1comment.sass 1`] = `
                   \\"column\\": 20
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"list1comment.sass\\"
                 }
               }
@@ -2338,7 +2245,6 @@ exports[`parses list1comment.sass 1`] = `
               \\"column\\": 21
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"list1comment.sass\\"
             }
           }
@@ -2365,7 +2271,6 @@ exports[`parses list1comment.sass 1`] = `
           \\"column\\": 28
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"list1comment.sass\\"
         }
       }
@@ -2403,7 +2308,6 @@ exports[`parses list1comment.sass 1`] = `
                   \\"column\\": 20
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"list1comment.sass\\"
                 }
               }
@@ -2420,7 +2324,6 @@ exports[`parses list1comment.sass 1`] = `
               \\"column\\": 21
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"list1comment.sass\\"
             }
           }
@@ -2444,7 +2347,6 @@ exports[`parses list1comment.sass 1`] = `
               \\"column\\": 10
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"list1comment.sass\\"
             }
           }
@@ -2471,7 +2373,6 @@ exports[`parses list1comment.sass 1`] = `
           \\"column\\": 27
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"list1comment.sass\\"
         }
       }
@@ -2516,7 +2417,6 @@ exports[`parses list1comment.sass 1`] = `
                       \\"column\\": 25
                     },
                     \\"input\\": {
-                      \\"hasBOM\\": false,
                       \\"file\\": \\"list1comment.sass\\"
                     }
                   }
@@ -2533,7 +2433,6 @@ exports[`parses list1comment.sass 1`] = `
                   \\"column\\": 26
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"list1comment.sass\\"
                 }
               }
@@ -2555,7 +2454,6 @@ exports[`parses list1comment.sass 1`] = `
       \\"column\\": 26
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"list1comment.sass\\"
     }
   }
@@ -2588,7 +2486,6 @@ exports[`parses list2comment.sass 1`] = `
           \\"column\\": 28
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"list2comment.sass\\"
         }
       }
@@ -2626,7 +2523,6 @@ exports[`parses list2comment.sass 1`] = `
                   \\"column\\": 20
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"list2comment.sass\\"
                 }
               }
@@ -2643,7 +2539,6 @@ exports[`parses list2comment.sass 1`] = `
               \\"column\\": 21
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"list2comment.sass\\"
             }
           }
@@ -2667,7 +2562,6 @@ exports[`parses list2comment.sass 1`] = `
               \\"column\\": 12
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"list2comment.sass\\"
             }
           }
@@ -2694,7 +2588,6 @@ exports[`parses list2comment.sass 1`] = `
           \\"column\\": 27
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"list2comment.sass\\"
         }
       }
@@ -2739,7 +2632,6 @@ exports[`parses list2comment.sass 1`] = `
                       \\"column\\": 25
                     },
                     \\"input\\": {
-                      \\"hasBOM\\": false,
                       \\"file\\": \\"list2comment.sass\\"
                     }
                   }
@@ -2756,7 +2648,6 @@ exports[`parses list2comment.sass 1`] = `
                   \\"column\\": 26
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"list2comment.sass\\"
                 }
               }
@@ -2778,7 +2669,6 @@ exports[`parses list2comment.sass 1`] = `
       \\"column\\": 26
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"list2comment.sass\\"
     }
   }
@@ -2818,7 +2708,6 @@ exports[`parses little.sass 1`] = `
               \\"column\\": 14
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"little.sass\\"
             }
           }
@@ -2842,7 +2731,6 @@ exports[`parses little.sass 1`] = `
               \\"column\\": 27
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"little.sass\\"
             }
           }
@@ -2873,7 +2761,6 @@ exports[`parses little.sass 1`] = `
                   \\"column\\": 19
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"little.sass\\"
                 }
               }
@@ -2897,7 +2784,6 @@ exports[`parses little.sass 1`] = `
                   \\"column\\": 24
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"little.sass\\"
                 }
               }
@@ -2914,7 +2800,6 @@ exports[`parses little.sass 1`] = `
               \\"column\\": 25
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"little.sass\\"
             }
           }
@@ -2931,7 +2816,6 @@ exports[`parses little.sass 1`] = `
           \\"column\\": 25
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"little.sass\\"
         }
       }
@@ -2947,7 +2831,6 @@ exports[`parses little.sass 1`] = `
       \\"column\\": 25
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"little.sass\\"
     }
   }
@@ -2980,7 +2863,6 @@ exports[`parses map1.sass 1`] = `
           \\"column\\": 32
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"map1.sass\\"
         }
       }
@@ -3004,7 +2886,6 @@ exports[`parses map1.sass 1`] = `
           \\"column\\": 31
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"map1.sass\\"
         }
       }
@@ -3028,7 +2909,6 @@ exports[`parses map1.sass 1`] = `
           \\"column\\": 41
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"map1.sass\\"
         }
       }
@@ -3066,7 +2946,6 @@ exports[`parses map1.sass 1`] = `
                   \\"column\\": 21
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"map1.sass\\"
                 }
               }
@@ -3083,7 +2962,6 @@ exports[`parses map1.sass 1`] = `
               \\"column\\": 22
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"map1.sass\\"
             }
           }
@@ -3102,7 +2980,6 @@ exports[`parses map1.sass 1`] = `
       \\"column\\": 22
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"map1.sass\\"
     }
   }
@@ -3142,7 +3019,6 @@ exports[`parses map2.sass 1`] = `
               \\"column\\": 15
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"map2.sass\\"
             }
           }
@@ -3166,7 +3042,6 @@ exports[`parses map2.sass 1`] = `
               \\"column\\": 16
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"map2.sass\\"
             }
           }
@@ -3190,7 +3065,6 @@ exports[`parses map2.sass 1`] = `
               \\"column\\": 17
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"map2.sass\\"
             }
           }
@@ -3206,7 +3080,6 @@ exports[`parses map2.sass 1`] = `
           \\"column\\": 18
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"map2.sass\\"
         }
       },
@@ -3245,7 +3118,6 @@ exports[`parses map2.sass 1`] = `
                   \\"column\\": 28
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"map2.sass\\"
                 }
               }
@@ -3262,7 +3134,6 @@ exports[`parses map2.sass 1`] = `
               \\"column\\": 29
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"map2.sass\\"
             }
           }
@@ -3281,7 +3152,6 @@ exports[`parses map2.sass 1`] = `
       \\"column\\": 29
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"map2.sass\\"
     }
   }
@@ -3314,7 +3184,6 @@ exports[`parses map2comment.sass 1`] = `
           \\"column\\": 13
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"map2comment.sass\\"
         }
       }
@@ -3345,7 +3214,6 @@ exports[`parses map2comment.sass 1`] = `
               \\"column\\": 15
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"map2comment.sass\\"
             }
           }
@@ -3369,7 +3237,6 @@ exports[`parses map2comment.sass 1`] = `
               \\"column\\": 16
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"map2comment.sass\\"
             }
           }
@@ -3393,7 +3260,6 @@ exports[`parses map2comment.sass 1`] = `
               \\"column\\": 17
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"map2comment.sass\\"
             }
           }
@@ -3409,7 +3275,6 @@ exports[`parses map2comment.sass 1`] = `
           \\"column\\": 18
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"map2comment.sass\\"
         }
       },
@@ -3434,7 +3299,6 @@ exports[`parses map2comment.sass 1`] = `
           \\"column\\": 10
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"map2comment.sass\\"
         }
       }
@@ -3472,7 +3336,6 @@ exports[`parses map2comment.sass 1`] = `
                   \\"column\\": 28
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"map2comment.sass\\"
                 }
               }
@@ -3489,7 +3352,6 @@ exports[`parses map2comment.sass 1`] = `
               \\"column\\": 29
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"map2comment.sass\\"
             }
           }
@@ -3508,7 +3370,6 @@ exports[`parses map2comment.sass 1`] = `
       \\"column\\": 29
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"map2comment.sass\\"
     }
   }
@@ -3555,7 +3416,6 @@ exports[`parses nested.sass 1`] = `
                   \\"column\\": 18
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"nested.sass\\"
                 }
               }
@@ -3579,7 +3439,6 @@ exports[`parses nested.sass 1`] = `
                   \\"column\\": 25
                 },
                 \\"input\\": {
-                  \\"hasBOM\\": false,
                   \\"file\\": \\"nested.sass\\"
                 }
               }
@@ -3595,7 +3454,6 @@ exports[`parses nested.sass 1`] = `
               \\"column\\": 26
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"nested.sass\\"
             }
           },
@@ -3613,7 +3471,6 @@ exports[`parses nested.sass 1`] = `
           \\"column\\": 26
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"nested.sass\\"
         }
       }
@@ -3629,7 +3486,6 @@ exports[`parses nested.sass 1`] = `
       \\"column\\": 26
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"nested.sass\\"
     }
   }
@@ -3669,7 +3525,6 @@ exports[`parses percentage.sass 1`] = `
               \\"column\\": 15
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"percentage.sass\\"
             }
           }
@@ -3686,7 +3541,6 @@ exports[`parses percentage.sass 1`] = `
           \\"column\\": 16
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"percentage.sass\\"
         }
       }
@@ -3702,7 +3556,6 @@ exports[`parses percentage.sass 1`] = `
       \\"column\\": 16
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"percentage.sass\\"
     }
   }
@@ -3742,7 +3595,6 @@ exports[`parses selectors.sass 1`] = `
               \\"column\\": 14
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"selectors.sass\\"
             }
           }
@@ -3759,7 +3611,6 @@ exports[`parses selectors.sass 1`] = `
           \\"column\\": 15
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"selectors.sass\\"
         }
       }
@@ -3790,7 +3641,6 @@ exports[`parses selectors.sass 1`] = `
               \\"column\\": 14
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"selectors.sass\\"
             }
           }
@@ -3807,7 +3657,6 @@ exports[`parses selectors.sass 1`] = `
           \\"column\\": 15
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"selectors.sass\\"
         }
       }
@@ -3838,7 +3687,6 @@ exports[`parses selectors.sass 1`] = `
               \\"column\\": 14
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"selectors.sass\\"
             }
           }
@@ -3855,7 +3703,6 @@ exports[`parses selectors.sass 1`] = `
           \\"column\\": 15
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"selectors.sass\\"
         }
       }
@@ -3886,7 +3733,6 @@ exports[`parses selectors.sass 1`] = `
               \\"column\\": 12
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"selectors.sass\\"
             }
           }
@@ -3903,7 +3749,6 @@ exports[`parses selectors.sass 1`] = `
           \\"column\\": 13
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"selectors.sass\\"
         }
       }
@@ -3919,7 +3764,6 @@ exports[`parses selectors.sass 1`] = `
       \\"column\\": 13
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"selectors.sass\\"
     }
   }
@@ -3959,7 +3803,6 @@ exports[`parses variable-interpolation.sass 1`] = `
               \\"column\\": 15
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"variable-interpolation.sass\\"
             }
           }
@@ -3976,7 +3819,6 @@ exports[`parses variable-interpolation.sass 1`] = `
           \\"column\\": 16
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"variable-interpolation.sass\\"
         }
       }
@@ -3992,7 +3834,6 @@ exports[`parses variable-interpolation.sass 1`] = `
       \\"column\\": 16
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"variable-interpolation.sass\\"
     }
   }
@@ -4025,7 +3866,6 @@ exports[`parses variables.sass 1`] = `
           \\"column\\": 9
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"variables.sass\\"
         }
       }
@@ -4056,7 +3896,6 @@ exports[`parses variables.sass 1`] = `
               \\"column\\": 15
             },
             \\"input\\": {
-              \\"hasBOM\\": false,
               \\"file\\": \\"variables.sass\\"
             }
           }
@@ -4073,7 +3912,6 @@ exports[`parses variables.sass 1`] = `
           \\"column\\": 16
         },
         \\"input\\": {
-          \\"hasBOM\\": false,
           \\"file\\": \\"variables.sass\\"
         }
       }
@@ -4089,7 +3927,6 @@ exports[`parses variables.sass 1`] = `
       \\"column\\": 16
     },
     \\"input\\": {
-      \\"hasBOM\\": false,
       \\"file\\": \\"variables.sass\\"
     }
   }

@@ -1,10 +1,10 @@
+*.es6
+
 .gitignore
 .editorconfig
 
 npm-debug.log
-
-*.es6
-.babelrc
+yarn.error
 
 __tests__/
 coverage/

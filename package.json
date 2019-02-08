@@ -21,12 +21,11 @@
     "postcss": "^7.0.8"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "@logux/eslint-config": "^27.0.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-env": "^2.4.1",
-    "babel-jest": "^23.0.0",
-    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-jest": "^24.1.0",
     "babel-plugin-precompile-charcodes": "^1.1.0",
     "coveralls": "^3.0.2",
     "eslint": "^5.12.0",
@@ -94,7 +93,7 @@
   "babel": {
     "presets": [
       [
-        "env",
+        "@babel/preset-env",
         {
           "targets": {
             "browsers": "last 1 version",
