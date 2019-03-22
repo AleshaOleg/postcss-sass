@@ -1,6 +1,7 @@
 const postcss = require('postcss')
-const postcssSass = require('../')
 const CssSyntaxError = require('postcss/lib/css-syntax-error')
+
+const postcssSass = require('../')
 
 it('should throw a CssSyntaxError', done => {
   let sassText = '.foo'
