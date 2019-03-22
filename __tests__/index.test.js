@@ -1,5 +1,6 @@
 const postcss = require('postcss')
 const gonzales = require('gonzales-pe')
+
 const postcssSass = require('../')
 
 it('PostCSS dependency', () => {
