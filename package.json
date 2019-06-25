@@ -28,7 +28,7 @@
     "babel-jest": "^24.5.0",
     "babel-plugin-precompile-charcodes": "^1.1.0",
     "coveralls": "^3.0.3",
-    "eslint": "^5.15.3",
+    "eslint": "^6.0.1",
     "eslint-config-postcss": "^3.0.7",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
