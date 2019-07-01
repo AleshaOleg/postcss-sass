@@ -43,7 +43,7 @@
     "husky": "^2.2.0",
     "istanbul": "^0.4.5",
     "jest": "^24.5.0",
-    "lint-staged": "^8.1.5",
+    "lint-staged": "^9.0.0",
     "postcss-parser-tests": "^6.2.1"
   },
   "scripts": {
