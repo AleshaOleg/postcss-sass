@@ -68,11 +68,7 @@ class SassParser {
     return root
   }
   process (node, parent) {
-    if (this[node.type]) {
-      return this[node.type](node, parent) || null
-    } else {
-      return null
-    }
+    return this[node.type](node, parent) || null
   }
   ruleset (node, parent) {
     // Loop to find the deepest ruleset node
@@ -465,8 +461,6 @@ class SassParser {
   variable (node, parent) {
     if (this.raws.loop) {
       parent.selector += `$${ node.content[0].content }`
-    } else {
-      parent.selector += `#${ node.content[0].content }`
     }
   }
   ident (node, parent) {
