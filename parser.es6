@@ -423,7 +423,14 @@ class SassParser {
     node.content.forEach((contentNode, i) => {
       switch (contentNode.type) {
         case 'space': {
-          if (node.content[i - 1].type === 'atkeyword') atrule.selector += ' '
+          let prevNodeType = node.content[i - 1].type
+          switch (prevNodeType) {
+            case 'atkeyword':
+            case 'ident':
+              atrule.selector += contentNode.content
+              break
+            default:
+          }
           return
         }
         default:
