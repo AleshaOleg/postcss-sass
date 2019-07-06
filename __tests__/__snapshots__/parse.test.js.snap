@@ -3376,6 +3376,109 @@ exports[`parses map2comment.sass 1`] = `
 }"
 `;
 
+exports[`parses media.sass 1`] = `
+"{
+  \\"raws\\": {
+    \\"before\\": \\"\\"
+  },
+  \\"type\\": \\"root\\",
+  \\"nodes\\": [
+    {
+      \\"raws\\": {
+        \\"before\\": \\"\\",
+        \\"between\\": \\"\\\\n\\"
+      },
+      \\"type\\": \\"rule\\",
+      \\"nodes\\": [
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n  \\",
+            \\"between\\": \\": \\",
+            \\"semicolon\\": false
+          },
+          \\"type\\": \\"decl\\",
+          \\"prop\\": \\"display\\",
+          \\"value\\": \\"flex\\",
+          \\"source\\": {
+            \\"start\\": {
+              \\"line\\": 2,
+              \\"column\\": 3
+            },
+            \\"end\\": {
+              \\"line\\": 2,
+              \\"column\\": 15
+            },
+            \\"input\\": {
+              \\"file\\": \\"media.sass\\"
+            }
+          }
+        },
+        {
+          \\"raws\\": {
+            \\"before\\": \\"\\\\n\\\\n  \\",
+            \\"between\\": \\"\\"
+          },
+          \\"type\\": \\"rule\\",
+          \\"nodes\\": [
+            {
+              \\"raws\\": {
+                \\"before\\": \\"\\\\n    \\",
+                \\"between\\": \\": \\",
+                \\"semicolon\\": false
+              },
+              \\"type\\": \\"decl\\",
+              \\"prop\\": \\"border\\",
+              \\"value\\": \\"0\\",
+              \\"source\\": {
+                \\"start\\": {
+                  \\"line\\": 5,
+                  \\"column\\": 5
+                },
+                \\"end\\": {
+                  \\"line\\": 5,
+                  \\"column\\": 13
+                },
+                \\"input\\": {
+                  \\"file\\": \\"media.sass\\"
+                }
+              }
+            }
+          ],
+          \\"selector\\": \\"@media (max-width: 800px)\\"
+        }
+      ],
+      \\"selector\\": \\".test\\",
+      \\"source\\": {
+        \\"start\\": {
+          \\"line\\": 1,
+          \\"column\\": 1
+        },
+        \\"end\\": {
+          \\"line\\": 5,
+          \\"column\\": 13
+        },
+        \\"input\\": {
+          \\"file\\": \\"media.sass\\"
+        }
+      }
+    }
+  ],
+  \\"source\\": {
+    \\"start\\": {
+      \\"line\\": 1,
+      \\"column\\": 1
+    },
+    \\"end\\": {
+      \\"line\\": 5,
+      \\"column\\": 13
+    },
+    \\"input\\": {
+      \\"file\\": \\"media.sass\\"
+    }
+  }
+}"
+`;
+
 exports[`parses nested.sass 1`] = `
 "{
   \\"raws\\": {

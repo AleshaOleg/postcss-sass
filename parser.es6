@@ -413,6 +413,42 @@ class SassParser {
     parent.nodes.push(loop)
     this.raws.loop = false
   }
+  atrule (node, parent) {
+    let atrule = postcss.rule()
+    atrule.selector = ''
+    atrule.raws = {
+      before: this.raws.before || DEFAULT_RAWS_RULE.before,
+      between: DEFAULT_RAWS_RULE.between
+    }
+    node.content.forEach((contentNode, i) => {
+      switch (contentNode.type) {
+        case 'space': {
+          if (node.content[i - 1].type === 'atkeyword') atrule.selector += ' '
+          return
+        }
+        default:
+      }
+      this.process(contentNode, atrule)
+    })
+    parent.nodes.push(atrule)
+  }
+  parentheses (node, parent) {
+    node.content.forEach((contentNode, i) => {
+      if (i === 0) parent.selector += '('
+
+      if (typeof contentNode.content === 'string') {
+        parent.selector += contentNode.content
+      }
+
+      if (typeof contentNode.content === 'object') {
+        contentNode.content.forEach(childrenContentNode => {
+          parent.selector += childrenContentNode.content
+        })
+      }
+
+      if (i === node.content.length - 1) parent.selector += ')'
+    })
+  }
   atkeyword (node, parent) {
     parent.selector += `@${ node.content }`
   }
