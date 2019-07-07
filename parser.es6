@@ -445,12 +445,20 @@ class SassParser {
 
       if (typeof contentNode.content === 'object') {
         contentNode.content.forEach(childrenContentNode => {
+          if (contentNode.type === 'variable') parent.selector += '$'
           parent.selector += childrenContentNode.content
         })
       }
 
       if (i === node.content.length - 1) parent.selector += ')'
     })
+  }
+  interpolation (node, parent) {
+    parent.selector += '#{'
+    node.content.forEach(contentNode => {
+      this.process(contentNode, parent)
+    })
+    parent.selector += '}'
   }
   atkeyword (node, parent) {
     parent.selector += `@${ node.content }`
@@ -461,7 +469,9 @@ class SassParser {
   variable (node, parent) {
     if (this.raws.loop) {
       parent.selector += `$${ node.content[0].content }`
+      return
     }
+    parent.selector += `$${ node.content }`
   }
   ident (node, parent) {
     parent.selector += node.content
