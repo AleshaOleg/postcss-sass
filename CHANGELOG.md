@@ -37,3 +37,4 @@
 * Updated dependencies.
 
 ## 0.4.1
+* Return null if node in `process` method didn't find.
