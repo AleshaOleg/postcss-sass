@@ -68,11 +68,7 @@ class SassParser {
     return root
   }
   process (node, parent) {
-    if (this[node.type]) {
-      return this[node.type](node, parent) || null
-    } else {
-      return null
-    }
+    return this[node.type](node, parent) || null
   }
   ruleset (node, parent) {
     // Loop to find the deepest ruleset node
@@ -413,6 +409,52 @@ class SassParser {
     parent.nodes.push(loop)
     this.raws.loop = false
   }
+  atrule (node, parent) {
+    let atrule = postcss.rule()
+    atrule.selector = ''
+    atrule.raws = {
+      before: this.raws.before || DEFAULT_RAWS_RULE.before,
+      between: DEFAULT_RAWS_RULE.between
+    }
+    node.content.forEach((contentNode, i) => {
+      if (contentNode.type === 'space') {
+        let prevNodeType = node.content[i - 1].type
+        switch (prevNodeType) {
+          case 'atkeyword':
+          case 'ident':
+            atrule.selector += contentNode.content
+            break
+          default:
+        }
+        return
+      }
+      this.process(contentNode, atrule)
+    })
+    parent.nodes.push(atrule)
+  }
+  parentheses (node, parent) {
+    parent.selector += '('
+    node.content.forEach(contentNode => {
+      if (typeof contentNode.content === 'string') {
+        parent.selector += contentNode.content
+      }
+
+      if (typeof contentNode.content === 'object') {
+        contentNode.content.forEach(childrenContentNode => {
+          if (contentNode.type === 'variable') parent.selector += '$'
+          parent.selector += childrenContentNode.content
+        })
+      }
+    })
+    parent.selector += ')'
+  }
+  interpolation (node, parent) {
+    parent.selector += '#{'
+    node.content.forEach(contentNode => {
+      this.process(contentNode, parent)
+    })
+    parent.selector += '}'
+  }
   atkeyword (node, parent) {
     parent.selector += `@${ node.content }`
   }
@@ -422,9 +464,9 @@ class SassParser {
   variable (node, parent) {
     if (this.raws.loop) {
       parent.selector += `$${ node.content[0].content }`
-    } else {
-      parent.selector += `#${ node.content[0].content }`
+      return
     }
+    parent.selector += `$${ node.content }`
   }
   ident (node, parent) {
     parent.selector += node.content

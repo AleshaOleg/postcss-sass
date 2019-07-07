@@ -1,0 +1,10 @@
+$information-phone: "only screen and (max-width : 320px)"
+
+@media #{$information-phone}
+  background: red
+
+$width-name: max-device-width
+$target-width: 320px
+
+@media screen and ($width-name : $target-width)
+  background: red
