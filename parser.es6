@@ -417,19 +417,16 @@ class SassParser {
       between: DEFAULT_RAWS_RULE.between
     }
     node.content.forEach((contentNode, i) => {
-      switch (contentNode.type) {
-        case 'space': {
-          let prevNodeType = node.content[i - 1].type
-          switch (prevNodeType) {
-            case 'atkeyword':
-            case 'ident':
-              atrule.selector += contentNode.content
-              break
-            default:
-          }
-          return
+      if (contentNode.type === 'space') {
+        let prevNodeType = node.content[i - 1].type
+        switch (prevNodeType) {
+          case 'atkeyword':
+          case 'ident':
+            atrule.selector += contentNode.content
+            break
+          default:
         }
-        default:
+        return
       }
       this.process(contentNode, atrule)
     })
