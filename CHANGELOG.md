@@ -17,21 +17,21 @@
 * Interpolation.
 
 ## 0.3.1
-* Dependencies update (postcss, eslint, jest, postcss-parser-tests, postcss-scss)
-* `hoek` dependency security fix
+* Dependencies update (postcss, eslint, jest, postcss-parser-tests, postcss-scss).
+* `hoek` dependency security fix.
 
 ## 0.3.2
-* Fix percentage unit for value of property (@renataogarcia)
+* Fix percentage unit for value of property (@renataogarcia).
 
 ## 0.3.3
-* Updated dependencies
+* Updated dependencies.
 
 ## 0.3.4
-* Added `source` and `parent` fields to comment node
+* Added `source` and `parent` fields to comment node.
 
 ## 0.3.5
-* Minor updates in comment node
+* Minor updates in comment node.
 
 ## 0.4.0
-* Added support for media queries
-* Updated dependencies
+* Added support for media queries.
+* Updated dependencies.
