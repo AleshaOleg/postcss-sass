@@ -31,3 +31,7 @@
 
 ## 0.3.5
 * Minor updates in comment node
+
+## 0.4.0
+* Added support for media queries
+* Updated dependencies
