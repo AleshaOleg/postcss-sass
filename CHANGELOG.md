@@ -35,3 +35,5 @@
 ## 0.4.0
 * Added support for media queries.
 * Updated dependencies.
+
+## 0.4.1
