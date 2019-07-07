@@ -436,9 +436,8 @@ class SassParser {
     parent.nodes.push(atrule)
   }
   parentheses (node, parent) {
-    node.content.forEach((contentNode, i) => {
-      if (i === 0) parent.selector += '('
-
+    parent.selector += '('
+    node.content.forEach(contentNode => {
       if (typeof contentNode.content === 'string') {
         parent.selector += contentNode.content
       }
@@ -449,9 +448,8 @@ class SassParser {
           parent.selector += childrenContentNode.content
         })
       }
-
-      if (i === node.content.length - 1) parent.selector += ')'
     })
+    parent.selector += ')'
   }
   interpolation (node, parent) {
     parent.selector += '#{'
