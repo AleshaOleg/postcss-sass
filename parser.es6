@@ -68,7 +68,8 @@ class SassParser {
     return root
   }
   process (node, parent) {
-    return this[node.type](node, parent) || null
+    if (this[node.type]) return this[node.type](node, parent) || null
+    return null
   }
   ruleset (node, parent) {
     // Loop to find the deepest ruleset node
