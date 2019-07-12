@@ -24,7 +24,7 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
-    "@logux/eslint-config": "^28.2.3",
+    "@logux/eslint-config": "^29.0.0",
     "babel-jest": "^24.5.0",
     "babel-plugin-precompile-charcodes": "^1.1.0",
     "coveralls": "^3.0.3",
