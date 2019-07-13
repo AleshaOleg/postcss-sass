@@ -26,6 +26,7 @@ class SassParser {
   constructor (input) {
     this.input = input
   }
+
   parse () {
     try {
       this.node = gonzales.parse(this.input.css, { syntax: 'sass' })
@@ -35,6 +36,7 @@ class SassParser {
     this.lines = this.input.css.match(/^.*(\r?\n|$)/gm)
     this.root = this.stylesheet(this.node)
   }
+
   extractSource (start, end) {
     let nodeLines = this.lines.slice(
       start.line - 1,
@@ -47,6 +49,7 @@ class SassParser {
 
     return nodeLines.join('')
   }
+
   stylesheet (node) {
     // Create and set parameters for Root node
     let root = postcss.root()
@@ -67,10 +70,12 @@ class SassParser {
     node.content.forEach(contentNode => this.process(contentNode, root))
     return root
   }
+
   process (node, parent) {
     if (this[node.type]) return this[node.type](node, parent) || null
     return null
   }
+
   ruleset (node, parent) {
     // Loop to find the deepest ruleset node
     this.raws.multiRuleProp = ''
@@ -121,6 +126,7 @@ class SassParser {
       }
     })
   }
+
   block (node, parent) {
     // If nested rules exist, wrap current rule in new rule node
     if (this.raws.multiRule) {
@@ -155,6 +161,7 @@ class SassParser {
       this.raws.beforeMulti = this.raws.before
     }
   }
+
   declaration (node, parent) {
     let isBlockInside = false
     // Create Declaration node
@@ -263,10 +270,12 @@ class SassParser {
     this.raws.multiRuleProp = ''
     this.raws.property = false
   }
+
   customProperty (node, parent) {
     this.property(node, parent)
     parent.prop = `--${ parent.prop }`
   }
+
   property (node, parent) {
     // Set property for Declaration node
     switch (node.content[0].type) {
@@ -287,6 +296,7 @@ class SassParser {
       this.raws.interpolation = false
     }
   }
+
   value (node, parent) {
     if (!parent.value) {
       parent.value = ''
@@ -324,12 +334,15 @@ class SassParser {
       })
     }
   }
+
   singlelineComment (node, parent) {
     return this.comment(node, parent, true)
   }
+
   multilineComment (node, parent) {
     return this.comment(node, parent, false)
   }
+
   comment (node, parent, inline) {
     // https://github.com/nodesecurity/eslint-plugin-security#detect-unsafe-regex
     // eslint-disable-next-line security/detect-unsafe-regex
@@ -364,6 +377,7 @@ class SassParser {
     parent.nodes.push(comment)
     this.raws.before = ''
   }
+
   space (node, parent) {
     // Spaces before root and rule
     switch (parent.type) {
@@ -384,9 +398,11 @@ class SassParser {
       default:
     }
   }
+
   declarationDelimiter (node) {
     this.raws.before += node.content
   }
+
   loop (node, parent) {
     let loop = postcss.rule()
     this.raws.comment = false
@@ -410,6 +426,7 @@ class SassParser {
     parent.nodes.push(loop)
     this.raws.loop = false
   }
+
   atrule (node, parent) {
     let atrule = postcss.rule()
     atrule.selector = ''
@@ -433,6 +450,7 @@ class SassParser {
     })
     parent.nodes.push(atrule)
   }
+
   parentheses (node, parent) {
     parent.selector += '('
     node.content.forEach(contentNode => {
@@ -449,6 +467,7 @@ class SassParser {
     })
     parent.selector += ')'
   }
+
   interpolation (node, parent) {
     parent.selector += '#{'
     node.content.forEach(contentNode => {
@@ -456,12 +475,15 @@ class SassParser {
     })
     parent.selector += '}'
   }
+
   atkeyword (node, parent) {
     parent.selector += `@${ node.content }`
   }
+
   operator (node, parent) {
     parent.selector += node.content
   }
+
   variable (node, parent) {
     if (this.raws.loop) {
       parent.selector += `$${ node.content[0].content }`
@@ -469,6 +491,7 @@ class SassParser {
     }
     parent.selector += `$${ node.content }`
   }
+
   ident (node, parent) {
     parent.selector += node.content
   }
