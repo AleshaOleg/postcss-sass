@@ -17,9 +17,7 @@ const DEFAULT_RAWS_DECL = {
 }
 
 const DEFAULT_COMMENT_DECL = {
-  before: '',
-  left: '',
-  right: ''
+  before: ''
 }
 
 class SassParser {

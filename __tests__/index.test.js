@@ -1,7 +1,7 @@
 const postcss = require('postcss')
 const gonzales = require('gonzales-pe')
 
-const postcssSass = require('../')
+const postcssSass = require('..')
 
 it('PostCSS dependency', () => {
   expect(typeof postcss).toBe('function')
