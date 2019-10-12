@@ -952,12 +952,12 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@logux/eslint-config@^32.0.0":
-  version "32.0.0"
-  resolved "https://registry.yarnpkg.com/@logux/eslint-config/-/eslint-config-32.0.0.tgz#5ad6270091d877e6c3936021289d9904f06e0a62"
-  integrity sha512-fttFeArZxrLSYE575GnRd7fCJhz1tTCBRBJs3fV230dhGXtGHzJmPUcJ6HD2itJefePHDIXHign8ebd/578YDw==
+"@logux/eslint-config@^33.0.0":
+  version "33.0.0"
+  resolved "https://registry.yarnpkg.com/@logux/eslint-config/-/eslint-config-33.0.0.tgz#69d0e657b9135ce4643bba398b1b5d1c9487005f"
+  integrity sha512-tnHJH/dOfd6P/3Yas47wgMvW0c9TXXUhkq9PZ3gbPcS/ReKq4Cwx9mwy4Hd6xadHuvJh7mhCyAk4erOAGq65PQ==
   dependencies:
-    globals "^12.1.0"
+    globals "^12.1.1"
 
 "@nodelib/fs.scandir@2.1.1":
   version "2.1.1"
@@ -2762,12 +2762,12 @@ globals@^11.1.0, globals@^11.7.0:
   resolved "https://registry.yarnpkg.com/globals/-/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
 
-globals@^12.1.0:
-  version "12.1.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-12.1.0.tgz#ce672adc93cb3303513ec62b5b97bad510db028f"
-  integrity sha512-GQ4xcAfbMWx/Lly8PUHIn8/t2o7YEoMWnQ7nhJtjEJ1gs8I4Y+koc0GiraVMaSjc9Ghz99obkMau/tSK/ACEsQ==
+globals@^12.1.1:
+  version "12.1.1"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-12.1.1.tgz#143936147735ab224e5317482fac9669371363a9"
+  integrity sha512-i4wvLF+QFfPq/gNA1S8dL4Z2f2Cb62ZvxDhj38fZIProAfyUidDmUQILIg1jc5iwqJr4PVJSUB5usYvFxSzg+A==
   dependencies:
-    type-fest "^0.6.0"
+    type-fest "^0.8.1"
 
 globby@^10.0.1:
   version "10.0.1"
@@ -5960,10 +5960,10 @@ type-fest@^0.5.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.5.2.tgz#d6ef42a0356c6cd45f49485c3b6281fc148e48a2"
   integrity sha512-DWkS49EQKVX//Tbupb9TFa19c7+MK1XmzkrZUR8TAktmE/DizXoaoJV6TZ/tSIPXipqNiRI6CyAe7x69Jb6RSw==
 
-type-fest@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.6.0.tgz#8d2a2370d3df886eb5c90ada1c5bf6188acf838b"
-  integrity sha512-q+MB8nYR1KDLrgr4G5yemftpMC7/QLqVndBmEEdqzmNj5dcFOO4Oo8qlwZE3ULT3+Zim1F8Kq4cBnikNhlCMlg==
+type-fest@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
+  integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
 uglify-js@^3.1.4:
   version "3.6.0"
