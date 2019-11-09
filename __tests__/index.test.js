@@ -3,11 +3,11 @@ const gonzales = require('gonzales-pe')
 
 const postcssSass = require('..')
 
-it('PostCSS dependency', () => {
+it('check PostCSS dependency', () => {
   expect(typeof postcss).toBe('function')
 })
 
-it('gonzales-pe dependency', () => {
+it('check gonzales-pe dependency', () => {
   expect(typeof gonzales).toBe('object')
 })
 
