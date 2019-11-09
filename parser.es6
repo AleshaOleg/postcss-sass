@@ -20,6 +20,10 @@ const DEFAULT_COMMENT_DECL = {
   before: ''
 }
 
+const SUPPORTED_AT_KEYWORDS = [
+  'media'
+]
+
 class SassParser {
   constructor (input) {
     this.input = input
@@ -426,6 +430,10 @@ class SassParser {
   }
 
   atrule (node, parent) {
+    // Skip unsupported @xxx rules
+    let supportedNode = node.content[0].content.some(contentNode => SUPPORTED_AT_KEYWORDS.includes(contentNode.content))
+    if (!supportedNode) return
+
     let atrule = postcss.rule()
     atrule.selector = ''
     atrule.raws = {
