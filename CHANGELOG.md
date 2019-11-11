@@ -38,3 +38,6 @@
 
 ## 0.4.1
 * Return null if node in `process` method didn't find.
+
+## 0.4.2
+* Added ignoring of unsupported rules which starts from `@`
