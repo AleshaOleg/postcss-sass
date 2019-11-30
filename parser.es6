@@ -348,7 +348,7 @@ class SassParser {
   comment (node, parent, inline) {
     // https://github.com/nodesecurity/eslint-plugin-security#detect-unsafe-regex
     // eslint-disable-next-line security/detect-unsafe-regex
-    let text = node.content.match(/^(\s*)((?:\S[\s\S]*?)?)(\s*)$/)
+    let text = node.content.match(/^(\s*)((?:\S[\S\s]*?)?)(\s*)$/)
 
     this.raws.comment = true
 
