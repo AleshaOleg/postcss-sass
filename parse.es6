@@ -1,5 +1,4 @@
 const Input = require('postcss/lib/input')
-
 const Parser = require('./parser')
 
 module.exports = (sass, opts) => {
