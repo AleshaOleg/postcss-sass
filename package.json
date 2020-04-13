@@ -110,8 +110,7 @@
   },
   "lint-staged": {
     "*.es6": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "main": "index.js",
