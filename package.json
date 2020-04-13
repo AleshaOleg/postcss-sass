@@ -48,7 +48,6 @@
     "postcss-parser-tests": "^6.2.1"
   },
   "scripts": {
-    "precommit": "yarn run test && lint-staged",
     "clean": "rm *.js || echo 'Already cleaned'",
     "build": "yarn run clean && babel -s inline -d ./ *.es6",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
@@ -115,5 +114,10 @@
       "git add"
     ]
   },
-  "main": "index.js"
+  "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run test && lint-staged"
+    }
+  }
 }
