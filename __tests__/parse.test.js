@@ -1,4 +1,4 @@
-const jsonify = require('postcss-parser-tests').jsonify
+const { jsonify } = require('postcss-parser-tests')
 const path = require('path')
 const fs = require('fs')
 
