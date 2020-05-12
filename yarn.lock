@@ -821,10 +821,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@logux/eslint-config@^37.0.0":
-  version "37.2.0"
-  resolved "https://registry.yarnpkg.com/@logux/eslint-config/-/eslint-config-37.2.0.tgz#8f8d4a6a120582a78d3798e030f2a80b90e80c24"
-  integrity sha512-hkp1GlQsJswz3K8xajOJ9wsejMIbvWcZ1es/2b0WD0qTuKdwAz5Y+4sJ3IfxSCMIV5U18TJNPODQYelxdEgX8w==
+"@logux/eslint-config@^38.1.0":
+  version "38.1.0"
+  resolved "https://registry.yarnpkg.com/@logux/eslint-config/-/eslint-config-38.1.0.tgz#ba6c8214b52e899c5e8d07a94a8f8e9a5be59b1d"
+  integrity sha512-GynQi86fsH0km+Ce3XWjKvfFs3Eqk+nviXr/3ycqqdEvp2aUiaHFwrW79yrBPXepgTK4i7JL/ueKPY9qFyVa1A==
   dependencies:
     globals "^13.0.0"
 
