@@ -4,18 +4,18 @@ const gonzales = require('gonzales-pe')
 const postcssSass = require('..')
 
 it('check PostCSS dependency', () => {
-  expect(typeof postcss).toBe('function')
+    expect(typeof postcss).toBe('function')
 })
 
 it('check gonzales-pe dependency', () => {
-  expect(typeof gonzales).toBe('object')
+    expect(typeof gonzales).toBe('object')
 })
 
 it('parse Sass as postcss syntax', () => {
-  expect(typeof postcss()
-    .process(
-      'div\n  a\n    color: red\n  li\n    color: green',
-      { syntax: postcssSass }
-    ).root)
-    .toBe('object')
+    expect(
+        typeof postcss().process(
+            'div\n  a\n    color: red\n  li\n    color: green',
+            { syntax: postcssSass }
+        ).root
+    ).toBe('object')
 })
