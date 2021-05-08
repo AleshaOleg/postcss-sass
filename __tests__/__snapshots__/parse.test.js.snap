@@ -31,9 +31,6 @@ exports[`parses alt.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 14
-            },
-            \\"input\\": {
-              \\"file\\": \\"alt.sass\\"
             }
           }
         },
@@ -54,9 +51,6 @@ exports[`parses alt.sass 1`] = `
             \\"end\\": {
               \\"line\\": 3,
               \\"column\\": 15
-            },
-            \\"input\\": {
-              \\"file\\": \\"alt.sass\\"
             }
           }
         },
@@ -77,9 +71,6 @@ exports[`parses alt.sass 1`] = `
             \\"end\\": {
               \\"line\\": 4,
               \\"column\\": 14
-            },
-            \\"input\\": {
-              \\"file\\": \\"alt.sass\\"
             }
           }
         },
@@ -100,9 +91,6 @@ exports[`parses alt.sass 1`] = `
             \\"end\\": {
               \\"line\\": 5,
               \\"column\\": 11
-            },
-            \\"input\\": {
-              \\"file\\": \\"alt.sass\\"
             }
           }
         },
@@ -130,9 +118,6 @@ exports[`parses alt.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 7,
                   \\"column\\": 21
-                },
-                \\"input\\": {
-                  \\"file\\": \\"alt.sass\\"
                 }
               }
             },
@@ -153,9 +138,6 @@ exports[`parses alt.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 8,
                   \\"column\\": 15
-                },
-                \\"input\\": {
-                  \\"file\\": \\"alt.sass\\"
                 }
               }
             }
@@ -168,9 +150,6 @@ exports[`parses alt.sass 1`] = `
             \\"end\\": {
               \\"line\\": 8,
               \\"column\\": 16
-            },
-            \\"input\\": {
-              \\"file\\": \\"alt.sass\\"
             }
           },
           \\"selector\\": \\"background:\\"
@@ -206,9 +185,6 @@ exports[`parses alt.sass 1`] = `
                     \\"end\\": {
                       \\"line\\": 10,
                       \\"column\\": 16
-                    },
-                    \\"input\\": {
-                      \\"file\\": \\"alt.sass\\"
                     }
                   }
                 }
@@ -221,9 +197,6 @@ exports[`parses alt.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 10,
                   \\"column\\": 17
-                },
-                \\"input\\": {
-                  \\"file\\": \\"alt.sass\\"
                 }
               },
               \\"selector\\": \\"\\"
@@ -238,9 +211,6 @@ exports[`parses alt.sass 1`] = `
             \\"end\\": {
               \\"line\\": 10,
               \\"column\\": 17
-            },
-            \\"input\\": {
-              \\"file\\": \\"alt.sass\\"
             }
           }
         },
@@ -275,9 +245,6 @@ exports[`parses alt.sass 1`] = `
                     \\"end\\": {
                       \\"line\\": 12,
                       \\"column\\": 14
-                    },
-                    \\"input\\": {
-                      \\"file\\": \\"alt.sass\\"
                     }
                   }
                 },
@@ -298,9 +265,6 @@ exports[`parses alt.sass 1`] = `
                     \\"end\\": {
                       \\"line\\": 13,
                       \\"column\\": 27
-                    },
-                    \\"input\\": {
-                      \\"file\\": \\"alt.sass\\"
                     }
                   }
                 }
@@ -313,9 +277,6 @@ exports[`parses alt.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 13,
                   \\"column\\": 28
-                },
-                \\"input\\": {
-                  \\"file\\": \\"alt.sass\\"
                 }
               },
               \\"selector\\": \\"\\"
@@ -330,9 +291,6 @@ exports[`parses alt.sass 1`] = `
             \\"end\\": {
               \\"line\\": 13,
               \\"column\\": 28
-            },
-            \\"input\\": {
-              \\"file\\": \\"alt.sass\\"
             }
           }
         },
@@ -367,9 +325,6 @@ exports[`parses alt.sass 1`] = `
                     \\"end\\": {
                       \\"line\\": 15,
                       \\"column\\": 15
-                    },
-                    \\"input\\": {
-                      \\"file\\": \\"alt.sass\\"
                     }
                   }
                 },
@@ -390,9 +345,6 @@ exports[`parses alt.sass 1`] = `
                     \\"end\\": {
                       \\"line\\": 16,
                       \\"column\\": 14
-                    },
-                    \\"input\\": {
-                      \\"file\\": \\"alt.sass\\"
                     }
                   }
                 }
@@ -405,9 +357,6 @@ exports[`parses alt.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 16,
                   \\"column\\": 15
-                },
-                \\"input\\": {
-                  \\"file\\": \\"alt.sass\\"
                 }
               },
               \\"selector\\": \\"\\"
@@ -422,9 +371,6 @@ exports[`parses alt.sass 1`] = `
             \\"end\\": {
               \\"line\\": 16,
               \\"column\\": 15
-            },
-            \\"input\\": {
-              \\"file\\": \\"alt.sass\\"
             }
           }
         }
@@ -438,9 +384,6 @@ exports[`parses alt.sass 1`] = `
         \\"end\\": {
           \\"line\\": 16,
           \\"column\\": 15
-        },
-        \\"input\\": {
-          \\"file\\": \\"alt.sass\\"
         }
       }
     }
@@ -453,9 +396,6 @@ exports[`parses alt.sass 1`] = `
     \\"end\\": {
       \\"line\\": 16,
       \\"column\\": 15
-    },
-    \\"input\\": {
-      \\"file\\": \\"alt.sass\\"
     }
   }
 }"
@@ -492,9 +432,6 @@ exports[`parses basic.sass 1`] = `
             \\"end\\": {
               \\"line\\": 4,
               \\"column\\": 15
-            },
-            \\"input\\": {
-              \\"file\\": \\"basic.sass\\"
             }
           }
         },
@@ -515,9 +452,6 @@ exports[`parses basic.sass 1`] = `
             \\"end\\": {
               \\"line\\": 5,
               \\"column\\": 20
-            },
-            \\"input\\": {
-              \\"file\\": \\"basic.sass\\"
             }
           }
         }
@@ -531,9 +465,6 @@ exports[`parses basic.sass 1`] = `
         \\"end\\": {
           \\"line\\": 5,
           \\"column\\": 21
-        },
-        \\"input\\": {
-          \\"file\\": \\"basic.sass\\"
         }
       }
     },
@@ -561,9 +492,6 @@ exports[`parses basic.sass 1`] = `
             \\"end\\": {
               \\"line\\": 8,
               \\"column\\": 16
-            },
-            \\"input\\": {
-              \\"file\\": \\"basic.sass\\"
             }
           }
         },
@@ -584,9 +512,6 @@ exports[`parses basic.sass 1`] = `
             \\"end\\": {
               \\"line\\": 9,
               \\"column\\": 15
-            },
-            \\"input\\": {
-              \\"file\\": \\"basic.sass\\"
             }
           }
         },
@@ -614,9 +539,6 @@ exports[`parses basic.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 12,
                   \\"column\\": 21
-                },
-                \\"input\\": {
-                  \\"file\\": \\"basic.sass\\"
                 }
               }
             },
@@ -644,9 +566,6 @@ exports[`parses basic.sass 1`] = `
                     \\"end\\": {
                       \\"line\\": 14,
                       \\"column\\": 27
-                    },
-                    \\"input\\": {
-                      \\"file\\": \\"basic.sass\\"
                     }
                   }
                 },
@@ -667,9 +586,6 @@ exports[`parses basic.sass 1`] = `
                     \\"end\\": {
                       \\"line\\": 15,
                       \\"column\\": 27
-                    },
-                    \\"input\\": {
-                      \\"file\\": \\"basic.sass\\"
                     }
                   }
                 }
@@ -683,9 +599,6 @@ exports[`parses basic.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 15,
                   \\"column\\": 28
-                },
-                \\"input\\": {
-                  \\"file\\": \\"basic.sass\\"
                 }
               }
             }
@@ -699,9 +612,6 @@ exports[`parses basic.sass 1`] = `
             \\"end\\": {
               \\"line\\": 16,
               \\"column\\": 1
-            },
-            \\"input\\": {
-              \\"file\\": \\"basic.sass\\"
             }
           }
         }
@@ -715,9 +625,6 @@ exports[`parses basic.sass 1`] = `
         \\"end\\": {
           \\"line\\": 16,
           \\"column\\": 1
-        },
-        \\"input\\": {
-          \\"file\\": \\"basic.sass\\"
         }
       }
     },
@@ -759,9 +666,6 @@ exports[`parses basic.sass 1`] = `
                     \\"end\\": {
                       \\"line\\": 20,
                       \\"column\\": 24
-                    },
-                    \\"input\\": {
-                      \\"file\\": \\"basic.sass\\"
                     }
                   }
                 }
@@ -775,9 +679,6 @@ exports[`parses basic.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 20,
                   \\"column\\": 25
-                },
-                \\"input\\": {
-                  \\"file\\": \\"basic.sass\\"
                 }
               }
             },
@@ -805,9 +706,6 @@ exports[`parses basic.sass 1`] = `
                     \\"end\\": {
                       \\"line\\": 22,
                       \\"column\\": 24
-                    },
-                    \\"input\\": {
-                      \\"file\\": \\"basic.sass\\"
                     }
                   }
                 }
@@ -821,9 +719,6 @@ exports[`parses basic.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 22,
                   \\"column\\": 25
-                },
-                \\"input\\": {
-                  \\"file\\": \\"basic.sass\\"
                 }
               }
             }
@@ -837,9 +732,6 @@ exports[`parses basic.sass 1`] = `
             \\"end\\": {
               \\"line\\": 23,
               \\"column\\": 4
-            },
-            \\"input\\": {
-              \\"file\\": \\"basic.sass\\"
             }
           }
         },
@@ -867,9 +759,6 @@ exports[`parses basic.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 24,
                   \\"column\\": 25
-                },
-                \\"input\\": {
-                  \\"file\\": \\"basic.sass\\"
                 }
               }
             }
@@ -883,9 +772,6 @@ exports[`parses basic.sass 1`] = `
             \\"end\\": {
               \\"line\\": 24,
               \\"column\\": 26
-            },
-            \\"input\\": {
-              \\"file\\": \\"basic.sass\\"
             }
           }
         }
@@ -899,9 +785,6 @@ exports[`parses basic.sass 1`] = `
         \\"end\\": {
           \\"line\\": 24,
           \\"column\\": 26
-        },
-        \\"input\\": {
-          \\"file\\": \\"basic.sass\\"
         }
       }
     }
@@ -914,9 +797,6 @@ exports[`parses basic.sass 1`] = `
     \\"end\\": {
       \\"line\\": 24,
       \\"column\\": 26
-    },
-    \\"input\\": {
-      \\"file\\": \\"basic.sass\\"
     }
   }
 }"
@@ -953,9 +833,6 @@ exports[`parses basic2.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 20
-            },
-            \\"input\\": {
-              \\"file\\": \\"basic2.sass\\"
             }
           }
         }
@@ -969,9 +846,6 @@ exports[`parses basic2.sass 1`] = `
         \\"end\\": {
           \\"line\\": 2,
           \\"column\\": 21
-        },
-        \\"input\\": {
-          \\"file\\": \\"basic2.sass\\"
         }
       }
     },
@@ -999,9 +873,6 @@ exports[`parses basic2.sass 1`] = `
             \\"end\\": {
               \\"line\\": 5,
               \\"column\\": 20
-            },
-            \\"input\\": {
-              \\"file\\": \\"basic2.sass\\"
             }
           }
         },
@@ -1029,9 +900,6 @@ exports[`parses basic2.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 8,
                   \\"column\\": 24
-                },
-                \\"input\\": {
-                  \\"file\\": \\"basic2.sass\\"
                 }
               }
             }
@@ -1045,9 +913,6 @@ exports[`parses basic2.sass 1`] = `
             \\"end\\": {
               \\"line\\": 8,
               \\"column\\": 25
-            },
-            \\"input\\": {
-              \\"file\\": \\"basic2.sass\\"
             }
           }
         },
@@ -1075,9 +940,6 @@ exports[`parses basic2.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 11,
                   \\"column\\": 24
-                },
-                \\"input\\": {
-                  \\"file\\": \\"basic2.sass\\"
                 }
               }
             }
@@ -1091,9 +953,6 @@ exports[`parses basic2.sass 1`] = `
             \\"end\\": {
               \\"line\\": 11,
               \\"column\\": 25
-            },
-            \\"input\\": {
-              \\"file\\": \\"basic2.sass\\"
             }
           }
         }
@@ -1107,9 +966,6 @@ exports[`parses basic2.sass 1`] = `
         \\"end\\": {
           \\"line\\": 11,
           \\"column\\": 25
-        },
-        \\"input\\": {
-          \\"file\\": \\"basic2.sass\\"
         }
       }
     }
@@ -1122,9 +978,6 @@ exports[`parses basic2.sass 1`] = `
     \\"end\\": {
       \\"line\\": 11,
       \\"column\\": 25
-    },
-    \\"input\\": {
-      \\"file\\": \\"basic2.sass\\"
     }
   }
 }"
@@ -1161,9 +1014,6 @@ exports[`parses comments.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 15
-            },
-            \\"input\\": {
-              \\"file\\": \\"comments.sass\\"
             }
           }
         },
@@ -1184,9 +1034,6 @@ exports[`parses comments.sass 1`] = `
             \\"end\\": {
               \\"line\\": 3,
               \\"column\\": 14
-            },
-            \\"input\\": {
-              \\"file\\": \\"comments.sass\\"
             }
           }
         },
@@ -1207,9 +1054,6 @@ exports[`parses comments.sass 1`] = `
             \\"end\\": {
               \\"line\\": 4,
               \\"column\\": 18
-            },
-            \\"input\\": {
-              \\"file\\": \\"comments.sass\\"
             }
           }
         },
@@ -1230,9 +1074,6 @@ exports[`parses comments.sass 1`] = `
             \\"end\\": {
               \\"line\\": 5,
               \\"column\\": 26
-            },
-            \\"input\\": {
-              \\"file\\": \\"comments.sass\\"
             }
           }
         }
@@ -1246,9 +1087,6 @@ exports[`parses comments.sass 1`] = `
         \\"end\\": {
           \\"line\\": 5,
           \\"column\\": 27
-        },
-        \\"input\\": {
-          \\"file\\": \\"comments.sass\\"
         }
       }
     },
@@ -1269,9 +1107,6 @@ exports[`parses comments.sass 1`] = `
         \\"end\\": {
           \\"line\\": 9,
           \\"column\\": 3
-        },
-        \\"input\\": {
-          \\"file\\": \\"comments.sass\\"
         }
       }
     }
@@ -1284,9 +1119,6 @@ exports[`parses comments.sass 1`] = `
     \\"end\\": {
       \\"line\\": 9,
       \\"column\\": 4
-    },
-    \\"input\\": {
-      \\"file\\": \\"comments.sass\\"
     }
   }
 }"
@@ -1323,9 +1155,6 @@ exports[`parses custom-property.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 24
-            },
-            \\"input\\": {
-              \\"file\\": \\"custom-property.sass\\"
             }
           }
         }
@@ -1339,9 +1168,6 @@ exports[`parses custom-property.sass 1`] = `
         \\"end\\": {
           \\"line\\": 2,
           \\"column\\": 25
-        },
-        \\"input\\": {
-          \\"file\\": \\"custom-property.sass\\"
         }
       }
     }
@@ -1354,9 +1180,6 @@ exports[`parses custom-property.sass 1`] = `
     \\"end\\": {
       \\"line\\": 2,
       \\"column\\": 25
-    },
-    \\"input\\": {
-      \\"file\\": \\"custom-property.sass\\"
     }
   }
 }"
@@ -1400,9 +1223,6 @@ exports[`parses custom-property-set.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 3,
                   \\"column\\": 19
-                },
-                \\"input\\": {
-                  \\"file\\": \\"custom-property-set.sass\\"
                 }
               }
             }
@@ -1415,9 +1235,6 @@ exports[`parses custom-property-set.sass 1`] = `
             \\"end\\": {
               \\"line\\": 3,
               \\"column\\": 20
-            },
-            \\"input\\": {
-              \\"file\\": \\"custom-property-set.sass\\"
             }
           },
           \\"selector\\": \\"--custom-property-set:\\"
@@ -1432,9 +1249,6 @@ exports[`parses custom-property-set.sass 1`] = `
         \\"end\\": {
           \\"line\\": 3,
           \\"column\\": 20
-        },
-        \\"input\\": {
-          \\"file\\": \\"custom-property-set.sass\\"
         }
       }
     }
@@ -1447,9 +1261,6 @@ exports[`parses custom-property-set.sass 1`] = `
     \\"end\\": {
       \\"line\\": 3,
       \\"column\\": 20
-    },
-    \\"input\\": {
-      \\"file\\": \\"custom-property-set.sass\\"
     }
   }
 }"
@@ -1470,10 +1281,7 @@ exports[`parses empty.sass 1`] = `
     \\"end\\": [
       0,
       0
-    ],
-    \\"input\\": {
-      \\"file\\": \\"empty.sass\\"
-    }
+    ]
   }
 }"
 `;
@@ -1509,9 +1317,6 @@ exports[`parses global.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 14
-            },
-            \\"input\\": {
-              \\"file\\": \\"global.sass\\"
             }
           }
         },
@@ -1532,9 +1337,6 @@ exports[`parses global.sass 1`] = `
             \\"end\\": {
               \\"line\\": 3,
               \\"column\\": 15
-            },
-            \\"input\\": {
-              \\"file\\": \\"global.sass\\"
             }
           }
         },
@@ -1555,9 +1357,6 @@ exports[`parses global.sass 1`] = `
             \\"end\\": {
               \\"line\\": 4,
               \\"column\\": 14
-            },
-            \\"input\\": {
-              \\"file\\": \\"global.sass\\"
             }
           }
         },
@@ -1578,9 +1377,6 @@ exports[`parses global.sass 1`] = `
             \\"end\\": {
               \\"line\\": 5,
               \\"column\\": 11
-            },
-            \\"input\\": {
-              \\"file\\": \\"global.sass\\"
             }
           }
         }
@@ -1594,9 +1390,6 @@ exports[`parses global.sass 1`] = `
         \\"end\\": {
           \\"line\\": 5,
           \\"column\\": 12
-        },
-        \\"input\\": {
-          \\"file\\": \\"global.sass\\"
         }
       }
     }
@@ -1609,9 +1402,6 @@ exports[`parses global.sass 1`] = `
     \\"end\\": {
       \\"line\\": 5,
       \\"column\\": 12
-    },
-    \\"input\\": {
-      \\"file\\": \\"global.sass\\"
     }
   }
 }"
@@ -1632,9 +1422,6 @@ exports[`parses import.sass 1`] = `
     \\"end\\": {
       \\"line\\": 1,
       \\"column\\": 27
-    },
-    \\"input\\": {
-      \\"file\\": \\"import.sass\\"
     }
   }
 }"
@@ -1673,9 +1460,6 @@ exports[`parses important.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 25
-            },
-            \\"input\\": {
-              \\"file\\": \\"important.sass\\"
             }
           }
         },
@@ -1705,9 +1489,6 @@ exports[`parses important.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 4,
                   \\"column\\": 30
-                },
-                \\"input\\": {
-                  \\"file\\": \\"important.sass\\"
                 }
               }
             },
@@ -1728,9 +1509,6 @@ exports[`parses important.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 5,
                   \\"column\\": 18
-                },
-                \\"input\\": {
-                  \\"file\\": \\"important.sass\\"
                 }
               }
             }
@@ -1743,9 +1521,6 @@ exports[`parses important.sass 1`] = `
             \\"end\\": {
               \\"line\\": 5,
               \\"column\\": 19
-            },
-            \\"input\\": {
-              \\"file\\": \\"important.sass\\"
             }
           },
           \\"selector\\": \\"background:\\"
@@ -1760,9 +1535,6 @@ exports[`parses important.sass 1`] = `
         \\"end\\": {
           \\"line\\": 5,
           \\"column\\": 19
-        },
-        \\"input\\": {
-          \\"file\\": \\"important.sass\\"
         }
       }
     }
@@ -1775,9 +1547,6 @@ exports[`parses important.sass 1`] = `
     \\"end\\": {
       \\"line\\": 5,
       \\"column\\": 19
-    },
-    \\"input\\": {
-      \\"file\\": \\"important.sass\\"
     }
   }
 }"
@@ -1807,9 +1576,6 @@ exports[`parses list1.sass 1`] = `
         \\"end\\": {
           \\"line\\": 1,
           \\"column\\": 10
-        },
-        \\"input\\": {
-          \\"file\\": \\"list1.sass\\"
         }
       }
     },
@@ -1844,9 +1610,6 @@ exports[`parses list1.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 5,
                   \\"column\\": 20
-                },
-                \\"input\\": {
-                  \\"file\\": \\"list1.sass\\"
                 }
               }
             }
@@ -1860,9 +1623,6 @@ exports[`parses list1.sass 1`] = `
             \\"end\\": {
               \\"line\\": 5,
               \\"column\\": 21
-            },
-            \\"input\\": {
-              \\"file\\": \\"list1.sass\\"
             }
           }
         }
@@ -1886,9 +1646,6 @@ exports[`parses list1.sass 1`] = `
         \\"end\\": {
           \\"line\\": 7,
           \\"column\\": 24
-        },
-        \\"input\\": {
-          \\"file\\": \\"list1.sass\\"
         }
       }
     },
@@ -1923,9 +1680,6 @@ exports[`parses list1.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 11,
                   \\"column\\": 20
-                },
-                \\"input\\": {
-                  \\"file\\": \\"list1.sass\\"
                 }
               }
             }
@@ -1939,9 +1693,6 @@ exports[`parses list1.sass 1`] = `
             \\"end\\": {
               \\"line\\": 11,
               \\"column\\": 21
-            },
-            \\"input\\": {
-              \\"file\\": \\"list1.sass\\"
             }
           }
         }
@@ -1965,9 +1716,6 @@ exports[`parses list1.sass 1`] = `
         \\"end\\": {
           \\"line\\": 13,
           \\"column\\": 28
-        },
-        \\"input\\": {
-          \\"file\\": \\"list1.sass\\"
         }
       }
     },
@@ -2002,9 +1750,6 @@ exports[`parses list1.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 17,
                   \\"column\\": 20
-                },
-                \\"input\\": {
-                  \\"file\\": \\"list1.sass\\"
                 }
               }
             }
@@ -2018,9 +1763,6 @@ exports[`parses list1.sass 1`] = `
             \\"end\\": {
               \\"line\\": 17,
               \\"column\\": 21
-            },
-            \\"input\\": {
-              \\"file\\": \\"list1.sass\\"
             }
           }
         }
@@ -2044,9 +1786,6 @@ exports[`parses list1.sass 1`] = `
         \\"end\\": {
           \\"line\\": 19,
           \\"column\\": 27
-        },
-        \\"input\\": {
-          \\"file\\": \\"list1.sass\\"
         }
       }
     },
@@ -2088,9 +1827,6 @@ exports[`parses list1.sass 1`] = `
                     \\"end\\": {
                       \\"line\\": 24,
                       \\"column\\": 25
-                    },
-                    \\"input\\": {
-                      \\"file\\": \\"list1.sass\\"
                     }
                   }
                 }
@@ -2104,9 +1840,6 @@ exports[`parses list1.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 24,
                   \\"column\\": 26
-                },
-                \\"input\\": {
-                  \\"file\\": \\"list1.sass\\"
                 }
               }
             }
@@ -2125,9 +1858,6 @@ exports[`parses list1.sass 1`] = `
     \\"end\\": {
       \\"line\\": 24,
       \\"column\\": 26
-    },
-    \\"input\\": {
-      \\"file\\": \\"list1.sass\\"
     }
   }
 }"
@@ -2157,9 +1887,6 @@ exports[`parses list1comment.sass 1`] = `
         \\"end\\": {
           \\"line\\": 1,
           \\"column\\": 10
-        },
-        \\"input\\": {
-          \\"file\\": \\"list1comment.sass\\"
         }
       }
     },
@@ -2194,9 +1921,6 @@ exports[`parses list1comment.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 5,
                   \\"column\\": 20
-                },
-                \\"input\\": {
-                  \\"file\\": \\"list1comment.sass\\"
                 }
               }
             }
@@ -2210,9 +1934,6 @@ exports[`parses list1comment.sass 1`] = `
             \\"end\\": {
               \\"line\\": 5,
               \\"column\\": 21
-            },
-            \\"input\\": {
-              \\"file\\": \\"list1comment.sass\\"
             }
           }
         }
@@ -2236,9 +1957,6 @@ exports[`parses list1comment.sass 1`] = `
         \\"end\\": {
           \\"line\\": 7,
           \\"column\\": 24
-        },
-        \\"input\\": {
-          \\"file\\": \\"list1comment.sass\\"
         }
       }
     },
@@ -2273,9 +1991,6 @@ exports[`parses list1comment.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 11,
                   \\"column\\": 20
-                },
-                \\"input\\": {
-                  \\"file\\": \\"list1comment.sass\\"
                 }
               }
             }
@@ -2289,9 +2004,6 @@ exports[`parses list1comment.sass 1`] = `
             \\"end\\": {
               \\"line\\": 11,
               \\"column\\": 21
-            },
-            \\"input\\": {
-              \\"file\\": \\"list1comment.sass\\"
             }
           }
         }
@@ -2315,9 +2027,6 @@ exports[`parses list1comment.sass 1`] = `
         \\"end\\": {
           \\"line\\": 13,
           \\"column\\": 28
-        },
-        \\"input\\": {
-          \\"file\\": \\"list1comment.sass\\"
         }
       }
     },
@@ -2352,9 +2061,6 @@ exports[`parses list1comment.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 17,
                   \\"column\\": 20
-                },
-                \\"input\\": {
-                  \\"file\\": \\"list1comment.sass\\"
                 }
               }
             }
@@ -2368,9 +2074,6 @@ exports[`parses list1comment.sass 1`] = `
             \\"end\\": {
               \\"line\\": 17,
               \\"column\\": 21
-            },
-            \\"input\\": {
-              \\"file\\": \\"list1comment.sass\\"
             }
           }
         },
@@ -2391,9 +2094,6 @@ exports[`parses list1comment.sass 1`] = `
             \\"end\\": {
               \\"line\\": 19,
               \\"column\\": 10
-            },
-            \\"input\\": {
-              \\"file\\": \\"list1comment.sass\\"
             }
           }
         }
@@ -2417,9 +2117,6 @@ exports[`parses list1comment.sass 1`] = `
         \\"end\\": {
           \\"line\\": 21,
           \\"column\\": 27
-        },
-        \\"input\\": {
-          \\"file\\": \\"list1comment.sass\\"
         }
       }
     },
@@ -2461,9 +2158,6 @@ exports[`parses list1comment.sass 1`] = `
                     \\"end\\": {
                       \\"line\\": 26,
                       \\"column\\": 25
-                    },
-                    \\"input\\": {
-                      \\"file\\": \\"list1comment.sass\\"
                     }
                   }
                 }
@@ -2477,9 +2171,6 @@ exports[`parses list1comment.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 26,
                   \\"column\\": 26
-                },
-                \\"input\\": {
-                  \\"file\\": \\"list1comment.sass\\"
                 }
               }
             }
@@ -2498,9 +2189,6 @@ exports[`parses list1comment.sass 1`] = `
     \\"end\\": {
       \\"line\\": 26,
       \\"column\\": 26
-    },
-    \\"input\\": {
-      \\"file\\": \\"list1comment.sass\\"
     }
   }
 }"
@@ -2530,9 +2218,6 @@ exports[`parses list2comment.sass 1`] = `
         \\"end\\": {
           \\"line\\": 1,
           \\"column\\": 28
-        },
-        \\"input\\": {
-          \\"file\\": \\"list2comment.sass\\"
         }
       }
     },
@@ -2567,9 +2252,6 @@ exports[`parses list2comment.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 5,
                   \\"column\\": 20
-                },
-                \\"input\\": {
-                  \\"file\\": \\"list2comment.sass\\"
                 }
               }
             }
@@ -2583,9 +2265,6 @@ exports[`parses list2comment.sass 1`] = `
             \\"end\\": {
               \\"line\\": 5,
               \\"column\\": 21
-            },
-            \\"input\\": {
-              \\"file\\": \\"list2comment.sass\\"
             }
           }
         },
@@ -2606,9 +2285,6 @@ exports[`parses list2comment.sass 1`] = `
             \\"end\\": {
               \\"line\\": 7,
               \\"column\\": 12
-            },
-            \\"input\\": {
-              \\"file\\": \\"list2comment.sass\\"
             }
           }
         }
@@ -2632,9 +2308,6 @@ exports[`parses list2comment.sass 1`] = `
         \\"end\\": {
           \\"line\\": 8,
           \\"column\\": 27
-        },
-        \\"input\\": {
-          \\"file\\": \\"list2comment.sass\\"
         }
       }
     },
@@ -2676,9 +2349,6 @@ exports[`parses list2comment.sass 1`] = `
                     \\"end\\": {
                       \\"line\\": 13,
                       \\"column\\": 25
-                    },
-                    \\"input\\": {
-                      \\"file\\": \\"list2comment.sass\\"
                     }
                   }
                 }
@@ -2692,9 +2362,6 @@ exports[`parses list2comment.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 13,
                   \\"column\\": 26
-                },
-                \\"input\\": {
-                  \\"file\\": \\"list2comment.sass\\"
                 }
               }
             }
@@ -2713,9 +2380,6 @@ exports[`parses list2comment.sass 1`] = `
     \\"end\\": {
       \\"line\\": 13,
       \\"column\\": 26
-    },
-    \\"input\\": {
-      \\"file\\": \\"list2comment.sass\\"
     }
   }
 }"
@@ -2752,9 +2416,6 @@ exports[`parses little.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 14
-            },
-            \\"input\\": {
-              \\"file\\": \\"little.sass\\"
             }
           }
         },
@@ -2775,9 +2436,6 @@ exports[`parses little.sass 1`] = `
             \\"end\\": {
               \\"line\\": 3,
               \\"column\\": 27
-            },
-            \\"input\\": {
-              \\"file\\": \\"little.sass\\"
             }
           }
         },
@@ -2805,9 +2463,6 @@ exports[`parses little.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 5,
                   \\"column\\": 19
-                },
-                \\"input\\": {
-                  \\"file\\": \\"little.sass\\"
                 }
               }
             },
@@ -2828,9 +2483,6 @@ exports[`parses little.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 6,
                   \\"column\\": 24
-                },
-                \\"input\\": {
-                  \\"file\\": \\"little.sass\\"
                 }
               }
             }
@@ -2844,9 +2496,6 @@ exports[`parses little.sass 1`] = `
             \\"end\\": {
               \\"line\\": 6,
               \\"column\\": 25
-            },
-            \\"input\\": {
-              \\"file\\": \\"little.sass\\"
             }
           }
         }
@@ -2860,9 +2509,6 @@ exports[`parses little.sass 1`] = `
         \\"end\\": {
           \\"line\\": 6,
           \\"column\\": 25
-        },
-        \\"input\\": {
-          \\"file\\": \\"little.sass\\"
         }
       }
     }
@@ -2875,9 +2521,6 @@ exports[`parses little.sass 1`] = `
     \\"end\\": {
       \\"line\\": 6,
       \\"column\\": 25
-    },
-    \\"input\\": {
-      \\"file\\": \\"little.sass\\"
     }
   }
 }"
@@ -2907,9 +2550,6 @@ exports[`parses map1.sass 1`] = `
         \\"end\\": {
           \\"line\\": 1,
           \\"column\\": 32
-        },
-        \\"input\\": {
-          \\"file\\": \\"map1.sass\\"
         }
       }
     },
@@ -2930,9 +2570,6 @@ exports[`parses map1.sass 1`] = `
         \\"end\\": {
           \\"line\\": 2,
           \\"column\\": 31
-        },
-        \\"input\\": {
-          \\"file\\": \\"map1.sass\\"
         }
       }
     },
@@ -2953,9 +2590,6 @@ exports[`parses map1.sass 1`] = `
         \\"end\\": {
           \\"line\\": 3,
           \\"column\\": 41
-        },
-        \\"input\\": {
-          \\"file\\": \\"map1.sass\\"
         }
       }
     },
@@ -2990,9 +2624,6 @@ exports[`parses map1.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 7,
                   \\"column\\": 21
-                },
-                \\"input\\": {
-                  \\"file\\": \\"map1.sass\\"
                 }
               }
             }
@@ -3006,9 +2637,6 @@ exports[`parses map1.sass 1`] = `
             \\"end\\": {
               \\"line\\": 7,
               \\"column\\": 22
-            },
-            \\"input\\": {
-              \\"file\\": \\"map1.sass\\"
             }
           }
         }
@@ -3024,9 +2652,6 @@ exports[`parses map1.sass 1`] = `
     \\"end\\": {
       \\"line\\": 7,
       \\"column\\": 22
-    },
-    \\"input\\": {
-      \\"file\\": \\"map1.sass\\"
     }
   }
 }"
@@ -3063,9 +2688,6 @@ exports[`parses map2.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 15
-            },
-            \\"input\\": {
-              \\"file\\": \\"map2.sass\\"
             }
           }
         },
@@ -3086,9 +2708,6 @@ exports[`parses map2.sass 1`] = `
             \\"end\\": {
               \\"line\\": 3,
               \\"column\\": 16
-            },
-            \\"input\\": {
-              \\"file\\": \\"map2.sass\\"
             }
           }
         },
@@ -3109,9 +2728,6 @@ exports[`parses map2.sass 1`] = `
             \\"end\\": {
               \\"line\\": 4,
               \\"column\\": 17
-            },
-            \\"input\\": {
-              \\"file\\": \\"map2.sass\\"
             }
           }
         }
@@ -3124,9 +2740,6 @@ exports[`parses map2.sass 1`] = `
         \\"end\\": {
           \\"line\\": 4,
           \\"column\\": 18
-        },
-        \\"input\\": {
-          \\"file\\": \\"map2.sass\\"
         }
       },
       \\"selector\\": \\"$button-colors:\\"
@@ -3162,9 +2775,6 @@ exports[`parses map2.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 8,
                   \\"column\\": 28
-                },
-                \\"input\\": {
-                  \\"file\\": \\"map2.sass\\"
                 }
               }
             }
@@ -3178,9 +2788,6 @@ exports[`parses map2.sass 1`] = `
             \\"end\\": {
               \\"line\\": 8,
               \\"column\\": 29
-            },
-            \\"input\\": {
-              \\"file\\": \\"map2.sass\\"
             }
           }
         }
@@ -3196,9 +2803,6 @@ exports[`parses map2.sass 1`] = `
     \\"end\\": {
       \\"line\\": 8,
       \\"column\\": 29
-    },
-    \\"input\\": {
-      \\"file\\": \\"map2.sass\\"
     }
   }
 }"
@@ -3228,9 +2832,6 @@ exports[`parses map2comment.sass 1`] = `
         \\"end\\": {
           \\"line\\": 1,
           \\"column\\": 13
-        },
-        \\"input\\": {
-          \\"file\\": \\"map2comment.sass\\"
         }
       }
     },
@@ -3258,9 +2859,6 @@ exports[`parses map2comment.sass 1`] = `
             \\"end\\": {
               \\"line\\": 3,
               \\"column\\": 15
-            },
-            \\"input\\": {
-              \\"file\\": \\"map2comment.sass\\"
             }
           }
         },
@@ -3281,9 +2879,6 @@ exports[`parses map2comment.sass 1`] = `
             \\"end\\": {
               \\"line\\": 4,
               \\"column\\": 16
-            },
-            \\"input\\": {
-              \\"file\\": \\"map2comment.sass\\"
             }
           }
         },
@@ -3304,9 +2899,6 @@ exports[`parses map2comment.sass 1`] = `
             \\"end\\": {
               \\"line\\": 5,
               \\"column\\": 17
-            },
-            \\"input\\": {
-              \\"file\\": \\"map2comment.sass\\"
             }
           }
         }
@@ -3319,9 +2911,6 @@ exports[`parses map2comment.sass 1`] = `
         \\"end\\": {
           \\"line\\": 5,
           \\"column\\": 18
-        },
-        \\"input\\": {
-          \\"file\\": \\"map2comment.sass\\"
         }
       },
       \\"selector\\": \\"$button-colors:\\"
@@ -3343,9 +2932,6 @@ exports[`parses map2comment.sass 1`] = `
         \\"end\\": {
           \\"line\\": 7,
           \\"column\\": 10
-        },
-        \\"input\\": {
-          \\"file\\": \\"map2comment.sass\\"
         }
       }
     },
@@ -3380,9 +2966,6 @@ exports[`parses map2comment.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 10,
                   \\"column\\": 28
-                },
-                \\"input\\": {
-                  \\"file\\": \\"map2comment.sass\\"
                 }
               }
             }
@@ -3396,9 +2979,6 @@ exports[`parses map2comment.sass 1`] = `
             \\"end\\": {
               \\"line\\": 10,
               \\"column\\": 29
-            },
-            \\"input\\": {
-              \\"file\\": \\"map2comment.sass\\"
             }
           }
         }
@@ -3414,9 +2994,6 @@ exports[`parses map2comment.sass 1`] = `
     \\"end\\": {
       \\"line\\": 10,
       \\"column\\": 29
-    },
-    \\"input\\": {
-      \\"file\\": \\"map2comment.sass\\"
     }
   }
 }"
@@ -3453,9 +3030,6 @@ exports[`parses media.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 15
-            },
-            \\"input\\": {
-              \\"file\\": \\"media.sass\\"
             }
           }
         },
@@ -3483,9 +3057,6 @@ exports[`parses media.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 5,
                   \\"column\\": 13
-                },
-                \\"input\\": {
-                  \\"file\\": \\"media.sass\\"
                 }
               }
             }
@@ -3502,9 +3073,6 @@ exports[`parses media.sass 1`] = `
         \\"end\\": {
           \\"line\\": 5,
           \\"column\\": 13
-        },
-        \\"input\\": {
-          \\"file\\": \\"media.sass\\"
         }
       }
     }
@@ -3517,9 +3085,6 @@ exports[`parses media.sass 1`] = `
     \\"end\\": {
       \\"line\\": 5,
       \\"column\\": 13
-    },
-    \\"input\\": {
-      \\"file\\": \\"media.sass\\"
     }
   }
 }"
@@ -3556,9 +3121,6 @@ exports[`parses media2.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 30
-            },
-            \\"input\\": {
-              \\"file\\": \\"media2.sass\\"
             }
           }
         }
@@ -3589,9 +3151,6 @@ exports[`parses media2.sass 1`] = `
             \\"end\\": {
               \\"line\\": 5,
               \\"column\\": 13
-            },
-            \\"input\\": {
-              \\"file\\": \\"media2.sass\\"
             }
           }
         },
@@ -3612,9 +3171,6 @@ exports[`parses media2.sass 1`] = `
             \\"end\\": {
               \\"line\\": 6,
               \\"column\\": 14
-            },
-            \\"input\\": {
-              \\"file\\": \\"media2.sass\\"
             }
           }
         },
@@ -3642,9 +3198,6 @@ exports[`parses media2.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 8,
                   \\"column\\": 16
-                },
-                \\"input\\": {
-                  \\"file\\": \\"media2.sass\\"
                 }
               }
             }
@@ -3675,9 +3228,6 @@ exports[`parses media2.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 11,
                   \\"column\\": 15
-                },
-                \\"input\\": {
-                  \\"file\\": \\"media2.sass\\"
                 }
               }
             }
@@ -3694,9 +3244,6 @@ exports[`parses media2.sass 1`] = `
         \\"end\\": {
           \\"line\\": 11,
           \\"column\\": 15
-        },
-        \\"input\\": {
-          \\"file\\": \\"media2.sass\\"
         }
       }
     }
@@ -3709,9 +3256,6 @@ exports[`parses media2.sass 1`] = `
     \\"end\\": {
       \\"line\\": 11,
       \\"column\\": 15
-    },
-    \\"input\\": {
-      \\"file\\": \\"media2.sass\\"
     }
   }
 }"
@@ -3741,9 +3285,6 @@ exports[`parses media3.sass 1`] = `
         \\"end\\": {
           \\"line\\": 1,
           \\"column\\": 57
-        },
-        \\"input\\": {
-          \\"file\\": \\"media3.sass\\"
         }
       }
     },
@@ -3771,9 +3312,6 @@ exports[`parses media3.sass 1`] = `
             \\"end\\": {
               \\"line\\": 4,
               \\"column\\": 17
-            },
-            \\"input\\": {
-              \\"file\\": \\"media3.sass\\"
             }
           }
         }
@@ -3797,9 +3335,6 @@ exports[`parses media3.sass 1`] = `
         \\"end\\": {
           \\"line\\": 6,
           \\"column\\": 29
-        },
-        \\"input\\": {
-          \\"file\\": \\"media3.sass\\"
         }
       }
     },
@@ -3820,9 +3355,6 @@ exports[`parses media3.sass 1`] = `
         \\"end\\": {
           \\"line\\": 7,
           \\"column\\": 20
-        },
-        \\"input\\": {
-          \\"file\\": \\"media3.sass\\"
         }
       }
     },
@@ -3850,9 +3382,6 @@ exports[`parses media3.sass 1`] = `
             \\"end\\": {
               \\"line\\": 10,
               \\"column\\": 17
-            },
-            \\"input\\": {
-              \\"file\\": \\"media3.sass\\"
             }
           }
         }
@@ -3868,9 +3397,6 @@ exports[`parses media3.sass 1`] = `
     \\"end\\": {
       \\"line\\": 10,
       \\"column\\": 17
-    },
-    \\"input\\": {
-      \\"file\\": \\"media3.sass\\"
     }
   }
 }"
@@ -3914,9 +3440,6 @@ exports[`parses nested.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 3,
                   \\"column\\": 18
-                },
-                \\"input\\": {
-                  \\"file\\": \\"nested.sass\\"
                 }
               }
             },
@@ -3937,9 +3460,6 @@ exports[`parses nested.sass 1`] = `
                 \\"end\\": {
                   \\"line\\": 4,
                   \\"column\\": 25
-                },
-                \\"input\\": {
-                  \\"file\\": \\"nested.sass\\"
                 }
               }
             }
@@ -3952,9 +3472,6 @@ exports[`parses nested.sass 1`] = `
             \\"end\\": {
               \\"line\\": 4,
               \\"column\\": 26
-            },
-            \\"input\\": {
-              \\"file\\": \\"nested.sass\\"
             }
           },
           \\"selector\\": \\"background:\\"
@@ -3969,9 +3486,6 @@ exports[`parses nested.sass 1`] = `
         \\"end\\": {
           \\"line\\": 4,
           \\"column\\": 26
-        },
-        \\"input\\": {
-          \\"file\\": \\"nested.sass\\"
         }
       }
     }
@@ -3984,9 +3498,6 @@ exports[`parses nested.sass 1`] = `
     \\"end\\": {
       \\"line\\": 4,
       \\"column\\": 26
-    },
-    \\"input\\": {
-      \\"file\\": \\"nested.sass\\"
     }
   }
 }"
@@ -4023,9 +3534,6 @@ exports[`parses percentage.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 15
-            },
-            \\"input\\": {
-              \\"file\\": \\"percentage.sass\\"
             }
           }
         }
@@ -4039,9 +3547,6 @@ exports[`parses percentage.sass 1`] = `
         \\"end\\": {
           \\"line\\": 2,
           \\"column\\": 16
-        },
-        \\"input\\": {
-          \\"file\\": \\"percentage.sass\\"
         }
       }
     }
@@ -4054,9 +3559,6 @@ exports[`parses percentage.sass 1`] = `
     \\"end\\": {
       \\"line\\": 2,
       \\"column\\": 16
-    },
-    \\"input\\": {
-      \\"file\\": \\"percentage.sass\\"
     }
   }
 }"
@@ -4093,9 +3595,6 @@ exports[`parses selectors.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 14
-            },
-            \\"input\\": {
-              \\"file\\": \\"selectors.sass\\"
             }
           }
         }
@@ -4109,9 +3608,6 @@ exports[`parses selectors.sass 1`] = `
         \\"end\\": {
           \\"line\\": 2,
           \\"column\\": 15
-        },
-        \\"input\\": {
-          \\"file\\": \\"selectors.sass\\"
         }
       }
     },
@@ -4139,9 +3635,6 @@ exports[`parses selectors.sass 1`] = `
             \\"end\\": {
               \\"line\\": 5,
               \\"column\\": 14
-            },
-            \\"input\\": {
-              \\"file\\": \\"selectors.sass\\"
             }
           }
         }
@@ -4155,9 +3648,6 @@ exports[`parses selectors.sass 1`] = `
         \\"end\\": {
           \\"line\\": 5,
           \\"column\\": 15
-        },
-        \\"input\\": {
-          \\"file\\": \\"selectors.sass\\"
         }
       }
     },
@@ -4185,9 +3675,6 @@ exports[`parses selectors.sass 1`] = `
             \\"end\\": {
               \\"line\\": 8,
               \\"column\\": 14
-            },
-            \\"input\\": {
-              \\"file\\": \\"selectors.sass\\"
             }
           }
         }
@@ -4201,9 +3688,6 @@ exports[`parses selectors.sass 1`] = `
         \\"end\\": {
           \\"line\\": 8,
           \\"column\\": 15
-        },
-        \\"input\\": {
-          \\"file\\": \\"selectors.sass\\"
         }
       }
     },
@@ -4231,9 +3715,6 @@ exports[`parses selectors.sass 1`] = `
             \\"end\\": {
               \\"line\\": 12,
               \\"column\\": 12
-            },
-            \\"input\\": {
-              \\"file\\": \\"selectors.sass\\"
             }
           }
         }
@@ -4247,9 +3728,6 @@ exports[`parses selectors.sass 1`] = `
         \\"end\\": {
           \\"line\\": 12,
           \\"column\\": 13
-        },
-        \\"input\\": {
-          \\"file\\": \\"selectors.sass\\"
         }
       }
     }
@@ -4262,9 +3740,6 @@ exports[`parses selectors.sass 1`] = `
     \\"end\\": {
       \\"line\\": 12,
       \\"column\\": 13
-    },
-    \\"input\\": {
-      \\"file\\": \\"selectors.sass\\"
     }
   }
 }"
@@ -4301,9 +3776,6 @@ exports[`parses variable-interpolation.sass 1`] = `
             \\"end\\": {
               \\"line\\": 2,
               \\"column\\": 15
-            },
-            \\"input\\": {
-              \\"file\\": \\"variable-interpolation.sass\\"
             }
           }
         }
@@ -4317,9 +3789,6 @@ exports[`parses variable-interpolation.sass 1`] = `
         \\"end\\": {
           \\"line\\": 2,
           \\"column\\": 16
-        },
-        \\"input\\": {
-          \\"file\\": \\"variable-interpolation.sass\\"
         }
       }
     }
@@ -4332,9 +3801,6 @@ exports[`parses variable-interpolation.sass 1`] = `
     \\"end\\": {
       \\"line\\": 2,
       \\"column\\": 16
-    },
-    \\"input\\": {
-      \\"file\\": \\"variable-interpolation.sass\\"
     }
   }
 }"
@@ -4364,9 +3830,6 @@ exports[`parses variables.sass 1`] = `
         \\"end\\": {
           \\"line\\": 1,
           \\"column\\": 9
-        },
-        \\"input\\": {
-          \\"file\\": \\"variables.sass\\"
         }
       }
     },
@@ -4394,9 +3857,6 @@ exports[`parses variables.sass 1`] = `
             \\"end\\": {
               \\"line\\": 4,
               \\"column\\": 15
-            },
-            \\"input\\": {
-              \\"file\\": \\"variables.sass\\"
             }
           }
         }
@@ -4410,9 +3870,6 @@ exports[`parses variables.sass 1`] = `
         \\"end\\": {
           \\"line\\": 4,
           \\"column\\": 16
-        },
-        \\"input\\": {
-          \\"file\\": \\"variables.sass\\"
         }
       }
     }
@@ -4425,9 +3882,6 @@ exports[`parses variables.sass 1`] = `
     \\"end\\": {
       \\"line\\": 4,
       \\"column\\": 16
-    },
-    \\"input\\": {
-      \\"file\\": \\"variables.sass\\"
     }
   }
 }"
