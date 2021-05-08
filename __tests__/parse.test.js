@@ -13,7 +13,6 @@ for (let name of tests) {
     it('parses ' + name, () => {
         let sass = read(name)
         let root = parse(sass, { from: name })
-        console.log(123, root)
         expect(jsonify(root)).toMatchSnapshot()
     })
 }

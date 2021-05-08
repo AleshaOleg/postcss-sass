@@ -5,19 +5,19 @@
 ## 0.2.0
 * Fixed nesting.
 * Variables, comments, '!important' support.
-* Added Stringifier.
+* Added stringifier.
 
 ## 0.3.0
 * Refactoring (@sdwvit).
 * List/map.
 * Loop.
 * Move to ES6 syntax (@gucong3000).
-* Test cases for `stylelint` (@gucong3000).
+* Test cases for stylelint (@gucong3000).
 * Multiline comments (@gucong3000).
 * Interpolation.
 
 ## 0.3.1
-* Dependencies update (postcss, eslint, jest, postcss-parser-tests, postcss-scss).
+* Dependencies update (PostCSS, ESLint, Jest, postcss-parser-tests, postcss-scss).
 * `hoek` dependency security fix.
 
 ## 0.3.2
@@ -43,4 +43,7 @@
 * Added ignoring of unsupported rules which starts from `@` (@alpaca-tc).
 
 ## 0.4.4
-* Updated dependencies.
+* Dependencies update.
+
+## 0.5.0
+* Updated postcss to version 8.
