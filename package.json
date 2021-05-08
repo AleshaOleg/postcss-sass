@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/AleshaOleg/postcss-sass",
   "dependencies": {
-    "gonzales-pe": "^4.3.0"
+    "gonzales-pe": "^4.3.0",
+    "postcss": "^8.2.14"
   },
   "devDependencies": {
     "@logux/eslint-config": "^39.0.1",
@@ -40,11 +41,7 @@
     "istanbul": "^0.4.5",
     "jest": "^24.9.0",
     "lint-staged": "^10.0.3",
-    "postcss": "^8.2.14",
     "postcss-parser-tests": "^8.3.5"
-  },
-  "peerDependencies": {
-    "postcss": "^8.0.0"
   },
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
