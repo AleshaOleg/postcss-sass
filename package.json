@@ -17,16 +17,10 @@
   },
   "homepage": "https://github.com/AleshaOleg/postcss-sass",
   "dependencies": {
-    "gonzales-pe": "^4.3.0",
-    "postcss": "^7.0.31"
+    "gonzales-pe": "^4.3.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
     "@logux/eslint-config": "^39.0.1",
-    "babel-jest": "^24.9.0",
-    "babel-plugin-precompile-charcodes": "^1.1.0",
     "coveralls": "^3.0.3",
     "eslint": "^7.0.0",
     "eslint-config-postcss": "^4.0.0",
@@ -46,15 +40,20 @@
     "istanbul": "^0.4.5",
     "jest": "^24.9.0",
     "lint-staged": "^10.0.3",
-    "postcss-parser-tests": "^6.2.1"
+    "postcss": "^8.0.0",
+    "postcss-parser-tests": "^8.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.0.0"
   },
   "scripts": {
-    "clean": "rm *.js || echo 'Already cleaned'",
-    "build": "yarn run clean && babel -s inline -d ./ *.es6",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "prepublishOnly": "yarn run build && yarn run test",
-    "pretest": "eslint *.es6 __tests__",
+    "prepublishOnly": "yarn run test",
+    "pretest": "eslint *.js __tests__",
     "test": "jest"
+  },
+  "engines": {
+    "node": "^10 || ^12 || >=14"
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss",
@@ -65,8 +64,7 @@
     "settings": {
       "node": {
         "tryExtensions": [
-          ".js",
-          ".es6"
+          ".js"
         ]
       }
     },
@@ -80,37 +78,16 @@
   "jest": {
     "collectCoverage": true,
     "moduleFileExtensions": [
-      "es6",
       "js",
       "json"
     ],
     "testPathIgnorePatterns": [
       "<rootDir>/__tests__/utils"
     ],
-    "testEnvironment": "node",
-    "transform": {
-      "^.+\\.es6$": "babel-jest"
-    }
-  },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "browsers": "last 1 version",
-            "node": 6
-          },
-          "loose": true
-        }
-      ]
-    ],
-    "plugins": [
-      "precompile-charcodes"
-    ]
+    "testEnvironment": "node"
   },
   "lint-staged": {
-    "*.es6": [
+    "*.js": [
       "eslint --fix"
     ]
   },
