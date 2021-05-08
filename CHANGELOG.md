@@ -41,3 +41,6 @@
 
 ## 0.4.2
 * Added ignoring of unsupported rules which starts from `@` (@alpaca-tc).
+
+## 0.4.4
+* Updated dependencies.
